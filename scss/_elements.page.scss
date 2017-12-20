@@ -5,7 +5,7 @@
 */
 
 html {
-    font: $html-font-weight #{$html-font-size}/#{$html-line-height} $html-font-family;
+    font: $html-font-weight #{$html-font-size}/#{$html-line-height}px $html-font-family;
     -webkit-overflow-scrolling: touch;
     background-color: $html-background-color;
 

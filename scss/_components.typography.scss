@@ -35,3 +35,8 @@
     color: palette(color-neutral);
     @include ms2;
 }
+
+.c-type-intro {
+    font-weight: $gamma-font-weight;
+    @include ms4;
+}

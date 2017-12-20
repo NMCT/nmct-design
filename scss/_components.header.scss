@@ -3,6 +3,8 @@
 */
 
 .c-header {
+    position: relative;
+
     @include mq(bp4) {
         display: flex;
         align-items: center;

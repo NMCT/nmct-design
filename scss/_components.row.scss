@@ -12,8 +12,10 @@
 
     @include mq(bp1) {
         @include padding-lr($columns-gutter,$columns-gutter);
-        //@include padding-lr($columns-gutter * 2,$columns-gutter * 2);
-        //@include padding-tb($alpha-leading * 1.25,$alpha-leading * .25);
+    }
+
+    @include mq(bp3) {
+        @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
     }
 }
 
@@ -35,23 +37,27 @@
     }
 }
 
-.c-row--alpha {
-    background-color: palette(color-neutral,xxxxx-light);
-}
-
-.c-row--beta {
-    background-color: palette(color-neutral,xxxx-dark);
-    color: palette(color-neutral,xxx-light);
-}
-
-.c-row--featured {
-    z-index: 10;
-    @include margin-top($alpha-leading * -1);
-}
-
 .c-row--header {
-    z-index: 20;
     background-color: palette(color-alpha);
+    z-index: 20;
+
+    @include mq(bp3) {
+        @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
+    }
+}
+
+.c-row--intro {
+    background-color: palette(color-alpha);
+    color: palette(color-neutral,xxxxx-light);
+    background: palette(color-alpha) url('../img/svg/n-shape.svg') bottom center no-repeat;
+
+    @include mq(bp3) {
+        @include padding-tb($alpha-leading * 4,$alpha-leading * 3);
+    }
+
+    @include mq(bp6) {
+        @include padding-tb($alpha-leading * 6,$alpha-leading * 6);
+    }
 }
 
 .c-row--clear {

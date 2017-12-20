@@ -38,7 +38,7 @@
     -webkit-font-smoothing: antialiased; /* [4] */
     -moz-osx-font-smoothing: grayscale; /* [4] */
     font-weight: $gamma-font-weight;
-    @include uppercase;
+    // @include uppercase;
 
     &:hover,
     &:focus {
@@ -86,19 +86,16 @@
 // Button sizes
 
 .c-button--sm {
-    border-radius: $radius;
     @include padding-lr($columns-gutter,$columns-gutter);
-    @include input-dimensions($ms-2,1,0,.5,.5);
+    @include input-dimensions(ms(-2),1,0,.5,.5);
 }
 
 .c-button--md {
-    border-radius: $radius-md;
-    @include padding-lr($columns-gutter * 1.3,$columns-gutter * 1.2);
-    @include input-dimensions(ms(-1),1,0,.8,.7);
+    @include padding-lr($columns-gutter * 1,$columns-gutter * 1);
+    @include input-dimensions(ms(0),1,0,$alpha-leading / 2,$alpha-leading / 2);
 }
 
 .c-button--lg {
-    border-radius: $radius-lg;
     @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
     @include input-dimensions(ms(-1),1,0,$alpha-leading * 1.05,$alpha-leading * 0.95);
 }
@@ -127,316 +124,6 @@
 
 }
 
-.c-button--gamma {
-    background-color: palette(color-gamma,light);
-    border-color: palette(color-gamma,light);
-
-    &,
-    &:visited,
-    &:hover {
-        color: palette(color-neutral,xxxxx-light);
-    }
-
-    &:hover,
-    &:focus {
-        background-color: palette(color-gamma);
-        color: palette(color-neutral,xxxxx-light);
-    }
-
-    &:active {
-        background-color: palette(color-gamma);
-    }
-}
-
-.c-button--delta {
-    background-color: palette(color-delta,light);
-    border-color: palette(color-delta,light);
-
-    &,
-    &:visited,
-    &:hover {
-        color: palette(color-neutral,xxxxx-light);
-    }
-
-    &:hover,
-    &:focus {
-        background-color: palette(color-delta);
-        color: palette(color-neutral,xxxxx-light);
-    }
-
-    &:active {
-        background-color: palette(color-delta);
-    }
-}
-
-// Negative
-
-.c-button--beta-negative {
-    background-color: white;
-    border-color: white;
-
-    &,
-    &:visited,
-    &:hover {
-        color: palette(color-beta,light);
-    }
-
-    &:hover,
-    &:focus {
-        background-color: palette(color-beta,light);
-        border-color: palette(color-beta,light);
-        color: white;
-    }
-
-    &:active {
-        background-color: palette(color-beta,light);
-        border-color: palette(color-beta,light);
-    }
-
-}
-
-.c-button--beta-ghost {
-    background-color: white;
-    box-shadow: inset 0 0 0 2px palette(color-beta,light);
-
-    &,
-    &:visited,
-    &:hover {
-        color: palette(color-beta,light);
-    }
-
-    &:hover,
-    &:focus {
-        background-color: palette(color-beta,light);
-        border-color: palette(color-beta,light);
-        color: white;
-    }
-
-    &:active {
-        background-color: palette(color-beta,light);
-        border-color: palette(color-beta,light);
-    }
-
-}
-
-.c-button--gamma-negative {
-    background-color: white;
-    border-color: white;
-
-    &,
-    &:visited,
-    &:hover {
-        color: palette(color-gamma,light);
-    }
-
-    &:hover,
-    &:focus {
-        background-color: palette(color-gamma,light);
-        border-color: palette(color-gamma,light);
-        color: white;
-        //color: palette(color-gamma,light,dark);
-    }
-
-    &:active {
-        background-color: palette(color-gamma,light);
-        border-color: palette(color-gamma,light);
-    }
-}
-
-.c-button--delta-negative {
-    background-color: white;
-    border-color: white;
-
-    &,
-    &:visited,
-    &:hover {
-        color: palette(color-delta,light);
-    }
-
-    &:hover,
-    &:focus {
-        background-color: palette(color-delta,light);
-        border-color: palette(color-delta,light);
-        color: white;
-    }
-
-    &:active {
-        background-color: palette(color-delta,light);
-        border-color: palette(color-delta,light);
-    }
-}
-
-// Gradient buttons
-
-.c-button--gradient {
-    background-size: 200% auto;
-
-    &:hover,
-    &:focus {
-        background-position: right center;
-    }
-}
-
-.c-button--gradient-1 {
-    box-shadow: 0 5px 10px rgba(palette(color-beta),.2);
-
-    &,
-    &:focus,
-    &:active {
-        background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-beta) ,xx-light) 0%, map-get(map-get($palettes,color-beta) ,light) 50%, map-get(map-get($palettes,color-beta) ,light) 100%);
-    }
-
-    &,
-    &:visited,
-    &:hover {
-        color: palette(color-neutral,xxxxx-light);
-        //color: darken(palette(color-beta),10%);
-    }
-}
-
-.c-button--gradient-2 {
-    box-shadow: 0 5px 15px rgba(palette(color-alpha),.3);
-
-    &,
-    &:focus,
-    &:active {
-        background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-alpha) ,xx-light) 0%, map-get(map-get($palettes,color-alpha) ,light) 50%, map-get(map-get($palettes,color-alpha) ,light) 100%);
-    }
-
-    &,
-    &:visited,
-    &:hover {
-        color: palette(color-neutral,xxxxx-light);
-        //color: darken(palette(color-alpha),10%);
-    }
-}
-
-.c-button--gradient-3 {
-    box-shadow: 0 5px 10px rgba(palette(color-gamma),.2);
-
-    &,
-    &:focus,
-    &:active {
-        background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-alpha) ,xx-light) 0%, map-get(map-get($palettes,color-gamma) ,light) 50%, map-get(map-get($palettes,color-gamma) ,light) 100%);
-    }
-
-    &,
-    &:visited,
-    &:hover {
-        color: palette(color-neutral,xxxxx-light);
-        //color: darken(palette(color-alpha),10%);
-    }
-}
-
-.c-button--gradient-4 {
-    box-shadow: 0 5px 10px rgba(palette(color-beta),.2);
-
-    &,
-    &:focus,
-    &:active {
-        background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-delta) ,xx-light) 0%, map-get(map-get($palettes,color-beta) ,light) 50%, map-get(map-get($palettes,color-beta) ,light) 100%);
-    }
-
-    &,
-    &:visited,
-    &:hover {
-        color: palette(color-neutral,xxxxx-light);
-        //color: darken(palette(color-alpha),10%);
-    }
-}
-
-// Ghost gradient buttons
-
-.c-button--gradient-ghost {
-    background-size: 200% auto;
-    position: relative;
-
-    &:hover,
-    &:focus {
-        background-position: right center;
-    }
-
-    span {
-        display: block;
-        position: relative;
-    }
-
-    &:before {
-        content: '';
-        position: absolute;
-        background-color: #fff;
-        top: 2px;
-        right: 2px;
-        bottom: 2px;
-        left: 2px;
-        border-radius: $radius-lg - 2;
-        //z-index: -1;
-    }
-}
-
-.c-button--gradient-ghost-1 {
-
-    &,
-    &:focus,
-    &:active {
-        background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-beta) ,xx-light) 0%, map-get(map-get($palettes,color-beta) ,light) 50%, map-get(map-get($palettes,color-beta) ,xx-light) 100%);
-    }
-
-    &,
-    &:visited,
-    &:hover {
-        color: palette(color-beta);
-    }
-
-    span {
-        background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-beta) ,xx-light), map-get(map-get($palettes,color-beta) ,light));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-
-.c-button--gradient-ghost-2 {
-
-    &,
-    &:focus,
-    &:active {
-        background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-alpha) ,xx-light) 0%, map-get(map-get($palettes,color-alpha) ,light) 50%, map-get(map-get($palettes,color-alpha) ,xx-light) 100%);
-    }
-
-    &,
-    &:visited,
-    &:hover {
-        color: palette(color-alpha);
-    }
-
-    span {
-        background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-alpha) ,xx-light), map-get(map-get($palettes,color-alpha),light));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-
-.c-button--gradient-ghost-3 {
-
-    &,
-    &:focus,
-    &:active {
-        background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-alpha) ,xx-light) 0%, map-get(map-get($palettes,color-gamma) ,light) 50%, map-get(map-get($palettes,color-alpha) ,xx-light) 100%);
-    }
-
-    &,
-    &:visited,
-    &:hover {
-        color: palette(color-alpha);
-    }
-
-    span {
-        background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-alpha) ,xx-light) 0%, map-get(map-get($palettes,color-gamma) ,light));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-
 // rounded
 
 .c-button--rounded {
@@ -449,7 +136,6 @@
     box-shadow: 0 5px 15px rgba(palette(color-neutral,xxx-dark),.1);
 }
 
-
 // effects
 
 .c-button--scale {
@@ -460,6 +146,29 @@
 
     &:active {
         transform: scale(.975);
+    }
+}
+
+// special cases
+
+.c-button--header-cta {
+    background-color: palette(color-neutral,xxxxx-light);
+    box-shadow: 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
+
+    &,
+    &:visited,
+    &:hover {
+        color: palette(color-alpha);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: palette(color-neutral,xxxxx-light);
+        color: palette(color-alpha);
+    }
+
+    &:active {
+        background-color: palette(color-neutral,xxxxx-light);
     }
 }
 

@@ -15,5 +15,13 @@
 }
 
 @mixin box-shadow {
-    box-shadow: 0 5px 15px rgba(palette(color-neutral,xxx-dark),.1);
+    box-shadow: 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
+}
+
+@mixin box-shadow-lg {
+    box-shadow: 0 4px 8px rgba(palette(color-neutral,xxxx-dark),.1);
+}
+
+@mixin box-shadow-xl {
+    box-shadow: 0 8px 24px rgba(palette(color-neutral,xxxx-dark),.1);
 }

@@ -11,6 +11,10 @@
     @include mq(bp4) {
         display: block;
         width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     &.is-visible {
@@ -19,6 +23,8 @@
 }
 
     .c-nav-main__list {
+        margin-bottom: 0;
+
         @include mq(bp4) {
             justify-content: flex-end;
             display: flex;
@@ -43,14 +49,14 @@
 
     .c-nav-main__link {
         display: block;
-        color: palette(color-alpha);
+        color: white;
         text-decoration: none;
-        font-weight: $beta-font-weight;
+        font-weight: $gamma-font-weight;
         @include text-dimensions($alpha-font-size,1);
 
         &:hover,
         .is-selected & {
-            color: palette(color-alpha,dark);
+            color: white;
         }
     }
 

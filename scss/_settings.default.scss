@@ -42,8 +42,8 @@
 }
 
 // Base colors
-$color-alpha                        : rgb(252,61,33) !default;
-$color-beta                         : rgb(11,61,145) !default;
+$color-alpha                        : #E85E00 !default;
+$color-beta                         : #2612B5 !default;
 
 $color-error                        : #FF4136 !default;
 $color-success                      : #2ECC40 !default;
@@ -104,7 +104,7 @@ $palettes: (
 // ---
 
 $modularscale: (
-    base: 18px,
+    base: 16px,
     ratio: 1.125
 );
 
@@ -117,7 +117,7 @@ $beta-font-family                   : 'acumin-pro-semi-condensed', serif !defaul
 $gamma-font-family                  : 'alverata', serif !default;
 $delta-font-family                  : 'acumin-pro-wide', serif !default;
 
-$alpha-font-size                    : ms(1) !default;
+$alpha-font-size                    : ms(0) !default;
 
 $alpha-font-weight                  : 400 !default;
 $beta-font-weight                   : 500 !default;
@@ -126,9 +126,9 @@ $delta-font-weight                  : 700 !default;
 $jota-font-weight                   : 800 !default;
 $epsilon-font-weight                : 900 !default;
 
-$alpha-line-height                  : 28 !default;
+$alpha-line-height                  : 24 !default;
 
-$alpha-leading                      : $alpha-line-height * 1.25 !default;
+$alpha-leading                      : $alpha-line-height * 1 !default;
 $beta-leading                       : $alpha-line-height * 2 !default;
 
 // ---
@@ -223,7 +223,7 @@ $html-responsive-font-size          : false !default;
 $html-responsive-font-breakpoint    : bp5 !default;
 $html-responsive-font-magnification : 112.5% !default;
 
-$html-background-color              : palette(color-neutral,xx-dark) !default;
+$html-background-color              : palette(color-neutral,xxxx-light) !default;
 $body-color                         : palette(color-neutral,xx-dark) !default;
 
 $body-font-smoothing                : true !default;
@@ -343,7 +343,7 @@ $caption-padding-bottom             : $alpha-leading !default;
 // Grid
 // ---
 
-$grid-max-width                     : auto !default;
+$grid-max-width                     : map-get($breakpoints,bp6) !default;
 $grid-gutter                        : $columns-gutter !default;
 
 // ---

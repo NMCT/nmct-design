@@ -10,28 +10,24 @@
  *     Text-indent is set to prevent text from showing on top of the background-image.
  */
 
-$logo-vertical-ratio:     1.052;
-$logo-vertical-height:    $alpha-line-height * 4.5rem;
-$logo-vertical-width:     $logo-vertical-height * $logo-vertical-ratio;
-
-$logo-horizontal-ratio:     4.427;
-$logo-horizontal-height:    $alpha-line-height * 2.5rem;
-$logo-horizontal-width:     $logo-horizontal-height * $logo-horizontal-ratio;
-
-
-$logo-drop-ratio:     0.702;
-$logo-drop-height:    $alpha-line-height * 1.5rem;
-$logo-drop-width:     $logo-drop-height * $logo-drop-ratio;
+$logo-ratio:     0.680555555555556;
+$logo-height:    $alpha-leading * 3;
+$logo-width:     $logo-height * $logo-ratio;
 
 .c-logo {
     display: block;
-    font-family: $delta-font-family;
-    font-weight: $delta-font-weight;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    //@include ms0;
-    @include ms-1;
+    @include ms0;
 }
+
+    .c-logo,
+    .c-logo__mark {
+        height: #{$logo-height}px;
+        width: #{$logo-width}px;
+    }
+
+    .c-logo__path {
+        fill: white;
+    }
 
     .c-logo__link {
         display: block;

@@ -12,10 +12,12 @@ description: 'Discover the cosmos! Each day a different image or photograph of o
 
 # Site navigation
 navigation:
-  - title: Explore
-    url: 'explore'
-  - title: About
-    url: 'about'
+  - title: Waarom NMCT?
+    url: 'waarom-nmct'
+  - title: Programma
+    url: 'programma'
+  - title: Contact
+    url: 'contact'
 
 # Jekyll settings
 permalink: pretty

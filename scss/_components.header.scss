@@ -5,6 +5,7 @@
 .c-header {
     @include mq(bp4) {
         display: flex;
+        align-items: center;
         justify-content: space-between;
     }
 }

@@ -77,7 +77,7 @@ chopstick.mobileNav =
 {
     settings:
     {
-        navigation: $('.js-nav'),
+        navigation: $('.js-nav-mobile'),
         trigger: $('.js-nav-trigger')
     },
 

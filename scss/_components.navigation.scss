@@ -6,24 +6,29 @@
 
 .c-nav-main {
     width: 100%;
-    display: none;
+
+    .c-header & {
+        display: none;
+
+        @include mq(bp4) {
+            display: block;
+        }
+    }
 
     @include mq(bp4) {
-        display: block;
         width: auto;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
-    &.is-visible {
-        display: block;
-    }
 }
 
     .c-nav-main__list {
-        margin-bottom: 0;
+
+        .c-header & {
+            margin-bottom: 0;
+        }
 
         @include mq(bp4) {
             justify-content: flex-end;
@@ -78,12 +83,16 @@
     outline: 0;
 
     &.is-active {
-        color: palette(color-neutral,dark);
-        //background-color: palette(color-alpha);
+
     }
 
     @include mq(bp4) {
         display: none;
+    }
+
+    .c-nav-mobile & {
+        margin-left: auto;
+        margin-top: -#{$alpha-leading / 2}px;
     }
 }
 
@@ -91,6 +100,29 @@
         width: 1.5em;
         height: 1.5em;
     }
+
+// mobile navigation
+
+.c-nav-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: palette(color-alpha);
+    z-index: 100;
+    @include padding-tb($alpha-leading,$alpha-leading);
+    @include padding-lr($columns-gutter,$columns-gutter);
+
+    &.is-visible {
+        display: block;
+    }
+
+    @include mq(bp4) {
+        display: none;
+    }
+}
 
 // top navigation
 

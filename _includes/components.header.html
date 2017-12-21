@@ -1,9 +1,12 @@
-<div class="js-nav-holder c-row c-row--header">
+<div class="c-row c-row--header">
     <div class="o-container">
         <div class="c-header">
             {% include components.logo.html %}
             {% include components.nav-main.html %}
             <a href="#!" class="c-button c-button--md c-button--header-cta">Inschrijven</a>
+            <button class="c-nav-main-trigger js-nav-trigger">
+                {% include atom.symbol.html value="menu" class="c-nav-main-trigger__symbol" %}
+            </button>
         </div>
     </div>
 </div>

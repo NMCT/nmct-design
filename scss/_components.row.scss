@@ -6,13 +6,8 @@
 
 .c-row {
     position: relative;
-    @include padding-tb($alpha-leading,0);
-    @include padding-lr($columns-gutter / 2,$columns-gutter / 2);
-    @include clearfix;
-
-    @include mq(bp1) {
-        @include padding-lr($columns-gutter,$columns-gutter);
-    }
+    @include padding-lr($columns-gutter,$columns-gutter);
+    @include padding-tb($alpha-leading * 2,$alpha-leading * 1);
 
     @include mq(bp3) {
         @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
@@ -21,8 +16,7 @@
 
 .c-row--lg {
     @include mq(bp3) {
-        @include padding-tb($alpha-leading * 2,$alpha-leading * 1);
-        @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
+        @include padding-tb($alpha-leading * 4,$alpha-leading * 3);
     }
 }
 
@@ -32,14 +26,23 @@
     }
 
     @include mq(bp6) {
-        @include padding-lr($columns-gutter * 6,$columns-gutter * 6);
         @include padding-tb($alpha-leading * 6,$alpha-leading * 5);
     }
+}
+
+.c-row--alpha {
+    background-color: palette(color-alpha);
+    color: palette(color-neutral,xxxxx-light);
 }
 
 .c-row--header {
     background-color: palette(color-alpha);
     z-index: 20;
+
+    // @include mq(bp1) {
+        // @include padding-lr($columns-gutter,$columns-gutter);
+        @include padding-tb($alpha-leading,0);
+    // }
 
     @include mq(bp3) {
         @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
@@ -53,10 +56,10 @@
     background-size: contain;
 
     @include mq(bp3) {
-        @include padding-tb($alpha-leading * 4,$alpha-leading * 3);
+        @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
     }
 
-    @include mq(bp6) {
+    @include mq(bp5) {
         @include padding-tb($alpha-leading * 3,$alpha-leading * 8);
     }
 }

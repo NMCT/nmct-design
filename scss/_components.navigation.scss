@@ -25,13 +25,11 @@
 }
 
     .c-nav-main__list {
-
         .c-header & {
             margin-bottom: 0;
         }
 
         @include mq(bp4) {
-            justify-content: flex-end;
             display: flex;
             align-items: center;
             flex-wrap: wrap;
@@ -40,33 +38,59 @@
 
     .c-nav-main__item {
         @include mq(bp4) {
+            @include margin-lr($columns-gutter / 2);
+
             & + & {
-                @include margin-left($columns-gutter);
+                // @include margin-left($columns-gutter);
             }
         }
 
         @include mq(bp5) {
+            @include margin-lr($columns-gutter);
+
             & + & {
-                @include margin-left($columns-gutter * 2);
+                // @include margin-left($columns-gutter * 2);
             }
         }
     }
 
     .c-nav-main__link {
+        position: relative;
         display: block;
         color: white;
         text-decoration: none;
         font-weight: $gamma-font-weight;
         @include text-dimensions($alpha-font-size,1);
 
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: #{$alpha-leading / 2}px;
+            left: 0;
+            height: 1px;
+            width: 0;
+            opacity: 0;
+            background-color: rgba(palette(color-neutral,xxxxx-light),1);
+            transition: all $animation-duration-alpha $animation-easing-alpha;
+            transition-property: background, opacity, width;
+        }
+
         &:hover,
         .is-selected & {
             color: white;
+            text-decoration: none;
+
+            @include mq(bp4) {
+                &:after {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
         }
 
-        .is-selected & {
-            text-decoration: underline;
-        }
+        // @include mq(bp4,max) {
+            @include padding-tb($alpha-leading / 2,$alpha-leading / 2);
+        // }
     }
 
 .c-nav-main-trigger {
@@ -82,17 +106,8 @@
     background-color: transparent;
     outline: 0;
 
-    &.is-active {
-
-    }
-
     @include mq(bp4) {
         display: none;
-    }
-
-    .c-nav-mobile & {
-        margin-left: auto;
-        margin-top: -#{$alpha-leading / 2}px;
     }
 }
 
@@ -119,8 +134,16 @@
         display: block;
     }
 
+    @include mq(bp3) {
+        @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
+        @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
+    }
+
     @include mq(bp4) {
-        display: none;
+        &,
+        &.is-visible {
+            display: none;
+        }
     }
 }
 

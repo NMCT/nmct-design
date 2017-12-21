@@ -76,11 +76,11 @@ li {
 }
 
 .c-main-section-md {
-    @include mq(bp2) {
+    // @include mq(bp2) {
         & + & {
             @include padding-top($alpha-leading);
         }
-    }
+    // }
 
     @include mq(bp3) {
         & + & {
@@ -90,11 +90,11 @@ li {
 }
 
 .c-main-section-lg {
-    @include mq(bp2) {
+    // @include mq(bp2) {
         & + & {
             @include padding-top($alpha-leading);
         }
-    }
+    // }
 
     @include mq(bp3) {
         & + & {
@@ -104,11 +104,11 @@ li {
 }
 
 .c-main-section-xl {
-    @include mq(bp2) {
+    // @include mq(bp2) {
         & + & {
             @include padding-top($alpha-leading);
         }
-    }
+    // }
 
     @include mq(bp3) {
         & + & {

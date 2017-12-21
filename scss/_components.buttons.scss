@@ -115,8 +115,8 @@ button::-moz-focus-inner {
 }
 
 .c-button--md {
-    @include padding-lr($columns-gutter * 1,$columns-gutter * 1);
-    @include input-dimensions(ms(0),1,0,$alpha-leading / 2,$alpha-leading / 2);
+    @include padding-lr($columns-gutter * 1.25,$columns-gutter * 1.25);
+    @include input-dimensions(ms(0),1,0,$alpha-leading / 2.1,$alpha-leading / 1.9);
 }
 
 .c-button--lg {
@@ -176,13 +176,22 @@ button::-moz-focus-inner {
 // special cases
 
 .c-button--header-cta {
-    background-color: palette(color-neutral,xxxxx-light);
-    box-shadow: 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
+    // background-color: palette(color-neutral,xxxxx-light);
+    // background-color: rgba(palette(color-neutral,xxxxx-light),.15);
+    // background-color: rgba(palette(color-neutral,xxxx-dark),.125);
+    // text-transform: uppercase;
+    // letter-spacing: 1px;
+    // box-shadow: 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
+    // @include ms-1;
+    box-shadow: 0 0 0 2px white;
+    border-radius: $alpha-leading * 4px;
 
     &,
     &:visited,
     &:hover {
-        color: palette(color-alpha);
+        // color: palette(color-alpha);
+        // color: palette(color-neutral,xxxx-dark);
+        color: palette(color-neutral,xxxxx-light);
     }
 
     &:hover,

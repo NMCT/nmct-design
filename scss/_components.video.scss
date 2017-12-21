@@ -1,0 +1,68 @@
+/*
+    Components: Intro
+*/
+
+.c-video-player {
+    position: relative;
+    @include box-shadow-xl;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        // background-color: rgba(palette(color-neutral,xxx-dark),.25);
+        // background-color: rgba(palette(color-alpha,dark),.25);
+        z-index: 15;
+    }
+}
+
+.c-video-play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: $alpha-leading * 3px;
+    width: $alpha-leading * 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(white,.95);
+    z-index: 20;
+    transition: all $animation-duration-gamma $animation-easing-beta;
+    transition-property: transform, background;
+    @include box-shadow;
+
+    &:hover,
+    &:focus {
+        background-color: #fff;
+        transform: translate(-50%, -50%) scale(1.1);
+        outline: none;
+    }
+
+    &:active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    @include mq(bp3) {
+        height: $alpha-leading * 4px;
+        width: $alpha-leading * 4px;
+    }
+}
+
+    .c-video-play-button__symbol {
+        fill: palette(color-alpha,light);
+        width: $alpha-leading * 1.5px;
+        height: $alpha-leading * 1.5px;
+        // margin-left: 3px;
+    }
+
+    .c-video-player__video {
+        display: block;
+        max-width: 100%;
+        position: relative;
+        z-index: 10;
+    }

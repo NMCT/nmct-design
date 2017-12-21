@@ -50,13 +50,14 @@
     background-color: palette(color-alpha);
     color: palette(color-neutral,xxxxx-light);
     background: palette(color-alpha) url('../img/svg/n-shape.svg') bottom center no-repeat;
+    background-size: contain;
 
     @include mq(bp3) {
         @include padding-tb($alpha-leading * 4,$alpha-leading * 3);
     }
 
     @include mq(bp6) {
-        @include padding-tb($alpha-leading * 6,$alpha-leading * 6);
+        @include padding-tb($alpha-leading * 3,$alpha-leading * 8);
     }
 }
 

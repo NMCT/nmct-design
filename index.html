@@ -6,15 +6,17 @@ section: home
 <section class="c-row c-row--intro">
     <div class="o-container">
         <div class="u-max-width-lg u-align-horizontal">
-            <div class="c-main-section-md">
+            <div class="c-main-section-xl">
                 <p class="c-type-intro">
                     NMCT is een praktijkgerichte professionele IT bachelor opleiding rond nieuwe technologieën aan Howest, campus Kortrijk. In de eerste 3 semesters bouw je een stevige, allround IT basis op om daarna te kiezen uit 1 van onze 3 uitstroomprofielen: Smart Technology Creator, Web & App Developer of Infrastructure engineer.
                 </p>
             </div>
-            <div class="c-main-section-md">
-                <div class="c-intro-video">
-                    <button class="c-intro-video__play-button">Speel af</button>
-                    <video class="c-intro-video__video" poster="img/jpg/pexels-photo-668137.jpg">
+            <div class="c-main-section-xl">
+                <div class="c-video-player">
+                    <button class="c-video-play-button">
+                        {% include atom.symbol.html value="play_arrow" class="c-video-play-button__symbol" %}
+                    </button>
+                    <video class="c-video-player__video" poster="img/jpg/pexels-photo-668137.jpg">
                         <source src="mov_bbb.mp4" type="video/mp4">
                         <source src="mov_bbb.ogg" type="video/ogg">
                         Your browser does not support HTML5 video.
@@ -24,7 +26,7 @@ section: home
         </div>
     </div>
 </section>
-<section class="c-row">
+<section class="c-row c-row--xl">
     <div class="o-container">
         <div class="u-max-width-md">
             <p>

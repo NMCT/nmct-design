@@ -38,5 +38,9 @@
 
 .c-type-intro {
     font-weight: $gamma-font-weight;
-    @include ms4;
+    @include ms2;
+
+    @include mq(bp3) {
+        @include ms4;
+    }
 }

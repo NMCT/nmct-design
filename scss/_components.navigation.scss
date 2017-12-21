@@ -58,33 +58,28 @@
         .is-selected & {
             color: white;
         }
+
+        .is-selected & {
+            text-decoration: underline;
+        }
     }
 
 .c-nav-main-trigger {
+    position: relative;
+    width: $alpha-leading * 2px;
+    height: $alpha-leading * 2px;
+    margin-right: -#{$alpha-leading / 2}px;
     user-select: none;
-    position: absolute;
-    top: $alpha-leading * 1rem;
-    right: $columns-gutter * 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: palette(color-neutral,dark);
+    color: palette(color-neutral,xxxxx-light);
     background-color: transparent;
-    //background-color: palette(color-neutral,light);
-    border: 0;
     outline: 0;
-    padding: 0;
-    width: 1.5em;
-    height: 1.5em;
 
     &.is-active {
         color: palette(color-neutral,dark);
         //background-color: palette(color-alpha);
-    }
-
-    @include mq(bp2) {
-        top: $alpha-leading * 2rem;
-        right: $columns-gutter * 2rem;
     }
 
     @include mq(bp4) {

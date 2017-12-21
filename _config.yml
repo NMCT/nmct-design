@@ -16,6 +16,8 @@ navigation:
     url: 'waarom-nmct'
   - title: Programma
     url: 'programma'
+  - title: Nieuws
+    url: 'nieuws'
   - title: Contact
     url: 'contact'
 

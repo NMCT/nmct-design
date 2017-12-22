@@ -1,0 +1,101 @@
+/*
+    Components: c-Curriculum
+    ---
+*/
+
+.c-curriculum {
+    font-size: 0;
+}
+
+.c-curriculum__column {
+
+}
+
+.c-curriculum__header {
+    margin: 10px 0;
+    font-size: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.c-curriculum__module {
+    position: relative;
+    display: inline-block;
+    width: calc( ( 100% - 10px ) / 2);
+    vertical-align: bottom;
+
+    margin-bottom: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+
+    background: $ultra-light-grey;
+    z-index: 10;
+
+    &:nth-of-type( 2n + 2 ) {
+        margin-left: 10px;
+    }
+
+    &--code {
+        border-bottom: 2px solid $code;
+
+        // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $code;
+        // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $code;
+    }
+
+    &--connect {
+        border-bottom: 2px solid $connect;
+
+        // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $connect;
+        // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $connect;
+    }
+
+    &--create {
+        border-bottom: 2px solid $create;
+
+        // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $create;
+        // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $create;
+    }
+
+    &--inform {
+        border-bottom: 2px solid $inform;
+
+        // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $inform;
+        // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $inform;
+    }
+
+    &--project {
+        border-bottom: 2px solid $project;
+
+        // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $project;
+        // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $project;
+    }
+}
+
+.c-curriculum__module__header {
+    font-size: 1.0rem;
+    text-align: left;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.c-curriculum__module__tags {
+    font-size: 1rem;
+}
+
+@media screen and #{ $tablet-small-mq } {
+    .c-curriculum__column {
+        display: inline-block;
+        width: calc( ( 100% - 40px ) / 2 );
+        vertical-align: top;
+
+        &:nth-of-type( 2 ) {
+            margin: 0 20px;
+        }
+    }
+}
+
+@media screen and #{ $desktop-small-mq } {
+    .c-curriculum__column {
+        width: calc( ( 100% - 40px ) / 3 );
+    }
+}

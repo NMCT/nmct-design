@@ -57,10 +57,14 @@
     .c-nav-main__link {
         position: relative;
         display: block;
-        color: white;
         text-decoration: none;
         font-weight: $gamma-font-weight;
         @include text-dimensions($alpha-font-size,1);
+
+        &,
+        &:visited {
+            color: palette(color-neutral,xxxxx-light);
+        }
 
         &:after {
             content: '';

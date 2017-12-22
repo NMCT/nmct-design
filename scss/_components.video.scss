@@ -34,7 +34,7 @@
     transform: translate(-50%, -50%);
     background-color: rgba(white,.95);
     z-index: 20;
-    transition: all $animation-duration-gamma $animation-easing-beta;
+    transition: all $animation-duration-alpha $animation-easing-alpha;
     transition-property: transform, background;
     @include box-shadow;
 

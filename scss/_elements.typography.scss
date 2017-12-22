@@ -14,7 +14,7 @@ h1 {
 h2 {
     font-family: $h2-font-family;
     font-weight: $h2-font-weight;
-    @include ms0;
+    @include ms4;
     @include margin-bottom($h2-margin-bottom);
 }
 

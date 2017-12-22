@@ -35,6 +35,12 @@
     color: palette(color-neutral,xxxxx-light);
 }
 
+
+.c-row--beta {
+    background-color: palette(color-neutral,xxxx-dark);
+    color: palette(color-neutral,xxxxx-light);
+}
+
 .c-row--header {
     background-color: palette(color-alpha);
     z-index: 20;
@@ -52,15 +58,22 @@
 .c-row--intro {
     background-color: palette(color-alpha);
     color: palette(color-neutral,xxxxx-light);
-    background: palette(color-alpha) url('../img/svg/n-shape.svg') bottom center no-repeat;
+    background: palette(color-alpha) url('../img/svg/n-shape-2.svg') bottom center no-repeat;
     background-size: contain;
+    // background-size: auto;
 
     @include mq(bp3) {
+        // background-size: auto;
         @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
     }
 
+    @include mq(bp4) {
+        // background-size: auto;
+    }
+
     @include mq(bp5) {
-        @include padding-tb($alpha-leading * 3,$alpha-leading * 8);
+        // background-size: auto;
+        @include padding-tb($alpha-leading * 3,$alpha-leading * 6);
     }
 }
 

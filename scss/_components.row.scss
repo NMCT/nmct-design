@@ -58,21 +58,13 @@
 .c-row--intro {
     background-color: palette(color-alpha);
     color: palette(color-neutral,xxxxx-light);
-    background: palette(color-alpha) url('../img/svg/n-shape-2.svg') bottom center no-repeat;
-    background-size: contain;
-    // background-size: auto;
+    background: palette(color-alpha) url('../img/svg/background-visual-top.svg') bottom center no-repeat;
 
     @include mq(bp3) {
-        // background-size: auto;
         @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
     }
 
-    @include mq(bp4) {
-        // background-size: auto;
-    }
-
     @include mq(bp5) {
-        // background-size: auto;
         @include padding-tb($alpha-leading * 3,$alpha-leading * 6);
     }
 }

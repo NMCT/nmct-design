@@ -10,7 +10,7 @@
 
     .c-nav-mobile & {
         @include margin-bottom($alpha-leading * .5);
-
+ 
         @include mq(bp3) {
             @include margin-bottom($alpha-leading * 1.5);
         }

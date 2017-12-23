@@ -8,7 +8,7 @@
 	background-color: palette(color-neutral, xxxx-light);
 	z-index: 10;
 
-	&:last-of-type {
+	&--base {
 		margin-bottom: 336px;
 	}
 }

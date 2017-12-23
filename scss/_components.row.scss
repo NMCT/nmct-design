@@ -8,10 +8,13 @@
     position: relative;
     @include padding-lr($columns-gutter,$columns-gutter);
     @include padding-tb($alpha-leading * 2,$alpha-leading * 1);
+    background-color: palette(color-neutral, xxxx-light);
 
     @include mq(bp3) {
         @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
     }
+
+    z-index: 10;
 }
 
 .c-row--lg {
@@ -79,4 +82,38 @@
 
 .c-row--clear-bottom {
     padding-bottom: 0;
+}
+
+.c-row--footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: palette(color-neutral, xxxx-dark);
+    z-index: 0;
+
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        height: 3px;
+
+        /*
+        $color-alpha
+        $color-code
+        $color-connect
+        $color-create
+        $color-inform
+        $color-project
+        */
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$color-alpha+0$color-code+20$color-connect+40$color-create+60$color-inform+80$color-project+100 */
+        background: $color-alpha; /* Old browsers */
+        background: -moz-linear-gradient(left, $color-alpha 0%, $color-code 20%, $color-connect 40%, $color-create 60%, $color-inform 80%, $color-project 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, $color-alpha 0%,$color-code 20%,$color-connect 40%,$color-create 60%,$color-inform 80%,$color-project 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, $color-alpha 0%,$color-code 20%,$color-connect 40%,$color-create 60%,$color-inform 80%,$color-project 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-alpha', endColorstr='$color-project',GradientType=1 ); /* IE6-9 */
+    }
 }

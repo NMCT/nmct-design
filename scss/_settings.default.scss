@@ -59,7 +59,6 @@ $color-project: #7B9641;
 
 // Palettes
 $palettes: (
-    // WAT IS DIT??
     color-neutral: (
         xxxxx-light: hsl(hue($color-neutral),saturation($color-neutral),100),
         xxxx-light: hsl(hue($color-neutral),saturation($color-neutral),97.5),
@@ -104,19 +103,19 @@ $palettes: (
         dark: hsl(hue($color-notice),100,35),
     ),
     color-code: (
-        base: $color-code
+        base: $color-code,
     ),
     color-connect: (
-        base: $color-connect
+        base: $color-connect,
     ),
     color-create: (
-        base: $color-create
+        base: $color-create,
     ),
     color-inform: (
-        base: $color-inform
+        base: $color-inform,
     ),
     color-project: (
-        base: $color-project
+        base: $color-project,
     ),
 ) !default;
 

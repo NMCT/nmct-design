@@ -61,7 +61,7 @@
 .c-row--intro {
     background-color: palette(color-alpha);
     color: palette(color-neutral,xxxxx-light);
-    background: palette(color-alpha) url('../img/svg/background-visual-top.svg') bottom center no-repeat;
+    background: palette(color-alpha) url('../../img/svg/background-visual-top.svg') bottom center no-repeat;
 
     @include mq(bp3) {
         @include padding-tb($alpha-leading * 2,$alpha-leading * 2);

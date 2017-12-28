@@ -8,6 +8,52 @@
 }
 
 .c-curriculum__column {
+    position: relative;
+
+    @include mq(bp3) {
+        display: inline-block;
+        width: calc( ( 100% - 40px ) / 2 );
+        vertical-align: top;
+
+        &:nth-of-type( 2 ) {
+            margin: 0 20px;
+        }
+    }
+
+    @include mq(bp4) {
+        width: calc( ( 100% - 40px ) / 3 );
+    }
+
+    &--specialist {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(50% - 5px);
+
+        & .c-curriculum__module {
+            width: 100%;
+
+            &:nth-of-type( 2n + 2 ) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &--stage {
+        position: absolute;
+        top: calc( 1.6rem + 20px );
+        bottom: 0;
+        display: inline-block;
+        vertical-align: top;
+
+        width: calc(50% - 5px);
+
+        margin-left: 10px;
+
+        & .c-curriculum__module {
+            width: 100%;
+            height: calc(100% - 15px);
+        }
+    }
 }
 
 .c-curriculum__header {
@@ -27,7 +73,7 @@
     padding: 5px;
     box-sizing: border-box;
 
-    background: $ultra-light-grey;
+    background: palette(color-neutral, xxx-light);
     z-index: 10;
 
     &:nth-of-type( 2n + 2 ) {
@@ -35,38 +81,42 @@
     }
 
     &--code {
-        border-bottom: 2px solid $code;
+        border-bottom: 2px solid palette(color-code);
 
         // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $code;
         // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $code;
     }
 
     &--connect {
-        border-bottom: 2px solid $connect;
+        border-bottom: 2px solid palette(color-connect);
 
         // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $connect;
         // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $connect;
     }
 
     &--create {
-        border-bottom: 2px solid $create;
+        border-bottom: 2px solid palette(color-create);
 
         // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $create;
         // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $create;
     }
 
     &--inform {
-        border-bottom: 2px solid $inform;
+        border-bottom: 2px solid palette(color-inform);
 
         // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $inform;
         // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $inform;
     }
 
     &--project {
-        border-bottom: 2px solid $project;
+        border-bottom: 2px solid palette(color-project);
 
         // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $project;
         // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $project;
+    }
+
+    &--stage {
+
     }
 }
 
@@ -78,23 +128,5 @@
 }
 
 .c-curriculum__module__tags {
-    font-size: 1rem;
-}
-
-@media screen and #{ $tablet-small-mq } {
-    .c-curriculum__column {
-        display: inline-block;
-        width: calc( ( 100% - 40px ) / 2 );
-        vertical-align: top;
-
-        &:nth-of-type( 2 ) {
-            margin: 0 20px;
-        }
-    }
-}
-
-@media screen and #{ $desktop-small-mq } {
-    .c-curriculum__column {
-        width: calc( ( 100% - 40px ) / 3 );
-    }
+    font-size: .9rem;
 }

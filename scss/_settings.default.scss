@@ -133,7 +133,7 @@ $modularscale: (
 // Font settings
 // ---
 
-$alpha-font-family                  : 'acumin-pro', sans-serif !default;
+$alpha-font-family                  : 'Heebo', sans-serif !default;
 $beta-font-family                   : 'acumin-pro-semi-condensed', serif !default;
 $gamma-font-family                  : 'alverata', serif !default;
 $delta-font-family                  : 'acumin-pro-wide', serif !default;
@@ -167,6 +167,7 @@ $border-style                       : solid !default;
 // Z-indexes
 // ---
 
+// This make zero sense...
 $z-indexes: (
     alpha                           : 1,
     beta                            : 2,
@@ -179,6 +180,7 @@ $z-indexes: (
 // Breakpoints
 // ---
 
+// Very easy to read and use... NOT 🤬
 $breakpoints: (
     bp1                             : 321/16*1em,
     bp2                             : 480/16*1em,

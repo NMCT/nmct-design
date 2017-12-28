@@ -19,6 +19,10 @@
         // background-color: rgba(palette(color-alpha,dark),.25);
         z-index: 15;
     }
+
+    &:hover .c-video-player-controls {
+        opacity: 1;
+    }
 }
 
 .c-video-play-button {
@@ -64,11 +68,35 @@
 
     .c-video-player__video {
         display: block;
-        max-width: 100%;
+        width: 100%;
         position: relative;
         z-index: 10;
+    }
 
-        & source {
-            width: 100%;
+    .c-video-player-controls {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 20px;
+
+        background: rgba(255, 255, 255, .8);
+        opacity: 0;
+        z-index: 50;
+    }
+
+    .c-video-player-controls__progress {
+        width: 80%;
+        padding: 4px 0;
+        border-radius: 0;
+        -webkit-appearance: none;
+
+        &::-webkit-progress-bar {
+            background: palette(color-neutral, xxx-light);
+        }
+
+        &::-webkit-progress-value {
+            background: palette(color-neutral, xxxx-dark);
         }
     }
+

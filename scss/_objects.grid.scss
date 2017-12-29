@@ -9,6 +9,7 @@
 	z-index: 10;
 
 	&--base {
+		min-height: calc( 100vh - 168px );
 		margin-bottom: 312px;
 	}
 }

@@ -133,34 +133,35 @@ $modularscale: (
 // Font settings
 // ---
 
-$alpha-font-family                  : 'Heebo', sans-serif !default;
-$beta-font-family                   : 'acumin-pro-semi-condensed', serif !default;
-$gamma-font-family                  : 'alverata', serif !default;
-$delta-font-family                  : 'acumin-pro-wide', serif !default;
+$alpha-font-family: 'Heebo', sans-serif !default;
+$beta-font-family: 'acumin-pro-semi-condensed', serif !default;
+$gamma-font-family: 'alverata', serif !default;
+$delta-font-family: 'acumin-pro-wide', serif !default;
 
-$alpha-font-size                    : ms(0) !default;
+$alpha-font-size: ms(0) !default;
 
-$alpha-font-weight                  : 400 !default;
-$beta-font-weight                   : 500 !default;
-$gamma-font-weight                  : 600 !default;
-$delta-font-weight                  : 700 !default;
-$jota-font-weight                   : 800 !default;
-$epsilon-font-weight                : 900 !default;
+// Makes again zero sense...
+$alpha-font-weight: 400 !default;
+$beta-font-weight: 500 !default;
+$gamma-font-weight: 600 !default;
+$delta-font-weight: 700 !default;
+$jota-font-weight: 800 !default;
+$epsilon-font-weight: 900 !default;
 
-$alpha-line-height                  : 24 !default;
+$alpha-line-height: 24 !default;
 
-$alpha-leading                      : $alpha-line-height * 1 !default;
-$beta-leading                       : $alpha-line-height * 2 !default;
+$alpha-leading: $alpha-line-height * 1 !default;
+$beta-leading: $alpha-line-height * 2 !default;
 
 // ---
 // UI
 // ---
 
-$radius-lg                          : 8px !default;
-$radius-md                          : 4px !default;
-$radius                             : 0 !default;
-$border-width                       : 1px !default;
-$border-style                       : solid !default;
+$radius-lg: 8px !default;
+$radius-md: 4px !default;
+$radius: 0 !default;
+$border-width: 1px !default;
+$border-style: solid !default;
 
 
 // ---
@@ -169,11 +170,11 @@ $border-style                       : solid !default;
 
 // This make zero sense...
 $z-indexes: (
-    alpha                           : 1,
-    beta                            : 2,
-    gamma                           : 3,
-    delta                           : 4,
-    epsilon                         : 5
+    alpha: 1,
+    beta: 2,
+    gamma: 3,
+    delta: 4,
+    epsilon: 5
 ) !default;
 
 // ---
@@ -182,13 +183,13 @@ $z-indexes: (
 
 // Very easy to read and use... NOT 🤬
 $breakpoints: (
-    bp1                             : 321/16*1em,
-    bp2                             : 480/16*1em,
-    bp3                             : 680/16*1em,
-    bp4                             : 960/16*1em,
-    bp5                             : 1140/16*1em,
-    bp6                             : 1440/16*1em,
-    bp7                             : 1640/16*1em
+    bp1: 321/16*1em,
+    bp2: 480/16*1em,
+    bp3: 680/16*1em,
+    bp4: 960/16*1em,
+    bp5: 1140/16*1em,
+    bp6: 1440/16*1em,
+    bp7: 1640/16*1em
 ) !default;
 
 // ---
@@ -196,7 +197,7 @@ $breakpoints: (
 // ---
 
 // 1 times the $alpha-font-size. It's calculated in rem in _tools.spacing.scss
-$columns-gutter                     : $alpha-leading !default;
+$columns-gutter: $alpha-leading !default;
 
 // Define the amount of columns in the grid
 $columns: (
@@ -214,47 +215,47 @@ $columns: (
 // ---
 
 $increments: (
-    alpha                           : 0,
-    beta                            : $alpha-line-height * .25,
-    gamma                           : $alpha-line-height * .5,
-    delta                           : $alpha-leading,
-    epsilon                         : $alpha-line-height,
-    zeta                            : $alpha-line-height * 1.25,
-    eta                             : $beta-leading
+    alpha: 0,
+    beta: $alpha-line-height * .25,
+    gamma: $alpha-line-height * .5,
+    delta: $alpha-leading,
+    epsilon: $alpha-line-height,
+    zeta: $alpha-line-height * 1.25,
+    eta: $beta-leading
 ) !default;
 
 // ---
 // Animations
 // ---
 
-$animation-duration-alpha           : .1s !default;
-$animation-duration-beta            : .2s !default;
-$animation-duration-gamma           : .3s !default;
-$animation-easing-alpha             : ease-in-out !default;
-$animation-easing-beta              : cubic-bezier(.68, -.55, .265, 1.55) !default; // bouncy
+$animation-duration-alpha: .1s !default;
+$animation-duration-beta: .2s !default;
+$animation-duration-gamma: .3s !default;
+$animation-easing-alpha: ease-in-out !default;
+$animation-easing-beta: cubic-bezier(.68, -.55, .265, 1.55) !default; // bouncy
 
 // ---
 // Page
 // ---
 
-$html-font-family                   : $beta-font-family !default;
-$html-font-weight                   : $alpha-font-weight !default;
-$html-font-size                     : $alpha-font-size !default;
-$html-line-height                   : $alpha-line-height !default;
+$html-font-family: $beta-font-family !default;
+$html-font-weight: $alpha-font-weight !default;
+$html-font-size: $alpha-font-size !default;
+$html-line-height: $alpha-line-height !default;
 
-$html-responsive-font-size          : false !default;
-$html-responsive-font-breakpoint    : bp5 !default;
-$html-responsive-font-magnification : 112.5% !default;
+$html-responsive-font-size: false !default;
+$html-responsive-font-breakpoint: bp5 !default;
+$html-responsive-font-magnification: 112.5% !default;
 
-$html-background-color              : palette(color-neutral,xxxxx-light) !default;
-$body-color                         : palette(color-neutral,xx-dark) !default;
+$html-background-color: palette(color-neutral,xxxxx-light) !default;
+$body-color: palette(color-neutral,xx-dark) !default;
 
-$body-font-smoothing                : true !default;
+$body-font-smoothing: true !default;
 
-$change-selection-color             : false !default;
-$body-selection-background-color    : rgba(palette(color-alpha),.1) !default;
-$body-selection-color               : $body-color !default;
-$body-selection-text-shadow         : none !default;
+$change-selection-color: false !default;
+$body-selection-background-color: rgba(palette(color-alpha),.1) !default;
+$body-selection-color: $body-color !default;
+$body-selection-text-shadow: none !default;
 
 // ---
 // Typography

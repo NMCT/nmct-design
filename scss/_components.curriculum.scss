@@ -114,10 +114,6 @@
         // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $project;
         // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $project;
     }
-
-    &--stage {
-
-    }
 }
 
 .c-curriculum__module__header {
@@ -128,5 +124,6 @@
 }
 
 .c-curriculum__module__tags {
-    font-size: .9rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
 }

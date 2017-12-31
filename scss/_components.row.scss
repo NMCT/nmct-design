@@ -6,12 +6,12 @@
 
 .c-row {
     position: relative;
-    // @include padding-lr($columns-gutter,$columns-gutter);
+    @include padding-lr($columns-gutter,$columns-gutter);
     @include padding-tb($alpha-leading * 2,$alpha-leading * 1);
     background-color: palette(color-neutral, xxxxx-light);
 
-    @include mq(bp3) {
-        // @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
+    @include mq(90em) {
+        padding: 0;
     }
 
     z-index: 10;

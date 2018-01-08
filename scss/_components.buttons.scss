@@ -127,7 +127,7 @@ button::-moz-focus-inner {
 // Button colors
 
 .c-button--beta {
-    background-color: palette(color-beta,light);
+    background-color: palette(color-alpha);
     border-color: palette(color-beta,light);
 
     &,
@@ -138,7 +138,7 @@ button::-moz-focus-inner {
 
     &:hover,
     &:focus {
-        background-color: palette(color-beta);
+        background-color: palette(color-alpha);
         color: palette(color-neutral,xxxxx-light);
     }
 

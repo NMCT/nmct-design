@@ -8,11 +8,9 @@
     position: relative;
     @include padding-lr($columns-gutter,$columns-gutter);
     @include padding-tb($alpha-leading * 2,$alpha-leading * 1);
-    background-color: palette(color-neutral, xxxxx-light);
 
-    @include mq(90em) {
-        padding: 0;
-    }
+    // HIDE FOOTER
+    background-color: palette(color-neutral, xxxxx-light);
 
     z-index: 10;
 }

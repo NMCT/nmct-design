@@ -80,6 +80,7 @@
         }
 
         &:hover,
+        &:focus,
         .is-selected & {
             color: white;
             text-decoration: none;

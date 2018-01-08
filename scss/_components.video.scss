@@ -4,23 +4,9 @@
 
 .c-video-player {
     position: relative;
+    background: palette(color-neutral, xxxx-light);
     @include margin-bottom($alpha-leading);
     @include box-shadow-xl;
-
-    background: palette(color-neutral, xxxx-light);
-
-    &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        // background-color: rgba(palette(color-neutral,xxx-dark),.25);
-        // background-color: rgba(palette(color-alpha,dark),.25);
-        z-index: 15;
-    }
 
     &:hover .c-video-player-controls {
         opacity: 1;
@@ -101,4 +87,3 @@
             background: palette(color-neutral, xxxx-dark);
         }
     }
-

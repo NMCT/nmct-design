@@ -1,0 +1,15 @@
+/*
+    Objects: Grid
+    ---
+    Grid system objects, works together with utility width classes
+*/
+.o-wrapper {
+	position: relative;
+	background-color: palette(color-neutral, xxxxx-light);
+	z-index: 10;
+
+	&--base {
+		min-height: calc( 100vh - 168px );
+		margin-bottom: 312px;
+	}
+}

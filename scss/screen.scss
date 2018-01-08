@@ -59,11 +59,13 @@
 @import '../vendor/chopstick-sass/scss/objects.media-embed';
 @import '../vendor/chopstick-sass/scss/objects.list';
 @import '../vendor/chopstick-sass/scss/objects.tables';
+@import 'objects.grid';
 
 /* Components */
 @import 'components.symbols';
 @import 'components.top';
 @import 'components.header';
+@import 'components.footer';
 @import 'components.navigation';
 @import 'components.video';
 @import 'components.typography';
@@ -71,7 +73,7 @@
 @import 'components.row';
 @import 'components.icons';
 @import 'components.alerts';
-//@import 'components.quotes';
+@import 'components.curriculum';
 @import 'components.media';
 @import 'components.buttons';
 @import 'components.input';
@@ -80,6 +82,8 @@
 @import 'components.pagination';
 @import 'components.cards';
 @import 'components.styleguide';
+@import 'components.projects';
+@import 'components.news';
 
 /* Plugins */
 @import 'plugins.syntax';

@@ -42,60 +42,81 @@
 }
 
 // Base colors
-$color-alpha                        : #E85E00 !default;
-$color-beta                         : #2612B5 !default;
+$color-alpha: #E85E00 !default;
+$color-beta: #2612B5 !default;
 
-$color-error                        : #FF4136 !default;
-$color-success                      : #2ECC40 !default;
-$color-notice                       : #FF851B !default;
+$color-error: #FF4136 !default;
+$color-success: #2ECC40 !default;
+$color-notice: #FF851B !default;
 
-$color-neutral                      : hsl(hue($color-beta),7.5,50) !default;
+$color-neutral: hsl(hue($color-beta),7.5,50) !default;
+
+$color-code: #01A8C1;
+$color-connect: #EF3696;
+$color-create: #FB9D3C;
+$color-inform: #A46B50;
+$color-project: #7B9641;
 
 // Palettes
 $palettes: (
     color-neutral: (
-        xxxxx-light                 : hsl(hue($color-neutral),saturation($color-neutral),100),
-        xxxx-light                  : hsl(hue($color-neutral),saturation($color-neutral),97.5),
-        xxx-light                   : hsl(hue($color-neutral),saturation($color-neutral),95),
-        xx-light                    : hsl(hue($color-neutral),saturation($color-neutral),80),
-        x-light                     : hsl(hue($color-neutral),saturation($color-neutral),70),
-        light                       : hsl(hue($color-neutral),saturation($color-neutral),60),
-        base                        : $color-neutral,
-        dark                        : hsl(hue($color-neutral),saturation($color-neutral),40),
-        x-dark                      : hsl(hue($color-neutral),saturation($color-neutral),30),
-        xx-dark                     : hsl(hue($color-neutral),saturation($color-neutral),15),
-        xxx-dark                    : hsl(hue($color-neutral),saturation($color-neutral),10),
-        xxxx-dark                   : hsl(hue($color-neutral),saturation($color-neutral),5)
+        xxxxx-light: hsl(hue($color-neutral),saturation($color-neutral),100),
+        xxxx-light: hsl(hue($color-neutral),saturation($color-neutral),97.5),
+        xxx-light: hsl(hue($color-neutral),saturation($color-neutral),95),
+        xx-light: hsl(hue($color-neutral),saturation($color-neutral),80),
+        x-light: hsl(hue($color-neutral),saturation($color-neutral),70),
+        light: hsl(hue($color-neutral),saturation($color-neutral),60),
+        base: $color-neutral,
+        dark: hsl(hue($color-neutral),saturation($color-neutral),40),
+        x-dark: hsl(hue($color-neutral),saturation($color-neutral),30),
+        xx-dark: hsl(hue($color-neutral),saturation($color-neutral),15),
+        xxx-dark: hsl(hue($color-neutral),saturation($color-neutral),10),
+        xxxx-dark: hsl(hue($color-neutral),saturation($color-neutral),5)
     ),
     color-alpha: (
-        x-light                     : hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) + 20),
-        light                       : hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) + 10),
-        base                        : $color-alpha,
-        dark                        : hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) - 10),
-        x-dark                      : hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) - 20),
+        x-light: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) + 20),
+        light: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) + 10),
+        base: $color-alpha,
+        dark: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) - 10),
+        x-dark: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) - 20),
     ),
     color-beta: (
-        x-light                     : hsl(hue($color-beta),saturation($color-beta),lightness($color-beta) + 20),
-        light                       : hsl(hue($color-beta),saturation($color-beta),lightness($color-beta) + 10),
-        base                        : $color-beta,
-        dark                        : hsl(hue($color-beta),saturation($color-beta),lightness($color-beta) - 10),
-        x-dark                      : hsl(hue($color-beta),saturation($color-beta),lightness($color-beta) - 20),
+        x-light: hsl(hue($color-beta),saturation($color-beta),lightness($color-beta) + 20),
+        light: hsl(hue($color-beta),saturation($color-beta),lightness($color-beta) + 10),
+        base: $color-beta,
+        dark: hsl(hue($color-beta),saturation($color-beta),lightness($color-beta) - 10),
+        x-dark: hsl(hue($color-beta),saturation($color-beta),lightness($color-beta) - 20),
     ),
     color-error: (
-        light                       : hsl(hue($color-error),70,60),
-        base                        : $color-error,
-        dark                        : hsl(hue($color-error),100,35),
+        light: hsl(hue($color-error),70,60),
+        base: $color-error,
+        dark: hsl(hue($color-error),100,35),
     ),
     color-success: (
-        light                       : hsl(hue($color-success),70,60),
-        base                        : $color-success,
-        dark                        : hsl(hue($color-success),100,35),
+        light: hsl(hue($color-success),70,60),
+        base: $color-success,
+        dark: hsl(hue($color-success),100,35),
     ),
     color-notice: (
-        light                       : hsl(hue($color-notice),70,60),
-        base                        : $color-notice,
-        dark                        : hsl(hue($color-notice),100,35),
-    )
+        light: hsl(hue($color-notice),70,60),
+        base: $color-notice,
+        dark: hsl(hue($color-notice),100,35),
+    ),
+    color-code: (
+        base: $color-code,
+    ),
+    color-connect: (
+        base: $color-connect,
+    ),
+    color-create: (
+        base: $color-create,
+    ),
+    color-inform: (
+        base: $color-inform,
+    ),
+    color-project: (
+        base: $color-project,
+    ),
 ) !default;
 
 
@@ -112,60 +133,63 @@ $modularscale: (
 // Font settings
 // ---
 
-$alpha-font-family                  : 'acumin-pro', sans-serif !default;
-$beta-font-family                   : 'acumin-pro-semi-condensed', serif !default;
-$gamma-font-family                  : 'alverata', serif !default;
-$delta-font-family                  : 'acumin-pro-wide', serif !default;
+$alpha-font-family: 'Heebo', sans-serif !default;
+$beta-font-family: 'acumin-pro-semi-condensed', serif !default;
+$gamma-font-family: 'alverata', serif !default;
+$delta-font-family: 'acumin-pro-wide', serif !default;
 
-$alpha-font-size                    : ms(0) !default;
+$alpha-font-size: ms(0) !default;
 
-$alpha-font-weight                  : 400 !default;
-$beta-font-weight                   : 500 !default;
-$gamma-font-weight                  : 600 !default;
-$delta-font-weight                  : 700 !default;
-$jota-font-weight                   : 800 !default;
-$epsilon-font-weight                : 900 !default;
+// Makes again zero sense...
+$alpha-font-weight: 400 !default;
+$beta-font-weight: 500 !default;
+$gamma-font-weight: 600 !default;
+$delta-font-weight: 700 !default;
+$jota-font-weight: 800 !default;
+$epsilon-font-weight: 900 !default;
 
-$alpha-line-height                  : 24 !default;
+$alpha-line-height: 24 !default;
 
-$alpha-leading                      : $alpha-line-height * 1 !default;
-$beta-leading                       : $alpha-line-height * 2 !default;
+$alpha-leading: $alpha-line-height * 1 !default;
+$beta-leading: $alpha-line-height * 2 !default;
 
 // ---
 // UI
 // ---
 
-$radius-lg                          : 8px !default;
-$radius-md                          : 4px !default;
-$radius                             : 0 !default;
-$border-width                       : 1px !default;
-$border-style                       : solid !default;
+$radius-lg: 8px !default;
+$radius-md: 4px !default;
+$radius: 0 !default;
+$border-width: 1px !default;
+$border-style: solid !default;
 
 
 // ---
 // Z-indexes
 // ---
 
+// This make zero sense...
 $z-indexes: (
-    alpha                           : 1,
-    beta                            : 2,
-    gamma                           : 3,
-    delta                           : 4,
-    epsilon                         : 5
+    alpha: 1,
+    beta: 2,
+    gamma: 3,
+    delta: 4,
+    epsilon: 5
 ) !default;
 
 // ---
 // Breakpoints
 // ---
 
+// Very easy to read and use... NOT 🤬
 $breakpoints: (
-    bp1                             : 321/16*1em,
-    bp2                             : 480/16*1em,
-    bp3                             : 680/16*1em,
-    bp4                             : 960/16*1em,
-    bp5                             : 1140/16*1em,
-    bp6                             : 1440/16*1em,
-    bp7                             : 1640/16*1em
+    bp1: 321/16*1em,
+    bp2: 480/16*1em,
+    bp3: 680/16*1em,
+    bp4: 960/16*1em,
+    bp5: 1140/16*1em,
+    bp6: 1440/16*1em,
+    bp7: 1640/16*1em
 ) !default;
 
 // ---
@@ -173,7 +197,7 @@ $breakpoints: (
 // ---
 
 // 1 times the $alpha-font-size. It's calculated in rem in _tools.spacing.scss
-$columns-gutter                     : $alpha-leading !default;
+$columns-gutter: $alpha-leading !default;
 
 // Define the amount of columns in the grid
 $columns: (
@@ -191,47 +215,52 @@ $columns: (
 // ---
 
 $increments: (
-    alpha                           : 0,
-    beta                            : $alpha-line-height * .25,
-    gamma                           : $alpha-line-height * .5,
-    delta                           : $alpha-leading,
-    epsilon                         : $alpha-line-height,
-    zeta                            : $alpha-line-height * 1.25,
-    eta                             : $beta-leading
+    alpha: 0,
+    beta: $alpha-line-height * .25,
+    gamma: $alpha-line-height * .5,
+    delta: $alpha-leading,
+    epsilon: $alpha-line-height,
+    zeta: $alpha-line-height * 1.25,
+    eta: $beta-leading
 ) !default;
 
 // ---
 // Animations
 // ---
 
-$animation-duration-alpha           : .1s !default;
-$animation-duration-beta            : .2s !default;
-$animation-duration-gamma           : .3s !default;
-$animation-easing-alpha             : ease-in-out !default;
-$animation-easing-beta              : cubic-bezier(.68, -.55, .265, 1.55) !default; // bouncy
+$animation-duration-alpha: .1s !default;
+$animation-duration-beta: .2s !default;
+$animation-duration-gamma: .3s !default;
+$animation-easing-alpha: ease-in-out !default;
+$animation-easing-beta: cubic-bezier(.68, -.55, .265, 1.55) !default; // bouncy
 
 // ---
 // Page
 // ---
 
-$html-font-family                   : $beta-font-family !default;
-$html-font-weight                   : $alpha-font-weight !default;
-$html-font-size                     : $alpha-font-size !default;
-$html-line-height                   : $alpha-line-height !default;
+$html-font-family: $beta-font-family !default;
+$html-font-weight: $alpha-font-weight !default;
+$html-font-size: $alpha-font-size !default;
+$html-line-height: $alpha-line-height !default;
 
-$html-responsive-font-size          : false !default;
-$html-responsive-font-breakpoint    : bp5 !default;
-$html-responsive-font-magnification : 112.5% !default;
+$html-responsive-font-size: false !default;
+$html-responsive-font-breakpoint: bp5 !default;
+$html-responsive-font-magnification: 112.5% !default;
 
+<<<<<<< HEAD
 $html-background-color              : palette(color-neutral,xxxxx-light) !default;
 $body-color                         : palette(color-neutral,x-dark) !default;
+=======
+$html-background-color: palette(color-neutral,xxxxx-light) !default;
+$body-color: palette(color-neutral,xx-dark) !default;
+>>>>>>> 6ea37665e2ee04d6cf45934fe8b1c274707a7fb9
 
-$body-font-smoothing                : true !default;
+$body-font-smoothing: true !default;
 
-$change-selection-color             : false !default;
-$body-selection-background-color    : rgba(palette(color-alpha),.1) !default;
-$body-selection-color               : $body-color !default;
-$body-selection-text-shadow         : none !default;
+$change-selection-color: false !default;
+$body-selection-background-color: rgba(palette(color-alpha),.1) !default;
+$body-selection-color: $body-color !default;
+$body-selection-text-shadow: none !default;
 
 // ---
 // Typography

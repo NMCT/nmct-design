@@ -1,0 +1,27 @@
+/*
+    Components: Footer
+*/
+
+.c-footer {
+    color: palette(color-neutral, xxxxx-light);
+}
+
+.c-footer__disclaimer {
+    font-size: .8rem;
+    color: palette(color-neutral);
+}
+
+.c-footer__link {
+    color: palette(color-neutral, xxxxx-light);
+}
+
+.c-footer__social {
+    margin-bottom: 0;
+}
+
+.c-footer__social--sub {
+    font-size: .7rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    color: palette(color-neutral, xx-light);
+}

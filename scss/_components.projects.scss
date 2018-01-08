@@ -1,0 +1,15 @@
+/*
+    Components: Projects
+*/
+
+.c-project {
+    color: palette(color-neutral, xxxx-dark);
+    opacity: .7;
+
+    transition: opacity 200ms ease-out;
+
+    &:hover {
+        text-decoration: none;
+        opacity: 1;
+    }
+}

@@ -89,6 +89,9 @@
     bottom: 0;
     left: 0;
     right: 0;
+
+    @include padding-tb($alpha-leading * 2,$alpha-leading * 1);
+
     background-color: palette(color-neutral, xxxx-dark);
     z-index: 0;
 

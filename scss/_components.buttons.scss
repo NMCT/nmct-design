@@ -185,6 +185,7 @@ button::-moz-focus-inner {
     // @include ms-1;
     box-shadow: 0 0 0 2px white;
     border-radius: $alpha-leading * 4px;
+    z-index: 30;
 
     &,
     &:visited,
@@ -205,8 +206,10 @@ button::-moz-focus-inner {
     }
 
     .c-header & {
-        @include mq(bp4,max) {
-            display: none;
+        display: none;
+
+        @include mq(bp4) {
+            display: block;
         }
     }
 }

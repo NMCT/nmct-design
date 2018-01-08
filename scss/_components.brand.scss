@@ -17,6 +17,7 @@ $logo-width:     $logo-height * $logo-ratio;
 .c-logo {
     display: block;
     margin-bottom: 0;
+    z-index: 20;
     @include ms0;
 }
 

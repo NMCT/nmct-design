@@ -6,13 +6,14 @@
 
 .c-row {
     position: relative;
+    background-color: palette(color-neutral, xxxxx-light);
+    z-index: 10;
     @include padding-lr($columns-gutter,$columns-gutter);
     @include padding-tb($alpha-leading * 2,$alpha-leading * 1);
 
-    // HIDE FOOTER
-    background-color: palette(color-neutral, xxxxx-light);
-
-    z-index: 10;
+    @include mq(bp3) {
+        @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
+    }
 }
 
 .c-row--lg {

@@ -8,7 +8,6 @@
     justify-content: flex-end;
     transition: all $animation-duration-beta $animation-easing-alpha;
     width: 100%;
-    @include margin-bottom($alpha-leading);
 }
 
 .c-media--link {

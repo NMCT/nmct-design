@@ -38,12 +38,7 @@
 
     .c-media__title {
         width: 100%;
-        //white-space: nowrap;
-        //overflow: hidden;
-        //text-overflow: ellipsis;
-        //font-family: $alpha-font-family;
         transition: color $animation-duration-alpha $animation-easing-alpha;
-        @include ms0;
 
         .c-media--link &,
         .c-media--link:visited & {
@@ -52,9 +47,12 @@
 
         .c-media--link:hover &,
         .c-media--link:focus & {
-            //text-decoration: underline;
             color: $link-color;
         }
+    }
+
+    .c-media__text {
+        color: palette(color-neutral);
     }
 
     .c-media__picture {
@@ -68,9 +66,9 @@
         will-change: transform,opacity;
         transition: all $animation-duration-beta $animation-easing-alpha;
 
-        //.c-media--link:hover & {
-        //    transform: translateX(-#{$alpha-leading * .25}px) translateY(-#{$alpha-leading * .25}px);
-        //}
+        .c-media--link:hover & {
+           transform: translateX(-#{$alpha-leading * .25}px) translateY(-#{$alpha-leading * .25}px);
+        }
     }
 
     .c-media__image--blazy {

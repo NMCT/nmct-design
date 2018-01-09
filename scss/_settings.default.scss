@@ -216,12 +216,14 @@ $columns: (
 
 $increments: (
     alpha: 0,
-    beta: $alpha-line-height * .25,
-    gamma: $alpha-line-height * .5,
-    delta: $alpha-leading,
-    epsilon: $alpha-line-height,
-    zeta: $alpha-line-height * 1.25,
-    eta: $beta-leading
+    beta: $alpha-leading * .25,
+    gamma: $alpha-leading * .5,
+    delta: $alpha-leading * .75,
+    epsilon: $alpha-leading,
+    zeta: $alpha-leading * 1.25,
+    eta: $alpha-leading * 1.5,
+    theta: $alpha-leading * 1.75,
+    iota: $alpha-leading * 2
 ) !default;
 
 // ---

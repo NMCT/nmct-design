@@ -134,9 +134,7 @@ $modularscale: (
 // ---
 
 $alpha-font-family: 'Heebo', sans-serif !default;
-$beta-font-family: 'acumin-pro-semi-condensed', serif !default;
-$gamma-font-family: 'alverata', serif !default;
-$delta-font-family: 'acumin-pro-wide', serif !default;
+// $alpha-font-family: 'acumin-pro', sans-serif !default;
 
 $alpha-font-size: ms(0) !default;
 
@@ -240,7 +238,7 @@ $animation-easing-beta: cubic-bezier(.68, -.55, .265, 1.55) !default; // bouncy
 // Page
 // ---
 
-$html-font-family: $beta-font-family !default;
+$html-font-family: $alpha-font-family !default;
 $html-font-weight: $alpha-font-weight !default;
 $html-font-size: $alpha-font-size !default;
 $html-line-height: $alpha-line-height !default;

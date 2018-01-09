@@ -4,12 +4,6 @@
     Special typography classes
 */
 
-.c-type-subheader {
-    font-weight: $beta-font-weight;
-    opacity: .75;
-    @include uppercase-wide;
-}
-
 .c-type-header {
     font-weight: $gamma-font-weight;
     @include uppercase;
@@ -25,13 +19,7 @@
     @include ms-1;
 }
 
-.c-type-typewriter {
-    font-family: $beta-font-family;
-    font-weight: $beta-font-weight;
-}
-
 .c-type-lead {
-    //font-family: $beta-font-family;
     color: palette(color-neutral);
     @include ms2;
 }

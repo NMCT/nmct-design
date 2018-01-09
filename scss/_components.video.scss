@@ -4,6 +4,7 @@
 
 .c-video-player {
     position: relative;
+    background: palette(color-neutral, xxxx-light);
     @include margin-bottom($alpha-leading);
     @include box-shadow-xl;
 
@@ -101,4 +102,3 @@
             background: palette(color-neutral, xxxx-dark);
         }
     }
-

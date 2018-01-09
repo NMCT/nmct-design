@@ -43,6 +43,15 @@ section: home
         </div>
     </div>
 </section>
+<section class="c-row c-row--lg">
+    <div class="o-container">
+        <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
+            {% for item in site.data.posts limit:4 %}
+                {% include atom.blog-article.html %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
 <section class="c-row c-row--lg c-row--beta">
     <div class="o-container">
         <div class="u-max-width-md u-align-horizontal">

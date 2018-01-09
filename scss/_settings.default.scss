@@ -314,10 +314,10 @@ $link-transition                    : all $animation-duration-alpha $animation-e
 $link-decoration                    : none !default;
 $link-decoration--hover             : underline !default;
 
-$link-color                         : palette(color-beta,x-light) !default;
+$link-color                         : palette(color-alpha) !default;
 $link-color--visited                : palette(color-alpha) !default;
-$link-color--hover                  : palette(color-beta,light) !default;
-$link-color--focus                  : palette(color-alpha) !default;
+$link-color--hover                  : palette(color-alpha,light) !default;
+$link-color--focus                  : palette(color-alpha,light) !default;
 
 $link-outline                       : 0 !default;
 $link-outline--focus                : thin dotted !default;

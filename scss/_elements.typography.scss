@@ -52,8 +52,12 @@ ul,
 dl,
 table,
 address {
-    @include ms0;
+    // @include ms0;
     @include margin-bottom($base-margin-bottom);
+
+    @include mq(bp3) {
+        @include ms1;
+    }
 }
 
 pre {

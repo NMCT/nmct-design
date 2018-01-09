@@ -21,7 +21,7 @@
 }
 
 @mixin ms1 {
-    @include text-dimensions(ms(1),1);
+    @include text-dimensions(ms(1),1.125);
 }
 
 @mixin ms2 {

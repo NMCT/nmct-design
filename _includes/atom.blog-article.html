@@ -1,16 +1,19 @@
 <article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 u-1-of-4-bp5 o-flex o-flex--align-end u-mb-delta">
     <a class="c-media c-media--link" href="#!">
-        <picture class="c-media__picture u-mb-gamma">
-            <img class="c-media__image c-media__image--blazy js-blazy" src="img/jpg/tiny/{{ item.image }}" data-src="img/jpg/{{ item.image }}" alt="">
+        <picture class="c-media__picture u-mb-delta">
+            <img class="c-media__image c-media__image--blazy js-blazy" src="img/jpg/thumb/{{ item.image }}" data-src="img/jpg/medium/{{ item.image }}" alt="">
         </picture>
         <div class="c-media__body">
             <p class="u-ms-2 u-color-neutral-base u-mb-alpha">
                 {{ item.date }}
             </p>
             <div class="c-media__content">
-                <h2 class="c-media__title u-mb-alpha">
+                <h2 class="c-media__title u-ms0 u-mb-gamma">
                     {{ item.title }}
                 </h2>
+                <p class="c-media__text u-mb-alpha">
+                    {{ item.text }}
+                </p>
             </div>
         </div>
     </a>

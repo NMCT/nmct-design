@@ -110,6 +110,10 @@
         @include ms10;
     }
 
+    .u-ms12-bp3 {
+        @include ms12;
+    }
+
 }
 
 @include mq(bp4) {
@@ -152,6 +156,10 @@
 
     .u-ms10-bp4 {
         @include ms10;
+    }
+
+    .u-ms12-bp4 {
+        @include ms12;
     }
 
 }

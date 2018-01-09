@@ -2,6 +2,10 @@
     Components: Projects
 */
 
+.c-project__caroussel {
+    position: relative;
+}
+
 .c-project {
     color: palette(color-neutral, xxxx-dark);
     opacity: .7;
@@ -12,4 +16,26 @@
         text-decoration: none;
         opacity: 1;
     }
+
+    &:nth-child( 2 ) {
+        transform: translate( 100%, -100% );
+    }
+
+    &:nth-child( 3 ) {
+        transform: translate( 200%, -200% );
+    }
+}
+
+.c-project__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.c-project__title {
+    margin: 10px 0;
+}
+
+.c-project__excerpt {
+
 }

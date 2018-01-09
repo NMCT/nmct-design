@@ -25,3 +25,16 @@
     text-transform: uppercase;
     color: palette(color-neutral, xx-light);
 }
+
+.c-footer__icon {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    opacity: .7;
+    outline: none;
+
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+}

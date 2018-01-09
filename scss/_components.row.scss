@@ -79,6 +79,11 @@
     }
 }
 
+.c-row--carousel {
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
 .c-row--clear {
     padding: 0;
 }

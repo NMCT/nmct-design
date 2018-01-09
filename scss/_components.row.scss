@@ -8,6 +8,7 @@
     position: relative;
     background-color: palette(color-neutral, xxxxx-light);
     z-index: 10;
+    @include clearfix;
     @include padding-lr($columns-gutter,$columns-gutter);
     @include padding-tb($alpha-leading * 2,$alpha-leading * 1);
 
@@ -58,6 +59,7 @@
     color: palette(color-neutral,xxxxx-light);
     background: palette(color-alpha) url('../../img/svg/background-visual-top.svg') bottom center no-repeat;
     background-size: 110%;
+    padding-bottom: 0;
 
     @include mq(bp3) {
         @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
@@ -65,7 +67,15 @@
 
     @include mq(bp5) {
         background-size: auto;
-        @include padding-tb($alpha-leading * 3,$alpha-leading * 6);
+        @include padding-tb($alpha-leading * 3,$alpha-leading * 3);
+    }
+
+    & + .c-row {
+        @include padding-top($alpha-leading);
+
+        @include mq(bp5) {
+            @include padding-top($alpha-leading * 2);
+        }
     }
 }
 

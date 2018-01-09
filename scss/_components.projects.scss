@@ -8,6 +8,10 @@
 
     transition: opacity 200ms ease-out;
 
+    img {
+        width: 100%;
+    }
+
     &:hover {
         text-decoration: none;
         opacity: 1;

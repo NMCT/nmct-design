@@ -252,8 +252,8 @@ $body-color: palette(color-neutral,xx-dark) !default;
 
 $body-font-smoothing: true !default;
 
-$change-selection-color: false !default;
-$body-selection-background-color: rgba(palette(color-alpha),.1) !default;
+$change-selection-color: true !default;
+$body-selection-background-color: palette(color-alpha) !default;
 $body-selection-color: $body-color !default;
 $body-selection-text-shadow: none !default;
 

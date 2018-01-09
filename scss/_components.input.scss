@@ -55,19 +55,19 @@
 
 // Input sizes
 .c-input-text--sm {
-    border-radius: $radius;
+    // border-radius: $radius;
     @include padding-lr(.5,.5);
     @include input-dimensions(ms(-2),1,0,.5,.5);
 }
 
 .c-input-text--md {
-    border-radius: $radius-md;
+    // border-radius: $radius-md;
     @include padding-lr($columns-gutter,$columns-gutter);
     @include input-dimensions(ms(-1),1,0,.75,.75);
 }
 
 .c-input-text--lg {
-    border-radius: $radius-lg;
+    // border-radius: $radius-lg;
     @include padding-lr($columns-gutter * 1.25,$columns-gutter * 1.25);
     @include input-dimensions($alpha-font-size,1,0,1.125,1.125);
 }

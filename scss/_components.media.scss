@@ -61,6 +61,7 @@
     }
 
     .c-media__image {
+        min-width: 100%;
         transform: translateX(0) translateY(0);
         will-change: transform,opacity;
         transition: all $animation-duration-beta $animation-easing-alpha;

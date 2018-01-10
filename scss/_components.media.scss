@@ -62,6 +62,8 @@
         display: flex;
         align-items: flex-end;
         background-color: palette(color-neutral,xxx-light);
+        // background-color: palette(color-alpha,xxx-light);
+        @include box-shadow-lg;
     }
 
     .c-media__image {
@@ -69,11 +71,10 @@
         transform: translateX(0) translateY(0);
         will-change: transform,opacity;
         transition: all $animation-duration-beta $animation-easing-alpha;
-        @include box-shadow-lg;
 
-        .c-media--link:hover & {
-           transform: translateX(-#{$alpha-leading * .25}px) translateY(-#{$alpha-leading * .25}px);
-        }
+        // .c-media--link:hover & {
+        //    transform: translateX(-#{$alpha-leading * .25}px) translateY(-#{$alpha-leading * .25}px);
+        // }
     }
 
     .c-media__image--blazy {

@@ -44,6 +44,11 @@
     color: palette(color-neutral,xxxxx-light);
 }
 
+.c-row--gamma {
+    background-color: palette(color-neutral,xxxxx-light);
+    @include box-shadow-lg;
+}
+
 .c-row--header {
     background-color: palette(color-alpha);
     z-index: 20;

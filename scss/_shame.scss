@@ -131,6 +131,41 @@ li {
     position: relative;
 }
 
+.c-projects__header,
+.c-projects__body {
+    position: relative;
+}
+
+.c-projects__body-sm {
+    @include margin-top($alpha-leading * -2.5);
+
+    @include mq(bp3) {
+        @include margin-top($alpha-leading * -3.5);
+    }
+
+    @include mq(bp4) {
+        margin-top: 0;
+    }
+}
+
+.c-projects__body-lg {
+    @include mq(bp4) {
+        @include margin-top($alpha-leading * -6);
+    }
+}
+
+.c-news__body {
+    @include margin-top($alpha-leading * -1.5);
+
+    @include mq(bp3) {
+        @include margin-top($alpha-leading * -2.5);
+    }
+
+    @include mq(bp4) {
+        @include margin-top($alpha-leading * -4);
+    }
+}
+
 ::-webkit-input-placeholder {
     font-family: $placeholder-font-family;
     font-style: $placeholder-font-style;

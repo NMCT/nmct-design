@@ -24,6 +24,10 @@
     @include ms2;
 }
 
+.c-type-maximum {
+    @include text-dimensions(ms(22),3.25);
+}
+
 .c-type-intro {
     font-weight: $delta-font-weight;
     color: palette(color-neutral, xxxxx-light);
@@ -61,3 +65,49 @@
         @include ms4;
     }
 }
+
+.c-type-svg {
+    line-height: 1;
+}
+
+    .c-type-svg__svg {
+        .c-type-svg--projects & {
+            max-width: 259px;
+
+            @include mq(bp3) {
+                max-width: 519px;
+            }
+
+            @include mq(bp4) {
+                max-width: 1039px;
+            }
+        }
+
+        .c-type-svg--news & {
+            max-width: 198px;
+
+            @include mq(bp3) {
+                max-width: 396px;
+            }
+
+            @include mq(bp4) {
+                max-width: 792px;
+            }
+        }
+    }
+
+    .c-type-svg__path {
+        // fill: palette(color-alpha);
+        fill: palette(color-neutral,xxx-light);
+        // stroke: palette(color-alpha);
+        // stroke: palette(color-neutral,xxx-light);
+        // stroke-width: 2;
+
+        // .c-type-svg--projects & {
+        //     fill: palette(color-alpha);
+        // }
+        //
+        // .c-type-svg--news & {
+        //     fill: palette(color-neutral,xxx-light);
+        // }
+    }

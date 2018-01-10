@@ -74,6 +74,9 @@ $palettes: (
         xxxx-dark: hsl(hue($color-neutral),saturation($color-neutral),5)
     ),
     color-alpha: (
+        xxxx-light: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) + 50),
+        xxx-light: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) + 40),
+        xx-light: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) + 30),
         x-light: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) + 20),
         light: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) + 10),
         base: $color-alpha,
@@ -204,7 +207,8 @@ $columns: (
     5,
     6,
     8,
-    9
+    9,
+    12
 ) !default;
 
 // ---

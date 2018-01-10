@@ -56,6 +56,7 @@
     }
 }
 
+
 .c-curriculum__header {
     margin: 10px 0;
     font-size: 1.6rem;
@@ -65,20 +66,20 @@
 
 .c-curriculum__module {
     position: relative;
-    display: inline-block;
-    width: calc( ( 100% - 10px ) / 2);
+    // display: inline-block;
+    // width: calc( ( 100% - 10px ) / 2);
     vertical-align: bottom;
 
     margin-bottom: 15px;
     padding: 5px;
     box-sizing: border-box;
 
-    background: palette(color-neutral, xxxx-light);
+    background: palette(color-neutral, xxxxx-light);
     z-index: 10;
 
-    &:nth-of-type( 2n + 2 ) {
-        margin-left: 10px;
-    }
+    // &:nth-of-type( 2n + 2 ) {
+    //     margin-left: 10px;
+    // }
 
     &--code {
         border-bottom: 2px solid palette(color-code);
@@ -133,4 +134,49 @@
     font-size: .8rem;
     text-transform: uppercase;
     line-height: 1.2rem;
+}
+
+// Sorry voor de volgende stijlen...
+.c-curriculum__choose {
+    position: relative;
+    padding-top: #{$columns-gutter}px;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+
+    background: palette(color-neutral, xxx-light);
+
+    z-index: 0;
+
+    @include box-shadow-lg;
+}
+
+.module_selector {
+    position: relative;
+    display: table;
+    margin: auto;
+
+    text-align: center;
+
+    border: none;
+    border-radius: none;
+
+    outline: none;
+    z-index: 1;
+}
+
+.c-curriculum--s4 {
+    // left: 50%;
+}
+
+.c-curriculum__notification {
+    position: relative;
+    width: 200%;
+
+    text-align: center;
+
+    z-index: 5;
+}
+
+.c-curriculum--s5 {
+
 }

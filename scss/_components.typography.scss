@@ -5,12 +5,12 @@
 */
 
 .c-type-header {
-    font-weight: $gamma-font-weight;
+    font-weight: $delta-font-weight;
     @include uppercase;
 }
 
 .c-type-header-wide {
-    font-weight: $gamma-font-weight;
+    font-weight: $delta-font-weight;
     @include uppercase-wide;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .c-type-intro {
-    font-weight: $gamma-font-weight;
+    font-weight: $delta-font-weight;
     color: palette(color-neutral, xxxxx-light);
     @include ms2;
 

@@ -6,7 +6,7 @@
 
 .c-row {
     position: relative;
-    background-color: palette(color-neutral, xxxxx-light);
+    // background-color: palette(color-neutral, xxxxx-light);
     z-index: 10;
     @include clearfix;
     @include padding-lr($columns-gutter,$columns-gutter);

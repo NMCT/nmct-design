@@ -167,6 +167,22 @@ li {
     z-index: 1;
 }
 
+.c-update {
+    color: palette(color-neutral,xxxxx-light);
+    font-weight: $delta-font-weight;
+    margin-bottom: 0;
+    text-align: center;
+    @include ms-2;
+
+    a {
+        &,
+        &:visited {
+            color: palette(color-neutral,xxxxx-light);
+            // color: palette(color-alpha,light);
+        }
+    }
+}
+
 ::-webkit-input-placeholder {
     font-family: $placeholder-font-family;
     font-style: $placeholder-font-style;

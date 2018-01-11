@@ -119,12 +119,12 @@
         bottom: 0;
         left: 0;
         display: block;
-        height: 2px;
+        height: 10px;
 
         background: $color-alpha; // NMCT Color for fallback.
-        background: -moz-linear-gradient(left, $color-alpha 0%, $color-code 20%, $color-connect 40%, $color-create 60%, $color-inform 80%, $color-project 100%);
-        background: -webkit-linear-gradient(left, $color-alpha 0%,$color-code 20%,$color-connect 40%,$color-create 60%,$color-inform 80%,$color-project 100%);
-        background: linear-gradient(to right, $color-alpha 0%,$color-code 20%,$color-connect 40%,$color-create 60%,$color-inform 80%,$color-project 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-alpha', endColorstr='$color-project',GradientType=1 );
+        // background: -moz-linear-gradient(left, $color-alpha 0%, $color-code 20%, $color-connect 40%, $color-create 60%, $color-inform 80%, $color-project 100%);
+        // background: -webkit-linear-gradient(left, $color-alpha 0%,$color-code 20%,$color-connect 40%,$color-create 60%,$color-inform 80%,$color-project 100%);
+        // background: linear-gradient(to right, $color-alpha 0%,$color-code 20%,$color-connect 40%,$color-create 60%,$color-inform 80%,$color-project 100%);
+        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-alpha', endColorstr='$color-project',GradientType=1 );
     }
 }

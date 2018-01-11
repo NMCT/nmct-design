@@ -18,7 +18,7 @@
 }
 
 .c-row--lg {
-    @include mq(bp3) {
+    @include mq(bp4) {
         @include padding-tb($alpha-leading * 4,$alpha-leading * 3);
     }
 }
@@ -64,24 +64,28 @@
     color: palette(color-neutral,xxxxx-light);
     background: palette(color-alpha) url('../../img/svg/background-visual-top.svg') bottom center no-repeat;
     background-size: 110%;
-    @include padding-tb($alpha-leading,0);
+    @include padding-tb($alpha-leading,$alpha-leading);
 
     @include mq(bp3) {
-        @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
+        @include padding-tb(0,$alpha-leading * 1);
+    }
+
+    @include mq(bp4) {
+        @include padding-tb($alpha-leading * 2,$alpha-leading * 3);
     }
 
     @include mq(bp5) {
         background-size: auto;
-        @include padding-tb($alpha-leading * 3,$alpha-leading * 3);
+        @include padding-tb($alpha-leading * 2,$alpha-leading * 3);
     }
 
-    & + .c-row {
-        @include padding-top($alpha-leading);
-
-        @include mq(bp5) {
-            @include padding-top($alpha-leading * 2);
-        }
-    }
+    // & + .c-row {
+    //     @include padding-top($alpha-leading);
+    //
+    //     @include mq(bp5) {
+    //         @include padding-top($alpha-leading * 2);
+    //     }
+    // }
 }
 
 .c-row--carousel {

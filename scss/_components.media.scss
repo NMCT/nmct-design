@@ -61,18 +61,17 @@
     .c-media__picture {
         display: flex;
         align-items: flex-end;
-        background-color: palette(color-neutral,xxx-light);
+        background-color: palette(color-alpha);
     }
 
     .c-media__image {
         min-width: 100%;
         transform: translateX(0) translateY(0);
         will-change: transform,opacity;
-        transition: all $animation-duration-beta $animation-easing-alpha;
-        @include box-shadow-lg;
+        transition: opacity $animation-duration-beta $animation-easing-alpha;
 
         .c-media--link:hover & {
-           transform: translateX(-#{$alpha-leading * .25}px) translateY(-#{$alpha-leading * .25}px);
+           opacity: .75;
         }
     }
 

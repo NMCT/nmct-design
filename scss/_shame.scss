@@ -114,17 +114,17 @@ li {
         }
     // }
 
-    @include mq(bp3) {
+    @include mq(bp4) {
         & + & {
             @include padding-top($alpha-leading * 3);
         }
     }
 
-    @include mq(bp5) {
-        & + & {
-            @include padding-top($alpha-leading * 5);
-        }
-    }
+    // @include mq(bp5) {
+    //     & + & {
+    //         @include padding-top($alpha-leading * 4);
+    //     }
+    // }
 }
 
 .c-projects__header,

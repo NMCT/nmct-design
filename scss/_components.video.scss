@@ -4,7 +4,8 @@
 
 .c-video-player {
     position: relative;
-    background: palette(color-neutral, xxxx-light);
+    // background: palette(color-neutral, xxxx-light);
+    background-color: palette(color-alpha);
     @include margin-bottom($alpha-leading);
     @include box-shadow-xl;
 
@@ -66,6 +67,7 @@
         fill: palette(color-alpha,light);
         width: $alpha-leading * 1.5px;
         height: $alpha-leading * 1.5px;
+        margin: 0 auto;
         // margin-left: 3px;
     }
 

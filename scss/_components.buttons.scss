@@ -183,7 +183,7 @@ button::-moz-focus-inner {
     // letter-spacing: 1px;
     // box-shadow: 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
     // @include ms-1;
-    box-shadow: 0 0 0 2px white;
+    border: 2px solid white;
     border-radius: $alpha-leading * 4px;
     z-index: 30;
 

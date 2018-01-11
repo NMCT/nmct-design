@@ -50,7 +50,6 @@
 }
 
 .c-row--top {
-    // background-color: palette(color-alpha, dark);
     background-color: palette(color-neutral, xx-dark);
     @include padding-tb($alpha-leading * .5, $alpha-leading * .5);
 }
@@ -86,6 +85,11 @@
     }
 }
 
+.c-row--footer {
+    border-top: 1px solid palette(color-neutral,xxx-light);
+    border-bottom: $alpha-leading * .25px solid palette(color-alpha);
+}
+
 .c-row--carousel {
     overflow: hidden;
     box-sizing: content-box;
@@ -101,11 +105,4 @@
 
 .c-row--clear-bottom {
     padding-bottom: 0;
-}
-
-.c-row--footer {
-    background-color: palette(color-neutral, xx-dark);
-    // background-color: palette(color-neutral, xxxx-light);
-    // background-color: palette(color-alpha);
-    // border-bottom: $alpha-leading * .25px solid palette(color-alpha);
 }

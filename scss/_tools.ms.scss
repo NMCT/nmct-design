@@ -21,11 +21,11 @@
 }
 
 @mixin ms1 {
-    @include text-dimensions(ms(1),1.125);
+    @include text-dimensions(ms(1),1.16666);
 }
 
 @mixin ms2 {
-    @include text-dimensions(ms(2),1.25);
+    @include text-dimensions(ms(2),1.33333);
 }
 
 @mixin ms3 {

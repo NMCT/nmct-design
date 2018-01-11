@@ -67,10 +67,12 @@
 }
 
 .c-type-svg {
-    line-height: 1;
+
 }
 
     .c-type-svg__svg {
+        display: block;
+
         .c-type-svg--projects & {
             max-width: 259px;
 
@@ -97,17 +99,5 @@
     }
 
     .c-type-svg__path {
-        // fill: palette(color-alpha);
         fill: palette(color-neutral,xxx-light);
-        // stroke: palette(color-alpha);
-        // stroke: palette(color-neutral,xxx-light);
-        // stroke-width: 2;
-
-        // .c-type-svg--projects & {
-        //     fill: palette(color-alpha);
-        // }
-        //
-        // .c-type-svg--news & {
-        //     fill: palette(color-neutral,xxx-light);
-        // }
     }

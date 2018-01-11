@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>social-linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="social-linkedin" fill="#000000" fill-rule="nonzero">
+            <path d="M8.05,19 L5.05,19 L5.05,9 L8.05,9 L8.05,19 Z M19.05,19 L16.05,19 L16.05,13.658 C16.05,12.266 15.554,11.573 14.571,11.573 C13.792,11.573 13.298,11.961 13.05,12.738 L13.05,19 L10.05,19 C10.05,19 10.09,10 10.05,9 L12.418,9 L12.601,11 L12.663,11 C13.278,10 14.261,9.322 15.609,9.322 C16.634,9.322 17.463,9.607 18.096,10.323 C18.733,11.04 19.05,12.002 19.05,13.353 L19.05,19 Z M6.55,8 C5.69395864,8 5,7.32842712 5,6.5 C5,5.67157288 5.69395864,5 6.55,5 C7.40604136,5 8.1,5.67157288 8.1,6.5 C8.1,7.32842712 7.40604136,8 6.55,8 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

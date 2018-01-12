@@ -147,9 +147,7 @@ li {
 .c-projects__carousel {
     position: relative;
 
-    display: flex;
     flex-direction: row;
-    justify-content: baseline;
 
     overflow: overlay;
     @include mq(bp4) {
@@ -185,6 +183,34 @@ li {
         // position: absolute;
         // top: 0;
         // left: 200%;
+    }
+}
+
+.c-button {
+    &.next,
+    &.prev {
+        position: absolute;
+        top: 40%;
+
+        display: block;
+        width: 35px;
+        height: 35px;
+
+        text-align: center;
+        line-height: 0;
+        color: palette( color-alpha );
+
+        background-color: palette( color-neutral, xxxxx-light );
+
+        z-index: 10;
+    }
+
+    &.next {
+        right: 0;
+    }
+
+    &.prev {
+        left: 0;
     }
 }
 

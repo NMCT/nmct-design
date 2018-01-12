@@ -25,16 +25,14 @@ button {
     background: none;
     border: 0;
     color: inherit;
-    /* cursor: default; */
     font: inherit;
     line-height: normal;
     overflow: visible;
     padding: 0;
-    -webkit-appearance: button; /* for input */
-    -webkit-user-select: none; /* for button */
-       -moz-user-select: none;
-        -ms-user-select: none;
+    appearance: button;
+    user-select: none;
 }
+
 input::-moz-focus-inner,
 button::-moz-focus-inner {
     border: 0;
@@ -50,19 +48,16 @@ button::-moz-focus-inner {
     background-image: none; /* [2] */
     white-space: nowrap; /* [3] */
     border-radius: $radius;
-    //border-style: solid;
     border-width: 0;
     transition-duration: $animation-duration-alpha;
     transition-timing-function: $animation-easing-alpha;
     transition-property: background, color, border, transform;
     outline: none;
-    //line-height: normal;
     appearance: none;
     box-shadow: none;
     -webkit-font-smoothing: antialiased; /* [4] */
     -moz-osx-font-smoothing: grayscale; /* [4] */
     font-weight: $delta-font-weight;
-    // @include uppercase;
 
     &:hover,
     &:focus {
@@ -163,11 +158,6 @@ button::-moz-focus-inner {
 // effects
 
 .c-button--scale {
-    //&:hover,
-    //&:focus {
-    //    transform: scale(1.025);
-    //}
-
     &:active {
         transform: scale(.975);
     }
@@ -176,22 +166,12 @@ button::-moz-focus-inner {
 // special cases
 
 .c-button--header-cta {
-    // background-color: palette(color-neutral,xxxxx-light);
-    // background-color: rgba(palette(color-neutral,xxxxx-light),.15);
-    // background-color: rgba(palette(color-neutral,xxxx-dark),.125);
-    // text-transform: uppercase;
-    // letter-spacing: 1px;
-    // box-shadow: 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
-    // @include ms-1;
     border: 2px solid white;
     border-radius: $alpha-leading * 4px;
     z-index: 30;
 
     &,
-    &:visited,
-    &:hover {
-        // color: palette(color-alpha);
-        // color: palette(color-neutral,xxxx-dark);
+    &:visited {
         color: palette(color-neutral,xxxxx-light);
     }
 

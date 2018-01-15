@@ -11,6 +11,20 @@ var chopstick =
             selector: '.js-blazy',
             successClass: 'is-blazy-loaded'
         });
+
+        var page = $(".js-page");
+        var choice = $(".js-curriculum-choice");
+        var choiceTop = choice.offset().top;
+
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= choiceTop) {
+                page.addClass("has-scrolled");
+            } else {
+                page.removeClass("has-scrolled");
+            }
+        });
     },
 
     /**

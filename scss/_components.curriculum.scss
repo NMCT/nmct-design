@@ -16,22 +16,16 @@
         width: 33.3333%;
         left: 50%;
         background-color: palette(color-neutral,xxxx-light);
-        // overflow: hidden;
         @include padding-bottom($alpha-leading / 2);
     }
 
     .c-curriculum-choice__body {
         box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxx-dark),.025), 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
         background-color: #fff;
-        // border-bottom: 1px solid white;
-        // @include padding-tb($alpha-leading / 2,$alpha-leading / 2);
-        // @include padding-lr($columns-gutter / 2,$columns-gutter / 2);
     }
 
     .c-curriculum-choice__button {
         margin-bottom: 0;
-        // background-color: #fff;
-        // border: 1px solid palette(color-neutral,xxx-light);
         width: 100%;
         text-align: left;
         display: flex;
@@ -46,7 +40,7 @@
 .c-curriculum-choices {
     // display: none;
     position: relative;
-    border-top: 1px solid palette(color-neutral,xxxx-light);
+    border-top: 1px solid palette(color-neutral,xxx-light);
     @include padding-tb($alpha-leading / 4,$alpha-leading / 4);
 }
 
@@ -64,12 +58,11 @@
 
         &:hover {
             color: palette(color-neutral,xx-dark);
-            // background-color: palette(color-neutral,xxxx-light);
             text-decoration: none;
         }
 
         .is-selected & {
-            color: palette(color-neutral,xxx-dark);
+            color: palette(color-neutral,xx-dark);
             font-weight: $delta-font-weight;
         }
     }

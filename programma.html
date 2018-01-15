@@ -6,136 +6,120 @@ section: programma
 
 <section class="c-row c-row--lg">
     <div class="o-container">
-        <div class="c-curriculum-overview">
-            {% comment %}
-            <div class="o-grid o-grid--gutter">
-                <div class="o-grid__item u-2-of-6 u-push-3-of-6 c-curriculum__choice">
-                    <h2>
-                        <select name="track" class="module_selector">
-                            <option selected="" disabled="">Uitstroomprofiel</option>
-                            <option value="10">Smart Technology Creator</option>
-                            <option value="9">Web &amp; App Developer</option>
-                            <option value="11">Infrastructure Engineer</option>
-                        </select>
-                    </h2>
+        <div class="c-curriculum-choice">
+            <div class="c-curriculum-choice__box">
+                <div class="c-curriculum-choice__body">
+                    <button class="c-curriculum-choice__button">
+                        Smart Technology Creator {% include atom.symbol.html value="keyboard-arrow-down" class="c-curriculum-choice__icon-down" %}
+                    </button>
+                    <ul class="o-list c-curriculum-choices">
+                        <li class="c-curriculum-choices__item is-selected">
+                            <a href="#!" class="c-curriculum-choices__filter">
+                                {% include atom.symbol.html value="check" class="c-curriculum-choices__symbol" %} Smart Technology Creator
+                            </a>
+                        </li>
+                        <li class="c-curriculum-choices__item">
+                            <a href="#!" class="c-curriculum-choices__filter">
+                                {% include atom.symbol.html value="check" class="c-curriculum-choices__symbol" %} Web &amp; App Developer
+                            </a>
+                        </li>
+                        <li class="c-curriculum-choices__item">
+                            <a href="#!" class="c-curriculum-choices__filter">
+                                {% include atom.symbol.html value="check" class="c-curriculum-choices__symbol" %} Infrastructure Engineer
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            {% endcomment %}
-            <div class="c-curriculum-choice">
-                <div class="c-curriculum-choice__box">
-                    <div class="c-curriculum-choice__body">
-                        <button class="c-curriculum-choice__button">
-                            Smart Technology Creator {% include atom.symbol.html value="keyboard-arrow-down" class="c-curriculum-choice__icon-down" %}
-                        </button>
-                        <ul class="o-list c-curriculum-choices">
-                            <li class="c-curriculum-choices__item is-selected">
-                                <a href="#!" class="c-curriculum-choices__filter">
-                                    {% include atom.symbol.html value="check" class="c-curriculum-choices__symbol" %} Smart Technology Creator
-                                </a>
-                            </li>
-                            <li class="c-curriculum-choices__item">
-                                <a href="#!" class="c-curriculum-choices__filter">
-                                    {% include atom.symbol.html value="check" class="c-curriculum-choices__symbol" %} Web &amp; App Developer
-                                </a>
-                            </li>
-                            <li class="c-curriculum-choices__item">
-                                <a href="#!" class="c-curriculum-choices__filter">
-                                    {% include atom.symbol.html value="check" class="c-curriculum-choices__symbol" %} Infrastructure Engineer
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+        </div>
+        <div class="c-curriculum">
+            <section class="c-curriculum__year">
+                <div class="c-curriculum__semester">
+                    <article class="c-module c-module--code">
+                        <h3 class="c-module__title">Basic Programming</h3>
+                        <p class="c-module__tags">#principles #python</p>
+                    </article>
+                    <article class="c-module c-module--connect">
+                        <h3 class="c-module__title">Computer Networks</h3>
+                        <p class="c-module__tags">#dhcp #router #netwerk</p>
+                    </article>
+                    <article class="c-module c-module--inform">
+                        <h3 class="c-module__title">Data Science</h3>
+                        <p class="c-module__tags">#principes #data</p>
+                    </article>
+                    <article class="c-module c-module--create">
+                        <h3 class="c-module__title">User Experience Design</h3>
+                        <p class="c-module__tags">#ux #user #wireframe</p>
+                    </article>
+                    <article class="c-module c-module--project">
+                        <h3 class="c-module__title">Prototyping</h3>
+                        <p class="c-module__tags">#electricity #arduino</p>
+                    </article>
                 </div>
-            </div>
-            <div class="c-curriculum">
-                <section class="c-curriculum__year">
-                    <div class="c-curriculum__semester">
-                        <article class="c-module c-module--code">
-                            <h3 class="c-module__title">Basic Programming</h3>
-                            <p class="c-module__tags">#principles #python</p>
-                        </article>
-                        <article class="c-module c-module--connect">
-                            <h3 class="c-module__title">Computer Networks</h3>
-                            <p class="c-module__tags">#dhcp #router #netwerk</p>
-                        </article>
-                        <article class="c-module c-module--inform">
-                            <h3 class="c-module__title">Data Science</h3>
-                            <p class="c-module__tags">#principes #data</p>
-                        </article>
-                        <article class="c-module c-module--create">
-                            <h3 class="c-module__title">User Experience Design</h3>
-                            <p class="c-module__tags">#ux #user #wireframe</p>
-                        </article>
-                        <article class="c-module c-module--project">
-                            <h3 class="c-module__title">Prototyping</h3>
-                            <p class="c-module__tags">#electricity #arduino</p>
-                        </article>
-                    </div>
-                    <div class="c-curriculum__semester">
-                        <article class="c-module c-module--code">
-                            <h3 class="c-module__title">Device Programming&nbsp;1</h3>
-                            <p class="c-module__tags">#HTML #flask #JS</p>
-                        </article>
-                        <article class="c-module c-module--connect">
-                            <h3 class="c-module__title">Data Communication&nbsp;1</h3>
-                            <p class="c-module__tags">#cryptography #coding</p>
-                        </article>
-                        <article class="c-module c-module--inform">
-                            <h3 class="c-module__title">Data Management</h3>
-                            <p class="c-module__tags">#sql #databases #erd</p>
-                        </article>
-                        <article class="c-module c-module--create">
-                            <h3 class="c-module__title">User Interface Design</h3>
-                            <p class="c-module__tags">#ui #design #HTML #CSS</p>
-                        </article>
-                        <article class="c-module c-module--project">
-                            <h3 class="c-module__title">Project&nbsp;1</h3>
-                            <p class="c-module__tags">#integrate</p>
-                        </article>
-                    </div>
-                </section>
-                <section class="c-curriculum__year">
-                    <div class="c-curriculum__semester">
-                        <article class="c-module c-module--code">
-                            <h3 class="c-module__title">Device Programming&nbsp;2</h3>
-                            <p class="c-module__tags">#c# #xamarin #coding</p>
-                        </article>
-                        <article class="c-module c-module--connect">
-                            <h3 class="c-module__title">Security</h3>
-                            <p class="c-module__tags">#privacy #beveiliging</p>
-                        </article>
-                        <article class="c-module c-module--inform">
-                            <h3 class="c-module__title">Cloud&nbsp;1</h3>
-                            <p class="c-module__tags">#c# #cloud #asp.net</p>
-                        </article>
-                        <article class="c-module c-module--create">
-                            <h3 class="c-module__title">Interaction Design</h3>
-                            <p class="c-module__tags">#interaction #dashboards</p>
-                        </article>
-                        <article class="c-module c-module--project">
-                            <h3 class="c-module__title">Project&nbsp;2</h3>
-                            <p class="c-module__tags">#business_cases</p>
-                        </article>
-                    </div>
-                    <div class="c-curriculum__semester c-curriculum__semester--choice c-curriculum__semester--choice-4">
-                        <article class="c-module c-module--empty">
-                            <h3 class="c-module__title"></h3>
-                            <p class="c-module__tags"><span class="c-module__tag"></span><span class="c-module__tag"></span><span class="c-module__tag"></span></p>
-                        </article>
-                    </div>
-                </section>
-                <section class="c-curriculum__year">
-                    <div class="c-curriculum__semester c-curriculum__semester--choice c-curriculum__semester--choice-5">
+                <div class="c-curriculum__semester">
+                    <article class="c-module c-module--code">
+                        <h3 class="c-module__title">Device Programming&nbsp;1</h3>
+                        <p class="c-module__tags">#HTML #flask #JS</p>
+                    </article>
+                    <article class="c-module c-module--connect">
+                        <h3 class="c-module__title">Data Communication&nbsp;1</h3>
+                        <p class="c-module__tags">#cryptography #coding</p>
+                    </article>
+                    <article class="c-module c-module--inform">
+                        <h3 class="c-module__title">Data Management</h3>
+                        <p class="c-module__tags">#sql #databases #erd</p>
+                    </article>
+                    <article class="c-module c-module--create">
+                        <h3 class="c-module__title">User Interface Design</h3>
+                        <p class="c-module__tags">#ui #design #HTML #CSS</p>
+                    </article>
+                    <article class="c-module c-module--project">
+                        <h3 class="c-module__title">Project&nbsp;1</h3>
+                        <p class="c-module__tags">#integrate</p>
+                    </article>
+                </div>
+            </section>
+            <section class="c-curriculum__year">
+                <div class="c-curriculum__semester">
+                    <article class="c-module c-module--code">
+                        <h3 class="c-module__title">Device Programming&nbsp;2</h3>
+                        <p class="c-module__tags">#c# #xamarin #coding</p>
+                    </article>
+                    <article class="c-module c-module--connect">
+                        <h3 class="c-module__title">Security</h3>
+                        <p class="c-module__tags">#privacy #beveiliging</p>
+                    </article>
+                    <article class="c-module c-module--inform">
+                        <h3 class="c-module__title">Cloud&nbsp;1</h3>
+                        <p class="c-module__tags">#c# #cloud #asp.net</p>
+                    </article>
+                    <article class="c-module c-module--create">
+                        <h3 class="c-module__title">Interaction Design</h3>
+                        <p class="c-module__tags">#interaction #dashboards</p>
+                    </article>
+                    <article class="c-module c-module--project">
+                        <h3 class="c-module__title">Project&nbsp;2</h3>
+                        <p class="c-module__tags">#business_cases</p>
+                    </article>
+                </div>
+                <div class="c-curriculum__semester c-curriculum__semester--choice c-curriculum__semester--choice-4">
+                    <article class="c-module c-module--empty">
+                        <h3 class="c-module__title"></h3>
+                        <p class="c-module__tags"><span class="c-module__tag"></span><span class="c-module__tag"></span><span class="c-module__tag"></span></p>
+                    </article>
+                </div>
+            </section>
+            <section class="c-curriculum__year">
+                <div class="c-curriculum__semester c-curriculum__semester--choice c-curriculum__semester--choice-5">
 
-                    </div>
-                    <div class="c-curriculum__semester">
-                        <article class="c-module c-module--project c-module--full">
-                            <h3 class="c-module__title">Stage + Bachelorproef</h3>
-                            <p class="c-module__tags">#ervaring #onderzoek</p>
-                        </article>
-                    </div>
-                </section>
-            </div>
+                </div>
+                <div class="c-curriculum__semester">
+                    <article class="c-module c-module--project c-module--full">
+                        <h3 class="c-module__title">Stage + Bachelorproef</h3>
+                        <p class="c-module__tags">#ervaring #onderzoek</p>
+                    </article>
+                </div>
+            </section>
         </div>
     </div>
 </section>

@@ -149,7 +149,7 @@ li {
 
     flex-direction: row;
 
-    overflow: overlay;
+    overflow: hidden;
     @include mq(bp4) {
         @include margin-top($alpha-leading * -6);
     }

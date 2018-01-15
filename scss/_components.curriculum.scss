@@ -3,25 +3,81 @@
     ---
 */
 
-.c-curriculum-choice {
+$choice-column-bgcolor: palette(color-neutral,xxx-light);
+$choice-column-border-color: palette(color-neutral,xx-light);
+$choice-column-border-width: 1px;
+$choice-column-border-style: solid;
+
+.c-curriculum-overview {
     position: relative;
-    height: $alpha-leading * 2.5px;
+}
+
+.c-curriculum-choice {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
     z-index: 20;
-    @include margin-lr($columns-gutter * -.5);
+
+    .has-scrolled & {
+        position: fixed;
+    }
+
+    @include mq(bp5) {
+        position: relative;
+        @include margin-lr($columns-gutter * -.5);
+
+        .has-scrolled & {
+            position: relative;
+        }
+    }
 }
 
     .c-curriculum-choice__box {
-        position: absolute;
-        top: 0;
-        width: 33.3333%;
-        left: 50%;
-        background-color: palette(color-neutral,xxxx-light);
-        @include padding-bottom($alpha-leading / 2);
+        position: relative;
+        height: $alpha-leading * 2px;
+
+        @include mq(bp5) {
+            left: 50%;
+            width: 33.3333%;
+            height: $alpha-leading * 3px;
+            background-color: $choice-column-bgcolor;
+            @include padding-bottom($alpha-leading / 2);
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                border: $choice-column-border-width $choice-column-border-style $choice-column-border-color;
+                border-width: $choice-column-border-width $choice-column-border-width 0;
+            }
+        }
     }
 
     .c-curriculum-choice__body {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
         box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxx-dark),.025), 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
         background-color: #fff;
+        // background-color: $choice-column-bgcolor;
+        // border-bottom: $choice-column-border-width $choice-column-border-style $choice-column-border-color;
+
+        .has-scrolled & {
+            right: 0;
+            left: 0;
+        }
+
+        @include mq(bp5) {
+            top: #{$columns-gutter / 2}px;
+            right: #{$columns-gutter / 2}px;
+            left: #{$columns-gutter / 2}px;
+        }
     }
 
     .c-curriculum-choice__button {
@@ -32,15 +88,17 @@
         align-items: center;
         justify-content: space-between;
         font-weight: $delta-font-weight;
+        outline: none;
         @include ms-1;
         @include padding-lr($columns-gutter * .75, $columns-gutter * .5);
         @include padding-tb($alpha-leading / 2,$alpha-leading / 2);
     }
 
 .c-curriculum-choices {
-    // display: none;
+    display: none;
     position: relative;
     border-top: 1px solid palette(color-neutral,xxx-light);
+    margin-bottom: 0;
     @include padding-tb($alpha-leading / 4,$alpha-leading / 4);
 }
 
@@ -84,22 +142,75 @@
 
 .c-curriculum {
     display: flex;
+    flex-wrap: wrap;
     z-index: 10;
+    @include padding-top($alpha-leading * 3);
     @include margin-lr($columns-gutter * -.5);
-    @include margin-bottom($alpha-leading);
+
+    @include mq(bp5) {
+        padding-top: 0;
+    }
 }
 
     .c-curriculum__year {
-        width: 33.3333%;
         display: flex;
         flex-wrap: wrap;
+
+        @include mq(bp5) {
+            width: 33.3333%;
+        }
     }
 
     .c-curriculum__semester {
-        width: 50%;
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        @include padding-bottom($alpha-leading / 2);
         @include padding-lr($columns-gutter / 2,$columns-gutter / 2);
+        @include margin-bottom($alpha-leading / 2);
+
+        @include mq(bp2) {
+            width: 50%;
+        }
     }
 
     .c-curriculum__semester--choice {
-        background-color: palette(color-neutral,xxxx-light);
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border: $choice-column-border-width $choice-column-border-style $choice-column-border-color;
+        }
+
+        @include mq(bp5) {
+            background-color: $choice-column-bgcolor;
+        }
+    }
+
+    .c-curriculum__semester--choice-4 {
+        &:before {
+            border-width: 0 0 $choice-column-border-width $choice-column-border-width;
+        }
+    }
+
+    .c-curriculum__semester--choice-5 {
+        &:before {
+            border-width: 0 $choice-column-border-width $choice-column-border-width 0;
+        }
+    }
+
+    .c-curriculum__semester-title {
+        color: palette(color-neutral);
+        // font-family: $beta-font-family;
+        font-weight: $alpha-font-weight;
+        text-align: center;
+        margin: 0 auto;
+        @include margin-bottom($alpha-leading / 2);
+        @include ms-2;
     }

@@ -4,28 +4,13 @@
     Special typography classes
 */
 
-.c-type-header {
-    font-weight: $delta-font-weight;
-    @include uppercase;
-}
-
-.c-type-header-wide {
-    font-weight: $delta-font-weight;
-    @include uppercase-wide;
-}
-
-.c-type-caption {
-    color: palette(color-neutral,light);
-    @include ms-1;
-}
-
 .c-type-lead {
     color: palette(color-neutral);
     @include ms2;
 }
 
-.c-type-maximum {
-    @include text-dimensions(ms(22),3.25);
+.c-type-meta {
+    font-family: $beta-font-family;
 }
 
 .c-type-intro {

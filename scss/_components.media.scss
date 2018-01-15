@@ -37,16 +37,10 @@
 
     .c-media__title {
         width: 100%;
-        transition: color $animation-duration-alpha $animation-easing-alpha;
 
         .c-media--link &,
         .c-media--link:visited & {
             color: palette(color-neutral,xxxx-dark);
-        }
-
-        .c-media--link:hover &,
-        .c-media--link:focus & {
-            color: $link-color;
         }
     }
 
@@ -54,8 +48,23 @@
         color: palette(color-neutral);
     }
 
+    .c-media__meta {
+        font-family: $beta-font-family;
+    }
+
     .c-media__more-link {
         text-decoration: underline;
+    }
+
+    .c-media__title,
+    .c-media__text,
+    .c-media__meta {
+        transition: color $animation-duration-alpha $animation-easing-alpha;
+
+        .c-media--link:hover &,
+        .c-media--link:focus & {
+            color: $link-color;
+        }
     }
 
     .c-media__picture {

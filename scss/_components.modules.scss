@@ -1,0 +1,57 @@
+/*
+    Components: c-module
+    ---
+*/
+
+.c-module {
+    position: relative;
+    background: palette(color-neutral, xxxxx-light);
+    border-bottom: $alpha-leading * .25px solid transparent;
+    box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxx-dark),.025), 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    @include padding-lr($columns-gutter / 2, $columns-gutter / 2);
+    @include padding-tb($alpha-leading / 2, $alpha-leading / 2);
+
+    & + & {
+        @include margin-top($alpha-leading);
+    }
+
+    &--code {
+        border-color: palette(color-code);
+    }
+
+    &--connect {
+        border-color: palette(color-connect);
+    }
+
+    &--create {
+        border-color: palette(color-create);
+    }
+
+    &--inform {
+        border-color: palette(color-inform);
+    }
+
+    &--project {
+        border-color: palette(color-project);
+    }
+
+    &--full {
+        height: 100%;
+    }
+}
+
+    .c-module__title {
+        width: 100%;
+        @include ms0;
+        @include margin-bottom($alpha-leading * .25);
+    }
+
+    .c-module__tags {
+        margin-bottom: 0;
+        color: palette(color-neutral);
+        font-family: $beta-font-family;
+        @include ms-2;
+    }

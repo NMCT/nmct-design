@@ -1,182 +1,112 @@
 /*
-    Components: c-Curriculum
+    Components: c-curriculum
     ---
 */
 
-.c-curriculum__container {
-    overflow: hidden;
+.c-curriculum-choice {
+    position: relative;
+    height: $alpha-leading * 2.5px;
+    z-index: 20;
+    @include margin-lr($columns-gutter * -.5);
 }
 
-.c-curriculum__column {
-    position: relative;
-
-    @include mq(bp3) {
-        display: inline-block;
-        width: calc( ( 100% - 40px ) / 2 );
-        vertical-align: top;
-
-        &:nth-of-type( 2 ) {
-            margin: 0 20px;
-        }
-    }
-
-    @include mq(bp4) {
-        width: calc( ( 100% - 40px ) / 3 );
-    }
-
-    &--specialist {
-        display: inline-block;
-        vertical-align: top;
-        width: calc(50% - 5px);
-
-        & .c-curriculum__module {
-            width: 100%;
-
-            &:nth-of-type( 2n + 2 ) {
-                margin-left: 0;
-            }
-        }
-    }
-
-    &--stage {
+    .c-curriculum-choice__box {
         position: absolute;
-        top: calc( 1.6rem + 20px );
-        bottom: 0;
-        display: inline-block;
-        vertical-align: top;
+        top: 0;
+        width: 33.3333%;
+        left: 50%;
+        background-color: palette(color-neutral,xxxx-light);
+        // overflow: hidden;
+        @include padding-bottom($alpha-leading / 2);
+    }
 
-        width: calc(50% - 5px);
+    .c-curriculum-choice__body {
+        box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxx-dark),.025), 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
+        background-color: #fff;
+        // border-bottom: 1px solid white;
+        // @include padding-tb($alpha-leading / 2,$alpha-leading / 2);
+        // @include padding-lr($columns-gutter / 2,$columns-gutter / 2);
+    }
 
-        margin-left: 10px;
+    .c-curriculum-choice__button {
+        margin-bottom: 0;
+        // background-color: #fff;
+        // border: 1px solid palette(color-neutral,xxx-light);
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: $delta-font-weight;
+        @include ms-1;
+        @include padding-lr($columns-gutter * .75, $columns-gutter * .5);
+        @include padding-tb($alpha-leading / 2,$alpha-leading / 2);
+    }
 
-        & .c-curriculum__module {
-            width: 100%;
-            height: calc(100% - 15px);
+.c-curriculum-choices {
+    // display: none;
+    position: relative;
+    border-top: 1px solid palette(color-neutral,xxxx-light);
+    @include padding-tb($alpha-leading / 4,$alpha-leading / 4);
+}
+
+    .c-curriculum-choices__filter {
+        display: flex;
+        align-items: center;
+        @include ms-1;
+        @include padding-lr($columns-gutter * .75, $columns-gutter * .75);
+        @include padding-tb($alpha-leading / 4,$alpha-leading / 4);
+
+        &,
+        &:visited {
+            color: palette(color-neutral,dark);
+        }
+
+        &:hover {
+            color: palette(color-neutral,xx-dark);
+            // background-color: palette(color-neutral,xxxx-light);
+            text-decoration: none;
+        }
+
+        .is-selected & {
+            color: palette(color-neutral,xxx-dark);
+            font-weight: $delta-font-weight;
         }
     }
-}
 
+    .c-curriculum-choices__symbol {
+        fill: palette(color-neutral,xx-light);
+        transition: fill $animation-duration-alpha $animation-easing-alpha;
+        @include margin-right($columns-gutter / 4);
 
-.c-curriculum__header {
-    margin: 10px 0;
-    font-size: 1.6rem;
-    text-align: center;
-    text-transform: uppercase;
-}
+        .c-curriculum-choices__filter:hover & {
+            fill: palette(color-neutral);
+        }
 
-.c-curriculum__module {
-    position: relative;
-    // display: inline-block;
-    // width: calc( ( 100% - 10px ) / 2);
-    vertical-align: bottom;
+        .is-selected &,
+        .is-selected .c-curriculum-choices__filter:hover & {
+            fill: palette(color-alpha);
+        }
+    }
 
-    margin-bottom: 15px;
-    padding: 5px;
-    box-sizing: border-box;
-
-    background: palette(color-neutral, xxxxx-light);
+.c-curriculum {
+    display: flex;
     z-index: 10;
+    @include margin-lr($columns-gutter * -.5);
+    @include margin-bottom($alpha-leading);
+}
 
-    // &:nth-of-type( 2n + 2 ) {
-    //     margin-left: 10px;
-    // }
-
-    &--code {
-        border-bottom: 2px solid palette(color-code);
-
-        // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $code;
-        // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $code;
+    .c-curriculum__year {
+        width: 33.3333%;
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    &--connect {
-        border-bottom: 2px solid palette(color-connect);
-
-        // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $connect;
-        // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $connect;
+    .c-curriculum__semester {
+        width: 50%;
+        @include padding-lr($columns-gutter / 2,$columns-gutter / 2);
     }
 
-    &--create {
-        border-bottom: 2px solid palette(color-create);
-
-        // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $create;
-        // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $create;
+    .c-curriculum__semester--choice {
+        background-color: palette(color-neutral,xxxx-light);
     }
-
-    &--inform {
-        border-bottom: 2px solid palette(color-inform);
-
-        // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $inform;
-        // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $inform;
-    }
-
-    &--project {
-        border-bottom: 2px solid palette(color-project);
-
-        // -webkit-box-shadow: #{$distant-small} -#{$distant-small} 0 0 $project;
-        // box-shadow: #{$distant-small} -#{$distant-small} 0 0 $project;
-    }
-}
-
-.c-curriculum__module__header {
-    min-height: 2rem;
-
-    margin-top: 10px;
-
-    font-size: .95rem;
-    line-height: 1rem;
-    text-align: left;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.c-curriculum__module__tags {
-    margin-bottom: 0;
-    font-size: .8rem;
-    text-transform: uppercase;
-    line-height: 1.2rem;
-}
-
-// Sorry voor de volgende stijlen...
-.c-curriculum__choose {
-    position: relative;
-    padding-top: #{$columns-gutter}px;
-    padding-bottom: 100%;
-    margin-bottom: -100%;
-
-    background: palette(color-neutral, xxx-light);
-
-    z-index: 0;
-
-    @include box-shadow-lg;
-}
-
-.module_selector {
-    position: relative;
-    display: table;
-    margin: auto;
-
-    text-align: center;
-
-    border: none;
-    border-radius: none;
-
-    outline: none;
-    z-index: 1;
-}
-
-.c-curriculum--s4 {
-    // left: 50%;
-}
-
-.c-curriculum__notification {
-    position: relative;
-    width: 200%;
-
-    text-align: center;
-
-    z-index: 5;
-}
-
-.c-curriculum--s5 {
-
-}

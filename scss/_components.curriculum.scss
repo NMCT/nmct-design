@@ -3,10 +3,28 @@
     ---
 */
 
-$choice-column-bgcolor: palette(color-neutral,xxxx-light);
+$choice-column-bgcolor: palette(color-neutral,xxx-light);
+// $choice-column-bgcolor: transparent;
 $choice-column-border-color: palette(color-neutral,xx-light);
 $choice-column-border-width: 1px;
 $choice-column-border-style: solid;
+
+.c-curriculum-title {
+    position: relative;
+    @include margin-bottom($alpha-leading * -.75);
+
+    @include mq(bp3) {
+        @include margin-bottom($alpha-leading * -2);
+    }
+
+    @include mq(bp4) {
+        @include margin-bottom($alpha-leading * -3);
+    }
+
+    @include mq(bp5) {
+        @include margin-bottom($alpha-leading * -4);
+    }
+}
 
 .c-curriculum-overview {
     position: relative;
@@ -35,12 +53,12 @@ $choice-column-border-style: solid;
 
     .c-curriculum-choice__box {
         position: relative;
-        height: $alpha-leading * 2px;
+        height: #{$alpha-leading * 2}px;
 
         @include mq(bp5) {
             left: 50%;
             width: 33.3333%;
-            height: $alpha-leading * 3px;
+            height: #{$alpha-leading * 2.5}px;
             background-color: $choice-column-bgcolor;
             @include padding-bottom($alpha-leading / 2);
 
@@ -65,8 +83,6 @@ $choice-column-border-style: solid;
         left: 0;
         box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxx-dark),.025), 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
         background-color: #fff;
-        // background-color: $choice-column-bgcolor;
-        // border-bottom: $choice-column-border-width $choice-column-border-style $choice-column-border-color;
 
         .has-scrolled & {
             right: 0;
@@ -76,9 +92,9 @@ $choice-column-border-style: solid;
         @include mq(bp5) {
             &,
             .has-scrolled & {
-                top: #{$columns-gutter / 2}px;
-                right: #{$columns-gutter / 2}px;
-                left: #{$columns-gutter / 2}px;
+                // top: #{$columns-gutter / 2}px;
+                // right: #{$columns-gutter / 2}px;
+                // left: #{$columns-gutter / 2}px;
             }
         }
     }
@@ -94,11 +110,10 @@ $choice-column-border-style: solid;
         outline: none;
         @include ms-1;
         @include padding-lr($columns-gutter * .75, $columns-gutter * .5);
-        @include padding-tb($alpha-leading / 2,$alpha-leading / 2);
+        @include padding-tb($alpha-leading * .5,$alpha-leading * .5);
     }
 
 .c-curriculum-choices {
-    display: none;
     position: relative;
     border-top: 1px solid palette(color-neutral,xxx-light);
     margin-bottom: 0;
@@ -147,8 +162,9 @@ $choice-column-border-style: solid;
     display: flex;
     flex-wrap: wrap;
     z-index: 10;
-    @include padding-top($alpha-leading * 3);
+    @include padding-top($alpha-leading * 2.5);
     @include margin-lr($columns-gutter * -.5);
+    @include margin-bottom($alpha-leading / 2);
 
     @include mq(bp5) {
         padding-top: 0;
@@ -158,6 +174,11 @@ $choice-column-border-style: solid;
     .c-curriculum__year {
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
+
+        @include mq(bp4) {
+            width: 50%;
+        }
 
         @include mq(bp5) {
             width: 33.3333%;
@@ -172,27 +193,28 @@ $choice-column-border-style: solid;
         flex-direction: column;
         @include padding-bottom($alpha-leading / 2);
         @include padding-lr($columns-gutter / 2,$columns-gutter / 2);
-        @include margin-bottom($alpha-leading / 2);
 
         @include mq(bp2) {
             width: 50%;
         }
     }
 
-    .c-curriculum__semester--choice {
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            border: $choice-column-border-width $choice-column-border-style $choice-column-border-color;
-        }
+    // background + border around 4th and 5th semester
 
+    .c-curriculum__semester--choice {
         @include mq(bp5) {
             background-color: $choice-column-bgcolor;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                border: $choice-column-border-width $choice-column-border-style $choice-column-border-color;
+            }
         }
     }
 
@@ -210,10 +232,35 @@ $choice-column-border-style: solid;
 
     .c-curriculum__semester-title {
         color: palette(color-neutral);
-        // font-family: $beta-font-family;
+        // color: palette(color-alpha);
         font-weight: $alpha-font-weight;
         text-align: center;
         margin: 0 auto;
         @include margin-bottom($alpha-leading / 2);
         @include ms-2;
+    }
+
+// legend
+
+.c-curriculum-legend {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $beta-font-family;
+    color: palette(color-neutral,base);
+    @include ms-2;
+    @include margin-lr($columns-gutter * -.5);
+}
+
+    .c-curriculum-legend__item {
+        display: flex;
+        align-items: center;
+        @include margin-lr($columns-gutter * .5);
+    }
+
+    .c-curriculum-legend__swatch {
+        display: block;
+        width: #{$alpha-leading * .5}px;
+        height: #{$alpha-leading * .5}px;
+        border-radius: 100%;
+        @include margin-right($columns-gutter * .25);
     }

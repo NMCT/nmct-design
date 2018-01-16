@@ -23,7 +23,7 @@ $choice-column-border-style: solid;
     }
 
     @include mq(bp5) {
-        @include margin-bottom($alpha-leading * -4);
+        @include margin-bottom($alpha-leading * -4.5);
     }
 }
 
@@ -83,7 +83,7 @@ $choice-column-border-style: solid;
         right: 0;
         left: 0;
         box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxx-dark),.05), 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
-        background-color: #fff;
+        background-color: palette(color-neutral,xxxxx-light);
 
         .has-scrolled & {
             right: 0;

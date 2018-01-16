@@ -248,6 +248,45 @@ li {
     }
 }
 
+.c-carousel {
+    position: relative;
+}
+
+.c-carousel-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: #{$alpha-leading * 2}px;
+    height: #{$alpha-leading * 2}px;
+    border-radius: 100%;
+    background-color: #fff;
+    color: palette(color-alpha);
+    position: absolute;
+    left: #{$alpha-leading * .5}px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include box-shadow;
+
+    @include mq(bp3) {
+        width: #{$alpha-leading * 3}px;
+        height: #{$alpha-leading * 3}px;
+        left: #{$alpha-leading * -1.5}px;
+    }
+}
+
+.c-carousel-nav--right {
+    left: auto;
+    right: #{$alpha-leading * .5}px;
+
+    @include mq(bp3) {
+        right: #{$alpha-leading * -1.5}px;
+    }
+}
+
+    .c-carousel-nav__symbol {
+        margin: 0 auto;
+    }
+
 ::-webkit-input-placeholder {
     font-family: $placeholder-font-family;
     font-style: $placeholder-font-style;

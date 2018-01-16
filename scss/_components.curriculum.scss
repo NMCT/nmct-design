@@ -3,7 +3,7 @@
     ---
 */
 
-$choice-column-bgcolor: palette(color-neutral,xxx-light);
+$choice-column-bgcolor: palette(color-neutral,xxxx-light);
 $choice-column-border-color: palette(color-neutral,xx-light);
 $choice-column-border-width: 1px;
 $choice-column-border-style: solid;
@@ -74,9 +74,12 @@ $choice-column-border-style: solid;
         }
 
         @include mq(bp5) {
-            top: #{$columns-gutter / 2}px;
-            right: #{$columns-gutter / 2}px;
-            left: #{$columns-gutter / 2}px;
+            &,
+            .has-scrolled & {
+                top: #{$columns-gutter / 2}px;
+                right: #{$columns-gutter / 2}px;
+                left: #{$columns-gutter / 2}px;
+            }
         }
     }
 

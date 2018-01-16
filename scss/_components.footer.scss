@@ -14,6 +14,16 @@
     }
 }
 
+.c-doormat__item {
+    & + & {
+        @include padding-top($alpha-leading);
+
+        @include mq(bp4) {
+            padding-top: 0;
+        }
+    }
+}
+
 .c-footer {
     color: palette(color-neutral,x-dark);
     @include padding-top($alpha-leading);

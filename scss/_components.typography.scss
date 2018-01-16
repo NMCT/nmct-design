@@ -71,6 +71,18 @@
             }
         }
 
+        .c-type-svg--programm & {
+            max-width: 321px;
+
+            @include mq(bp3) {
+                max-width: 643px;
+            }
+
+            @include mq(bp4) {
+                max-width: 1286px;
+            }
+        }
+
         .c-type-svg--news & {
             max-width: 198px;
 

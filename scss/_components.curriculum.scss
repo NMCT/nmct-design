@@ -3,8 +3,8 @@
     ---
 */
 
-$choice-column-bgcolor: palette(color-neutral,xxx-light);
-// $choice-column-bgcolor: transparent;
+// $choice-column-bgcolor: palette(color-neutral,xxx-light);
+$choice-column-bgcolor: transparent;
 $choice-column-border-color: palette(color-neutral,xx-light);
 // $choice-column-border-color: rgba(palette(color-neutral,xxxx-dark),.075);
 $choice-column-border-width: 1px;
@@ -94,8 +94,8 @@ $choice-column-border-style: solid;
             &,
             .has-scrolled & {
                 // top: 1px;
-                // right: 1px;
-                // left: 1px;
+                right: 1px;
+                left: 1px;
                 // top: #{$columns-gutter / 2}px;
                 // right: #{$columns-gutter / 2}px;
                 // left: #{$columns-gutter / 2}px;
@@ -119,7 +119,7 @@ $choice-column-border-style: solid;
 
 .c-curriculum-choices {
     position: relative;
-    border-top: 1px solid palette(color-neutral,xx-light);
+    border-top: 1px solid palette(color-neutral,xxx-light);
     margin-bottom: 0;
     @include padding-tb($alpha-leading / 4,$alpha-leading / 4);
 }

@@ -38,15 +38,13 @@
     color: palette(color-neutral,xxxxx-light);
 }
 
-
 .c-row--beta {
     background-color: palette(color-neutral,xxxx-dark);
     color: palette(color-neutral,xxxxx-light);
 }
 
-.c-row--gamma {
-    background-color: palette(color-neutral,xxxxx-light);
-    @include box-shadow-lg;
+.c-row--divide {
+    border-top: 1px solid palette(color-neutral,xxx-light);
 }
 
 .c-row--top {

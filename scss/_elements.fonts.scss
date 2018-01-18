@@ -1,0 +1,19 @@
+/*
+    Elements: fonts
+    ---
+    @font-face declarations
+*/
+
+@font-face {
+  font-family: 'Graphik';
+  font-weight: 400;
+  src:  url('../fonts/Graphik-Regular-Web.woff2') format('woff2'),
+        url('../fonts/Graphik-Regular-Web.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Graphik';
+  font-weight: 700;
+  src:  url('../fonts/Graphik-Bold-Web.woff2') format('woff2'),
+        url('../fonts/Graphik-Bold-Web.woff') format('woff');
+}

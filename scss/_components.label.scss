@@ -6,7 +6,7 @@
 
 // Labels
 .c-label {
-    color: palette(color-neutral);
+    color: palette(color-neutral, x-dark);
     @include text-dimensions(ms(-1),1);
 
     &.has-error {

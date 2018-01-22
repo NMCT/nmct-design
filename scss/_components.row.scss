@@ -90,6 +90,7 @@
 
 .c-row--map {
     @include padding-lr( 0 );
+    @include padding-tb( 0 );
 }
 
 .c-row--carousel {

@@ -43,6 +43,11 @@
     color: palette(color-neutral,xxxxx-light);
 }
 
+.c-row--gamma {
+    color: palette(color-neutral, xxxxx-light);
+    background: palette(color-neutral,xx-dark);
+}
+
 .c-row--divide {
     border-top: 1px solid palette(color-neutral,xxx-light);
 }

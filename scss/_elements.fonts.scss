@@ -5,15 +5,19 @@
 */
 
 @font-face {
-  font-family: 'Graphik';
-  font-weight: 400;
-  src:  url('../fonts/Graphik-Regular-Web.woff2') format('woff2'),
-        url('../fonts/Graphik-Regular-Web.woff') format('woff');
+    font-family: 'Aileron';
+    font-weight: 400;
+    src: url('../fonts/Aileron-Regular-webfont.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Graphik';
-  font-weight: 700;
-  src:  url('../fonts/Graphik-Bold-Web.woff2') format('woff2'),
-        url('../fonts/Graphik-Bold-Web.woff') format('woff');
+    font-family: 'Aileron';
+    font-weight: 700;
+    src: url('../fonts/Aileron-Bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-weight: 800;
+    src: url('../fonts/Aileron-Heavy-webfont.woff') format('woff');
 }

@@ -72,6 +72,7 @@
     color: palette(color-neutral,xxxxx-light);
     background: palette(color-alpha) url('../../img/svg/background-visual-top.svg') bottom center no-repeat;
     background-size: 110%;
+    min-height: 1000px;
     @include padding-tb($alpha-leading,$alpha-leading);
 
     @include mq(bp3) {

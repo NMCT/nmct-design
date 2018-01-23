@@ -136,9 +136,11 @@ $modularscale: (
 // Font settings
 // ---
 
-$alpha-font-family: 'Roboto', sans-serif !default;
+// $alpha-font-family: 'Roboto', sans-serif !default;
+$alpha-font-family: 'Archivo', sans-serif !default;
+$gamma-font-family: 'Archivo Black', sans-serif !default;
 // $alpha-font-family: 'acumin-pro', sans-serif !default;
-$beta-font-family: 'Roboto Mono', monospace !default;
+$beta-font-family: 'Space Mono', monospace !default;
 
 $alpha-font-size: ms(0) !default;
 
@@ -269,8 +271,8 @@ $body-selection-text-shadow: none !default;
 // set to false to hide the baseline and backround
 $show-baseline: false;
 
-$h1-font-family                     : $alpha-font-family !default;
-$h1-font-weight                     : $delta-font-weight !default;
+$h1-font-family                     : $gamma-font-family !default;
+$h1-font-weight                     : $alpha-font-weight !default;
 $h1-margin-bottom                   : $alpha-leading !default;
 
 $h2-font-family                     : $alpha-font-family !default;

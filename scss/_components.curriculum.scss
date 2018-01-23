@@ -114,7 +114,7 @@ $choice-column-border-style: solid;
         outline: none;
         @include ms-1;
         @include padding-lr($columns-gutter * .75, $columns-gutter * .5);
-        @include padding-tb($alpha-leading * .45,$alpha-leading * .55);
+        @include padding-tb($alpha-leading * .5,$alpha-leading * .5);
     }
 
 .c-curriculum-choices {

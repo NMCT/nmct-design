@@ -57,7 +57,7 @@ button::-moz-focus-inner {
     box-shadow: none;
     -webkit-font-smoothing: antialiased; /* [4] */
     -moz-osx-font-smoothing: grayscale; /* [4] */
-    font-weight: $delta-font-weight;
+    font-weight: $jota-font-weight;
 
     &:hover,
     &:focus {
@@ -111,7 +111,7 @@ button::-moz-focus-inner {
 
 .c-button--md {
     @include padding-lr($columns-gutter * 1.25,$columns-gutter * 1.25);
-    @include input-dimensions(ms(0),1,0,$alpha-leading / 2.2,$alpha-leading / 1.8);
+    @include input-dimensions(ms(-1),1,0,$alpha-leading / 2.1,$alpha-leading / 1.9);
 }
 
 .c-button--lg {

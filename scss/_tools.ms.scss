@@ -49,7 +49,7 @@
 }
 
 @mixin ms8 {
-    @include text-dimensions(ms(8),2.5);
+    @include text-dimensions(ms(8),2);
 }
 
 @mixin ms9 {

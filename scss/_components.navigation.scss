@@ -63,7 +63,7 @@
         display: block;
         text-decoration: none;
         font-weight: $delta-font-weight;
-        @include text-dimensions(ms(-1),1);
+        @include text-dimensions($alpha-font-size,1);
 
         &,
         &:visited {
@@ -73,7 +73,7 @@
         &:after {
             content: '';
             position: absolute;
-            bottom: #{$alpha-leading / 2}px;
+            bottom: #{$alpha-leading / 4}px;
             left: 0;
             height: 2px;
             width: 0;
@@ -98,7 +98,7 @@
         }
 
         // @include mq(bp4,max) {
-            @include padding-tb($alpha-leading / 2.2,$alpha-leading / 1.8);
+            @include padding-tb($alpha-leading / 2,$alpha-leading / 2);
         // }
     }
 

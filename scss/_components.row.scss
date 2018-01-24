@@ -5,7 +5,7 @@
 */
 
 .c-row {
-    // position: relative;
+    position: relative;
     background-color: palette(color-neutral, xxxxx-light);
     z-index: 10;
     @include clearfix;
@@ -65,32 +65,11 @@
     @include mq(bp3) {
         @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
     }
-
-    // .o-container {
-    //     max-width: none;
-    // }
 }
 
 .c-row--intro {
     background-color: palette(color-alpha);
     color: palette(color-neutral,xxxxx-light);
-    // @include padding-tb($alpha-leading * 2,$alpha-leading);
-    @include padding-bottom($alpha-leading);
-
-    @include mq(bp3) {
-        // @include padding-tb($alpha-leading * 2,$alpha-leading * 1);
-        @include padding-bottom($alpha-leading);
-    }
-
-    @include mq(bp4) {
-        // @include padding-tb($alpha-leading * 2,$alpha-leading * 1);
-        @include padding-bottom($alpha-leading);
-    }
-
-    @include mq(bp5) {
-        // @include padding-tb($alpha-leading * 4,$alpha-leading * 3);
-        @include padding-bottom($alpha-leading * 3);
-    }
 }
 
 .c-row--visual {
@@ -100,15 +79,6 @@
     @include mq(bp5) {
         background-size: auto;
     }
-}
-
-.c-row--full {
-    // min-height: calc(100vh - #{$alpha-leading * 11}px);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    // justify-content: center;
 }
 
 .c-row--footer {

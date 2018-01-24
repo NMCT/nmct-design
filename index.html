@@ -3,7 +3,8 @@ layout: default
 title: New Media and Communication Technology
 section: home
 ---
-<section class="c-row c-row--lg c-row--intro c-row--visual">
+
+<div class="c-row c-row--lg c-row--intro c-row--visual">
     <div class="o-container">
         <div class="o-grid o-grid--gutter-lg">
             <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
@@ -27,14 +28,53 @@ section: home
                             Your browser does not support HTML5 video.
                         </video>
                     </div>
-                    <!-- <p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
-                        Kijk zelf waarom NMCT zo leuk is
-                    </p> -->
+                    <p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
+                        Kijk zelf wat NMCT zo uniek maakt
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+</div>
+{% comment %}
+
+<section class="c-row c-row--clear c-row--alpha c-row--visual">
+    <div class="c-row c-row--intro c-row--transparent">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg">
+                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                    <div class="c-main-section-lg">
+                        <div class="u-max-width-xl">
+                            <h1 class="c-type-meta u-ms-1 u-mb-gamma u-opacity-gamma">
+                                New Media & Communication Technology
+                            </h1>
+                            <p class="c-type-intro">
+                                Heb je een uitgesproken interesse in technologie? Wil je een complete pipeline leren bouwen van input tot user experience? Geloof je ook in leren door te doen en door echte cases op te lossen? NMCT levert IT'ers af die de applicaties van de toekomst bouwen. Hier nog iets over IoT.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-row c-row--clear-top c-row--clear-bottom c-row--transparent">
+        <div class="o-container">
+            <div class="c-video-player">
+                <button class="c-video-play-button">
+                    {% include atom.symbol.html value="play" class="c-video-play-button__symbol" %}
+                </button>
+                <video class="c-video-player__video" poster="/img/jpg/nmct-promo.jpg">
+                    <source src="/video/nmct-promo.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+            <p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
+                Kijk zelf wat NMCT zo uniek maakt
+            </p>
+        </div>
+    </div>
 </section>
+{% endcomment %}
 <section class="c-row c-row--lg">
     <div class="o-container">
         <div class="c-projects">
@@ -74,7 +114,7 @@ section: home
                                                 </button>
                                             </picture>
                                             <div class="c-media__body">
-                                                <div class="c-media__content u-max-width-optimal">
+                                                <div class="c-media__content u-max-width-md">
                                                     <h2 class="c-media__title u-ms2 u-mb-gamma">
                                                         Control room for the future
                                                     </h2>

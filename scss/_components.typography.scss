@@ -16,25 +16,33 @@
 
 .c-type-intro {
     font-weight: $delta-font-weight;
-    color: palette(color-neutral, xxxxx-light);
     @include ms2;
 
     a {
         position: relative;
 
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: rgba(palette(color-neutral,xxxx-dark),.5);
+            transition: background $animation-duration-alpha $animation-easing-alpha;
+        }
+
         &,
         &:visited {
-            color: palette(color-neutral,xxxxx-light);
+            color: palette(color-neutral,xxxx-dark);
 
-            &:after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                height: 2px;
-                width: 100%;
-                background-color: rgba(palette(color-neutral,xxxxx-light),.5);
-                transition: background $animation-duration-alpha $animation-easing-alpha;
+            .c-row--intro &,
+            .c-row--alpha & {
+                color: palette(color-neutral,xxxxx-light);
+
+                &:after {
+                    background-color: rgba(palette(color-neutral,xxxxx-light),.5);
+                }
             }
         }
 
@@ -42,7 +50,12 @@
             text-decoration: none;
 
             &:after {
-                background-color: rgba(palette(color-neutral,xxxxx-light),1);
+                background-color: rgba(palette(color-neutral,xxxx-dark),1);
+
+                .c-row--intro &,
+                .c-row--alpha & {
+                    background-color: rgba(palette(color-neutral,xxxxx-light),1);
+                }
             }
         }
     }
@@ -53,7 +66,7 @@
 }
 
 .c-type-svg {
-
+    position: relative;
 }
 
     .c-type-svg__svg {

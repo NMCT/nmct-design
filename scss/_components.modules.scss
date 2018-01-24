@@ -43,8 +43,8 @@
 
     .c-module__title {
         width: 100%;
-        @include ms0;
-        // @include margin-bottom($alpha-leading * .5);
+        @include ms-1;
+        @include margin-bottom($alpha-leading * .5);
     }
 
     .c-module__tags {

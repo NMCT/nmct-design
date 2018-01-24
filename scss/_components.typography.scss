@@ -63,6 +63,10 @@
     @include mq(bp3) {
         @include ms4;
     }
+
+    @include mq(bp5) {
+        @include ms7;
+    }
 }
 
 .c-type-svg {

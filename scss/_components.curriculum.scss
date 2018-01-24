@@ -112,6 +112,7 @@ $choice-column-border-style: solid;
         justify-content: space-between;
         font-weight: $delta-font-weight;
         outline: none;
+        color: palette(color-alpha);
         @include ms-1;
         @include padding-lr($columns-gutter * .75, $columns-gutter * .5);
         @include padding-tb($alpha-leading * .45,$alpha-leading * .55);
@@ -142,7 +143,8 @@ $choice-column-border-style: solid;
         }
 
         .is-selected & {
-            color: palette(color-neutral,xx-dark);
+            // color: palette(color-neutral,xx-dark);
+            color: palette(color-alpha);
             font-weight: $delta-font-weight;
         }
     }

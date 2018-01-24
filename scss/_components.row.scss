@@ -81,7 +81,7 @@
     }
 
     @include mq(bp5) {
-        @include padding-tb($alpha-leading * 2,$alpha-leading * 3);
+        @include padding-tb($alpha-leading * 4,$alpha-leading * 3);
     }
 }
 
@@ -95,7 +95,7 @@
 }
 
 .c-row--full {
-    min-height: calc(100vh - #{$alpha-leading * 7.25}px);
+    min-height: calc(100vh - #{$alpha-leading * 7}px);
     display: flex;
     align-items: center;
     justify-content: center;

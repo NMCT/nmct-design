@@ -11,10 +11,6 @@
         color: palette(color-neutral,xxxx-dark);
     }
 
-    h3 {
-        @include uppercase;
-    }
-
     * + h2 {
         @include padding-top($alpha-leading);
     }

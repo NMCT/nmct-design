@@ -64,7 +64,7 @@
         @include ms4;
     }
 
-    @include mq(bp5) {
+    @include mq(bp4) {
         @include ms7;
     }
 }
@@ -75,6 +75,7 @@
 
     .c-type-svg__svg {
         display: block;
+        width: 100%;
 
         .c-type-svg--projects & {
             max-width: 259px;
@@ -98,6 +99,10 @@
             @include mq(bp4) {
                 max-width: 1286px;
             }
+
+            // @include mq(bp6) {
+            //     max-width: 1286px;
+            // }
         }
 
         .c-type-svg--news & {

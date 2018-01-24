@@ -41,7 +41,7 @@
 }
 
 @mixin ms6 {
-    @include text-dimensions(ms(6),1.5);
+    @include text-dimensions(ms(6),1.75);
 }
 
 @mixin ms7 {
@@ -49,7 +49,7 @@
 }
 
 @mixin ms8 {
-    @include text-dimensions(ms(8),2);
+    @include text-dimensions(ms(8),2.5);
 }
 
 @mixin ms9 {
@@ -57,7 +57,7 @@
 }
 
 @mixin ms10 {
-    @include text-dimensions(ms(10),2.5);
+    @include text-dimensions(ms(10),2.25);
 }
 
 @mixin ms11 {

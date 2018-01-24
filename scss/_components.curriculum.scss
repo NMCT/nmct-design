@@ -113,9 +113,15 @@ $choice-column-border-style: solid;
         font-weight: $delta-font-weight;
         outline: none;
         color: palette(color-alpha);
+        // background-color: palette(color-neutral,xxxx-dark);
         @include ms-1;
         @include padding-lr($columns-gutter * .75, $columns-gutter * .5);
-        @include padding-tb($alpha-leading * .45,$alpha-leading * .55);
+        @include padding-tb($alpha-leading * .425,$alpha-leading * .575);
+    }
+
+    .c-curriculum-choice__icon-down {
+        position: relative;
+        top: $alpha-leading * .075px;
     }
 
 .c-curriculum-choices {

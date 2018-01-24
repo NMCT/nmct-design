@@ -17,7 +17,7 @@ navigation:
   - title: Programma
     url: 'programma'
   - title: Nieuws
-    url: 'blog-detail'
+    url: 'nieuws'
   - title: Contact
     url: 'contact'
 

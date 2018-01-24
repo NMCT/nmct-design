@@ -194,6 +194,11 @@ button::-moz-focus-inner {
     }
 }
 
+.c-button--form {
+    color: palette(color-alpha);
+    border: 2px solid palette(color-alpha);
+}
+
 // Modifiers
 
 .c-button--postfix {

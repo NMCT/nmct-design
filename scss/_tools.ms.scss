@@ -45,7 +45,7 @@
 }
 
 @mixin ms7 {
-    @include text-dimensions(ms(7),1.75);
+    @include text-dimensions(ms(7),2);
 }
 
 @mixin ms8 {

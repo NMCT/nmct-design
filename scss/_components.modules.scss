@@ -52,5 +52,6 @@
         margin-top: auto;
         color: palette(color-neutral);
         font-family: $beta-font-family;
+        text-transform: uppercase;
         @include ms-2;
     }

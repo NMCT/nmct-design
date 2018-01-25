@@ -26,7 +26,7 @@
 
     .c-carousel__items {
         display: flex;
-        // align-items: baseline;
+        align-items: baseline;
         // transform: translateX(-100%); //Use this to move the carousel left or right
         transition: transform $animation-duration-gamma $animation-easing-alpha;
 

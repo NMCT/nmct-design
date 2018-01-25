@@ -120,11 +120,11 @@ li {
         }
     }
 
-    // @include mq(bp5) {
-    //     & + & {
-    //         @include padding-top($alpha-leading * 4);
-    //     }
-    // }
+    @include mq(bp5) {
+        & + & {
+            @include padding-top($alpha-leading * 4);
+        }
+    }
 }
 
 .c-projects__header,

@@ -53,7 +53,8 @@
 @import '../vendor/chopstick-sass/scss/elements.tables';
 
 /* Objects */
-@import '../vendor/chopstick-sass/scss/objects.grid';
+// @import '../vendor/chopstick-sass/scss/objects.grid';
+@import 'scss/objects.grid';
 @import '../vendor/chopstick-sass/scss/objects.flexbox';
 @import '../vendor/chopstick-sass/scss/objects.media';
 @import '../vendor/chopstick-sass/scss/objects.media-embed';

@@ -96,6 +96,10 @@
     box-sizing: content-box;
 }
 
+.c-row--no-overflow {
+    overflow: hidden;
+}
+
 .c-row--clear {
     padding: 0;
 }

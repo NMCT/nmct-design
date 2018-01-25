@@ -112,14 +112,6 @@ section: home
                                             2
                                         </li>
                                     </ol>
-                                    {% comment %}
-                                    <button class="c-carousel-nav__button c-carousel-nav__button--left">
-                                        {% include atom.symbol.html value="arrow-left" class="c-carousel-nav__button__symbol" %}
-                                    </button>
-                                    <button class="c-carousel-nav__button c-carousel-nav__button--right">
-                                        {% include atom.symbol.html value="arrow-right" class="c-carousel-nav__button__symbol" %}
-                                    </button>
-                                    {% endcomment %}
                                 </div>
                                 <div class="c-carousel__items-holder">
                                     <div class="c-carousel__items js-carousel-items">
@@ -185,6 +177,12 @@ section: home
                                         </div>
                                     </div>
                                 </div>
+                                <button class="c-carousel__arrow c-carousel__arrow--left">
+                                    {% include atom.symbol.html value="arrow-left" class="c-carousel__arrow-symbol" %}
+                                </button>
+                                <button class="c-carousel__arrow c-carousel__arrow--right">
+                                    {% include atom.symbol.html value="arrow-right" class="c-carousel__arrow-symbol" %}
+                                </button>
                             </div>
                         </div>
                     </div>

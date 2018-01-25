@@ -2,16 +2,16 @@
     Components: Carousel
 */
 
-.c-carousel {
-    position: relative;
-}
-
-// Berekening width:
+// Calculation width:
 // calc(((#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12*7) + ((100vw - #{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2})/2)) + (#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12) - $columns-gutter));
 // = calc(((1536px/12*7) + ((100vw - 1536px)/2)) + 104px)
 // 1536px = o-container width (bp6) + dubbele gutter links en rechts = #{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}
 // ((100vw - #{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2})/2)) = 100vw min de overschot van de max-width container links en rechts: wat is margin: auto van o-container.
 // 104px = #{(map-get($breakpoints,bp6) + $columns-gutter * 2 * 2)/12 - $columns-gutter})
+
+.c-carousel {
+    position: relative;
+}
 
     .c-carousel__items-holder {
         position: relative;
@@ -45,21 +45,45 @@
         }
     }
 
+    .c-carousel__arrow {
+        position: absolute;
+        top: 50%;
+        left: -#{$alpha-leading * 2}px;
+        z-index: 30;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: #{$alpha-leading * 2}px;
+        height: #{$alpha-leading * 2}px;
+        color: palette(color-alpha);
+        transform: translateY(-50%);
+    }
+
+    .c-carousel__arrow--right {
+        left: auto;
+        right: -#{$alpha-leading * 2}px;
+    }
+
+    .c-carousel__arrow-symbol {
+        margin: 0 auto;
+    }
+
+// Carousel nav
+
 .c-carousel-nav {
     position: relative;
-    // position: absolute;
-    // left: -#{$columns-gutter * 1.5}px;
     z-index: 20;
-    // @include margin-bottom($alpha-leading / 2);
 }
 
     .c-carousel-nav-list {
         display: flex;
         justify-content: flex-end;
         font-family: $beta-font-family;
-        // @include margin-tb($alpha-leading / -2,$alpha-leading / -2);
-        @include margin-lr($columns-gutter / -3,$columns-gutter / -3);
         @include ms-1;
+        @include margin-lr($columns-gutter / -3,$columns-gutter / -3);
+
+        // design 1
+        // @include margin-tb($alpha-leading / -2,$alpha-leading / -2);
     }
 
     .c-carousel-nav-list__item {
@@ -69,15 +93,17 @@
         cursor: pointer;
         color: palette(color-neutral);
         transition: all $animation-duration-alpha $animation-easing-alpha;
+        text-align: center;
+        border-radius: 100%;
+
+        // design 1
         // width: #{$columns-gutter * .5}px;
         // height: #{$columns-gutter * .5}px;
         // border: 2px solid palette(color-neutral,xx-light);
         // text-indent: -9999px;
         // @include margin-lr($columns-gutter / 4,$columns-gutter / 4);
 
-        text-align: center;
-        border-radius: 100%;
-
+        // design 2
         width: #{$columns-gutter * 1.25}px;
         height: #{$columns-gutter * 1.25}px;
 
@@ -90,42 +116,4 @@
             background-color: palette(color-alpha,light);
             border-color: palette(color-alpha,light);
         }
-    }
-
-.c-carousel-nav__button {
-    // position: absolute;
-    // top: 50%;
-    // left: #{$alpha-leading * .5}px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: #{$alpha-leading * 2}px;
-    height: #{$alpha-leading * 2}px;
-
-    border-radius: 100%;
-    background-color: #fff;
-    color: palette(color-alpha);
-
-    // transform: translateY(-50%);
-    @include box-shadow;
-
-    @include mq(bp3) {
-        width: #{$alpha-leading * 3}px;
-        height: #{$alpha-leading * 3}px;
-        // left: #{$alpha-leading * -1.5}px;
-    }
-}
-
-.c-carousel-nav__button--right {
-    left: auto;
-    right: #{$alpha-leading * .5}px;
-
-    @include mq(bp3) {
-        right: #{$alpha-leading * -1.5}px;
-    }
-}
-
-    .c-carousel-nav__button__symbol {
-        margin: 0 auto;
     }

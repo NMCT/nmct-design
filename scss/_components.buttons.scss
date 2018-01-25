@@ -116,7 +116,7 @@ button::-moz-focus-inner {
 
 .c-button--lg {
     @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
-    @include input-dimensions(ms(-1),1,0,$alpha-leading * 1.05,$alpha-leading * 0.95);
+    @include input-dimensions(ms(0),1,0,$alpha-leading * 1,$alpha-leading * 1);
 }
 
 // Button colors

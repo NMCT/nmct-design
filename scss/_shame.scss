@@ -100,7 +100,7 @@ li {
         }
     // }
 
-    @include mq(bp3) {
+    @include mq(bp5) {
         & + & {
             @include padding-top($alpha-leading * 3);
         }

@@ -75,7 +75,7 @@ section: home
     </div>
 </section>
 {% endcomment %}
-<section class="c-row c-row--lg">
+<section class="c-row c-row--lg c-row--no-overflow">
     <div class="o-container">
         <div class="c-projects">
             <div class="c-projects__header">
@@ -97,38 +97,79 @@ section: home
                             </p>
                         </div>
                     </div>
-                    <div class="o-grid__item u-7-of-12-bp4">
+                    <div class="o-grid__item u-8-of-12-bp4 u-7-of-12-bp6">
                         <div class="c-projects__body-lg">
-                            <div class="c-carousel">
-                                <div class="c-carousel__items">
-                                    <div class="c-carousel__item">
-                                        <a class="c-media c-media--link" href="/blog-detail">
-                                            <picture class="c-media__picture u-mb-epsilon">
-                                                <!-- <img class="c-media__image c-media__image--blazy js-blazy" src="/img/jpg/thumb/{{ item.image }}" data-src="/img/jpg/medium/{{ item.image }}" alt=""> -->
-                                                <img class="c-media__image" src="/img/jpg/large/skateboard.jpg" alt="">
-                                                <button class="c-carousel-nav c-carousel-nav--left">
-                                                    {% include atom.symbol.html value="arrow-left" class="c-carousel-nav__symbol" %}
-                                                </button>
-                                                <button class="c-carousel-nav c-carousel-nav--right">
-                                                    {% include atom.symbol.html value="arrow-right" class="c-carousel-nav__symbol" %}
-                                                </button>
-                                            </picture>
-                                            <div class="c-media__body">
-                                                <div class="c-media__content u-max-width-md">
-                                                    <h2 class="c-media__title u-ms2 u-mb-gamma">
-                                                        Control room for the future
-                                                    </h2>
-                                                    <p class="c-media__text u-mb-gamma">
-                                                        In 4 weken tijd bouwden onze NMCT studenten een prototype “Controlroom of the future” voor de biomassa centrales van Vyncke. Live data visualisatie vanuit Nederland in een Microsoft Hololens applicatie!
-                                                    </p>
-                                                    <p class="c-media__more-link">
-                                                        Bekijk dit project
-                                                    </p>
+                            <div class="c-carousel js-carousel">
+                                <div class="c-carousel__items-holder">
+                                    <div class="c-carousel__items js-carousel-items">
+                                        <div class="c-carousel__item is-selected js-carousel-item">
+                                            <a class="c-media c-media--link" href="/blog-detail">
+                                                <picture class="c-media__picture u-mb-epsilon">
+                                                    <img class="c-media__image" src="/img/jpg/NMCT-shoot2-16.jpg" alt="">
+                                                </picture>
+                                                <div class="c-media__body">
+                                                    <div class="c-media__content u-max-width-md">
+                                                        <h2 class="c-media__title u-ms2 u-mb-gamma">
+                                                            Control room for the future
+                                                        </h2>
+                                                        <p class="c-media__text u-mb-gamma">
+                                                            In 4 weken tijd bouwden onze NMCT studenten een prototype “Controlroom of the future” voor de biomassa centrales van Vyncke. Live data visualisatie vanuit Nederland in een Microsoft Hololens applicatie!
+                                                        </p>
+                                                        <p class="c-media__more-link">
+                                                            Bekijk dit project
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
+                                            </a>
+                                        </div>
+                                        <div class="c-carousel__item js-carousel-item">
+                                            <a class="c-media c-media--link" href="/blog-detail">
+                                                <picture class="c-media__picture u-mb-epsilon">
+                                                    <img class="c-media__image" src="/img/jpg/large/skateboard.jpg" alt="">
+                                                </picture>
+                                                <div class="c-media__body">
+                                                    <div class="c-media__content u-max-width-md">
+                                                        <h2 class="c-media__title u-ms2 u-mb-gamma">
+                                                            Control room for the future
+                                                        </h2>
+                                                        <p class="c-media__text u-mb-gamma">
+                                                            In 4 weken tijd bouwden onze NMCT studenten een prototype “Controlroom of the future” voor de biomassa centrales van Vyncke. Live data visualisatie vanuit Nederland in een Microsoft Hololens applicatie!
+                                                        </p>
+                                                        <p class="c-media__more-link">
+                                                            Bekijk dit project
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="c-carousel__item js-carousel-item">
+                                            <a class="c-media c-media--link" href="/blog-detail">
+                                                <picture class="c-media__picture u-mb-epsilon">
+                                                    <img class="c-media__image" src="/img/jpg/NMCT-shoot2-146.jpg" alt="">
+                                                </picture>
+                                                <div class="c-media__body">
+                                                    <div class="c-media__content u-max-width-md">
+                                                        <h2 class="c-media__title u-ms2 u-mb-gamma">
+                                                            Control room for the future
+                                                        </h2>
+                                                        <p class="c-media__text u-mb-gamma">
+                                                            In 4 weken tijd bouwden onze NMCT studenten een prototype “Controlroom of the future” voor de biomassa centrales van Vyncke. Live data visualisatie vanuit Nederland in een Microsoft Hololens applicatie!
+                                                        </p>
+                                                        <p class="c-media__more-link">
+                                                            Bekijk dit project
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
+                                <button class="c-carousel-nav c-carousel-nav--left">
+                                    {% include atom.symbol.html value="arrow-left" class="c-carousel-nav__symbol" %}
+                                </button>
+                                <button class="c-carousel-nav c-carousel-nav--right">
+                                    {% include atom.symbol.html value="arrow-right" class="c-carousel-nav__symbol" %}
+                                </button>
                             </div>
 
                             {% comment %}

@@ -50,10 +50,16 @@
 
     .c-media__meta {
         font-family: $beta-font-family;
+        text-transform: uppercase;
     }
 
     .c-media__more-link {
-        text-decoration: underline;
+        display: inline-block;
+        position: relative;
+        border-bottom: 1px solid palette(color-alpha);
+        font-family: $beta-font-family;
+        text-transform: uppercase;
+        @include ms-1;
     }
 
     .c-media__title,

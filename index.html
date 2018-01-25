@@ -100,6 +100,27 @@ section: home
                     <div class="o-grid__item u-8-of-12-bp4 u-7-of-12-bp6">
                         <div class="c-projects__body-lg">
                             <div class="c-carousel js-carousel">
+                                <div class="c-carousel-nav" aria-hidden="true">
+                                    <ol class="o-list c-carousel-nav-list">
+                                        <li class="c-carousel-nav-list__item is-selected js-carousel-nav-list-item">
+                                            1
+                                        </li>
+                                        <li class="c-carousel-nav-list__item js-carousel-nav-list-item">
+                                            2
+                                        </li>
+                                        <li class="c-carousel-nav-list__item js-carousel-nav-list-item">
+                                            3
+                                        </li>
+                                    </ol>
+                                    {% comment %}
+                                    <button class="c-carousel-nav__button c-carousel-nav__button--left">
+                                        {% include atom.symbol.html value="arrow-left" class="c-carousel-nav__button__symbol" %}
+                                    </button>
+                                    <button class="c-carousel-nav__button c-carousel-nav__button--right">
+                                        {% include atom.symbol.html value="arrow-right" class="c-carousel-nav__button__symbol" %}
+                                    </button>
+                                    {% endcomment %}
+                                </div>
                                 <div class="c-carousel__items-holder">
                                     <div class="c-carousel__items js-carousel-items">
                                         <div class="c-carousel__item is-selected js-carousel-item">
@@ -164,38 +185,7 @@ section: home
                                         </div>
                                     </div>
                                 </div>
-                                <button class="c-carousel-nav c-carousel-nav--left">
-                                    {% include atom.symbol.html value="arrow-left" class="c-carousel-nav__symbol" %}
-                                </button>
-                                <button class="c-carousel-nav c-carousel-nav--right">
-                                    {% include atom.symbol.html value="arrow-right" class="c-carousel-nav__symbol" %}
-                                </button>
                             </div>
-
-                            {% comment %}
-                            <div class="c-video-player">
-                                <img src="/img/jpg/large/skateboard.jpg" alt="">
-                                {% comment %}
-                                <div class="c-video-player__header">
-                                    <h2 class="c-video-player__title">
-                                        Control room for the future
-                                    </h2>
-                                </div>
-                                {% endcomment %}
-                            </div>
-                            <div class="c-projects__project-content">
-                                <div class="u-max-width-md s-content">
-                                    <h2 class="u-ms1 u-mb-gamma">
-                                        Control room for the future
-                                    </h2>
-                                    <div class="u-max-width-optimal">
-                                        <p>
-                                            In 4 weken tijd bouwden onze NMCT studenten een prototype “Controlroom of the future” voor de biomassa centrales van Vyncke. Live data visualisatie vanuit Nederland in een Microsoft Hololens applicatie!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            {% endcomment %}
                         </div>
                     </div>
                 </div>

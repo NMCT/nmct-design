@@ -47,21 +47,34 @@
 
     .c-carousel__arrow {
         position: absolute;
-        top: 50%;
-        left: -#{$alpha-leading * 2}px;
+        top: -#{$alpha-leading / 3}px;
+        left: -#{$columns-gutter / 1.5}px;
         z-index: 30;
         display: flex;
         align-items: center;
         justify-content: center;
         width: #{$alpha-leading * 2}px;
         height: #{$alpha-leading * 2}px;
+        background-color: #fff;
         color: palette(color-alpha);
-        transform: translateY(-50%);
+        border-radius: 100%;
+
+        // @include box-shadow;
+
+        @include mq(bp3) {
+            top: 50%;
+            transform: translateY(-50%);
+            left: -#{$columns-gutter * 2}px;
+        }
     }
 
     .c-carousel__arrow--right {
         left: auto;
-        right: -#{$alpha-leading * 2}px;
+        right: -#{$columns-gutter / 1.5}px;
+
+        @include mq(bp3) {
+            right: -#{$alpha-leading * 2}px;
+        }
     }
 
     .c-carousel__arrow-symbol {
@@ -77,10 +90,14 @@
 
     .c-carousel-nav-list {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         font-family: $beta-font-family;
         @include ms-1;
         @include margin-lr($columns-gutter / -3,$columns-gutter / -3);
+
+        @include mq(bp3) {
+            justify-content: flex-end;
+        }
 
         // design 1
         // @include margin-tb($alpha-leading / -2,$alpha-leading / -2);

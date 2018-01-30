@@ -64,11 +64,10 @@
 }
 
     .c-video-play-button__symbol {
+        display: block;
         fill: palette(color-alpha,light);
         width: $alpha-leading * 1.5px;
         height: $alpha-leading * 1.5px;
-        margin: 0 auto;
-        // margin-left: 3px;
     }
 
     .c-video-player__video {

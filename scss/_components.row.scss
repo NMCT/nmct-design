@@ -89,9 +89,13 @@
 .c-row--404 {
     background-color: palette(color-alpha);
     color: white;
-    min-height: 100vh;
+    min-height: calc(100vh - #{$alpha-leading * 5}px);
     display: flex;
     align-items: center;
+
+    @include mq(bp3) {
+        min-height: calc(100vh - #{$alpha-leading * 7}px);
+    }
 }
 
 .c-row--no-overflow {

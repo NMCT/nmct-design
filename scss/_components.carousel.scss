@@ -32,7 +32,7 @@
         transition: transform $animation-duration-gamma $animation-easing-alpha;
 
         @include mq(#{map-get($breakpoints,bp6)  + ($columns-gutter * 4) + 20px}) {
-            width: calc((#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12*7) - #{$columns-gutter * 2}px);
+            width: calc((#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12*7) - #{$columns-gutter * 4}px);
         }
     }
 
@@ -41,7 +41,7 @@
         opacity: .75;
         transition: opacity $animation-duration-alpha $animation-easing-alpha;
         // cursor: pointer;
-        @include padding-lr($columns-gutter,$columns-gutter);
+        @include margin-lr($columns-gutter,$columns-gutter);
 
         &:hover,
         &.is-selected {

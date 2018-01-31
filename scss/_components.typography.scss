@@ -5,7 +5,8 @@
 */
 
 .c-type-lead {
-    color: palette(color-neutral);
+    // color: palette(color-neutral);
+    font-weight: $delta-font-weight;
     @include ms2;
 }
 

@@ -13,6 +13,14 @@
     position: relative;
 }
 
+    .c-carousel-holder {
+        overflow: hidden;
+
+        @include mq(#{map-get($breakpoints,bp6)  + ($columns-gutter * 4) + 20px}) {
+            width: calc(((#{map-get($breakpoints,bp6) + $columns-gutter * 2 * 2}/12*7) + ((100vw - #{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2})/2)) + #{(map-get($breakpoints,bp6) + $columns-gutter * 2 * 2)/12});
+        }
+    }
+
     .c-carousel__items-holder {
         position: relative;
         z-index: 10;
@@ -39,7 +47,7 @@
     .c-carousel__items {
         display: flex;
         align-items: baseline;
-        // transform: translateX(-100%); //Use this to move the carousel left or right
+        transform: translateX(-100%); //Use this to move the carousel left or right
         transition: transform $animation-duration-gamma $animation-easing-alpha;
 
         @include mq(#{map-get($breakpoints,bp6)  + ($columns-gutter * 4) + 20px}) {
@@ -74,13 +82,15 @@
         justify-content: center;
         width: #{$alpha-leading * 2}px;
         height: #{$alpha-leading * 2}px;
-        background-color: #fff;
+        // border-radius: 100%;
+        // background-color: #fff;
         color: palette(color-alpha);
-        border-radius: 100%;
         transition: color $animation-duration-alpha $animation-easing-alpha;
 
-        &:hover {
+        &:hover,
+        &:focus {
             color: palette(color-alpha,light);
+            outline: none;
         }
 
         &.is-disabled {

@@ -222,6 +222,13 @@ li {
     }
 }
 
+.c-map {
+    width: 100%;
+    height: 0;
+    background-color: palette(color-neutral,xxx-light);
+    height: 75vh;
+}
+
 ::-webkit-input-placeholder {
     font-family: $placeholder-font-family;
     font-style: $placeholder-font-style;

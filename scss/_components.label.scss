@@ -6,7 +6,10 @@
 
 // Labels
 .c-label {
-    color: palette(color-neutral, x-dark);
+    text-transform: uppercase;
+    font-family: $beta-font-family;
+    font-weight: $alpha-font-weight;
+    color: palette(color-neutral);
     @include text-dimensions(ms(-1),1);
 
     &.has-error {

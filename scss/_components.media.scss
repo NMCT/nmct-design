@@ -19,7 +19,6 @@
 
     .c-media__body {
         flex-grow: 1;
-        // background-color: palette(color-neutral,xxxxx-light);
     }
 
     .c-media__content {
@@ -29,10 +28,6 @@
 
     .c-media__image-link {
         display: block;
-    }
-
-    .c-media__intro {
-        color: $body-color;
     }
 
     .c-media__title {

@@ -86,14 +86,13 @@
     border-bottom: $alpha-leading * .25px solid palette(color-alpha);
 }
 
-.c-row--map {
-    @include padding-lr( 0 );
-    @include padding-tb( 0 );
-}
-
-.c-row--carousel {
-    overflow: hidden;
-    box-sizing: content-box;
+.c-row--404 {
+    background-color: palette(color-alpha);
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .c-row--no-overflow {

@@ -19,3 +19,13 @@
         text-decoration: underline;
     }
 }
+
+.s-content-white {
+    a {
+        text-decoration: underline;
+        &,
+        &:visited {
+            color: white;
+        }
+    }
+}

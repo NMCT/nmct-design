@@ -26,6 +26,12 @@ $logo-box-width:     $logo-box-height * $logo-box-ratio;
     .c-header & {
         margin-bottom: 0;
     }
+
+    .c-row--404 & {
+        position: absolute;
+        top: #{$columns-gutter}px;
+        left: #{$columns-gutter}px;
+    }
 }
 
     .c-logo__link,

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+{% include generic.head.html %}
+
+<body class="js-page">
+
+    <!-- Deprecated browser alert -->
+    {% include components.browser-alert.html %}
+    <!-- End deprecated browser alert -->
+
+    {{ content }}
+
+    <!-- Footer javascript -->
+    {% include generic.javascript.html %}
+    <!-- End footer javascript -->
+
+</body>
+</html>

@@ -19,7 +19,8 @@
         overflow: hidden;
         @include margin-lr($columns-gutter * -1);
 
-        @include mq(#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}) {
+        // 20px = scrollbar safe zone
+        @include mq(#{map-get($breakpoints,bp6)  + ($columns-gutter * 4) + 20px}) {
             width: calc(((#{map-get($breakpoints,bp6) + $columns-gutter * 2 * 2}/12*7) + ((100vw - #{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2})/2)) + #{(map-get($breakpoints,bp6) + $columns-gutter * 2 * 2)/12 - $columns-gutter});
         }
     }
@@ -30,8 +31,8 @@
         // transform: translateX(-100%); //Use this to move the carousel left or right
         transition: transform $animation-duration-gamma $animation-easing-alpha;
 
-        @include mq(#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}) {
-            width: calc((#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12*7) - 48px);
+        @include mq(#{map-get($breakpoints,bp6)  + ($columns-gutter * 4) + 20px}) {
+            width: calc((#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12*7) - #{$columns-gutter * 2}px);
         }
     }
 
@@ -39,6 +40,7 @@
         min-width: 100%;
         opacity: .75;
         transition: opacity $animation-duration-alpha $animation-easing-alpha;
+        // cursor: pointer;
         @include padding-lr($columns-gutter,$columns-gutter);
 
         &:hover,
@@ -81,7 +83,7 @@
     }
 
     .c-carousel__arrow-symbol {
-        margin: 0 auto;
+        display: block;
     }
 
 // Carousel nav

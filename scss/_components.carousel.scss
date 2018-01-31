@@ -32,20 +32,24 @@
         transition: transform $animation-duration-gamma $animation-easing-alpha;
 
         @include mq(#{map-get($breakpoints,bp6)  + ($columns-gutter * 4) + 20px}) {
-            width: calc((#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12*7) - #{$columns-gutter * 4}px);
+            width: calc((#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12*7) - #{$columns-gutter * 2}px);
         }
     }
 
     .c-carousel__item {
         min-width: 100%;
-        opacity: .75;
+        opacity: .5;
         transition: opacity $animation-duration-alpha $animation-easing-alpha;
-        // cursor: pointer;
-        @include margin-lr($columns-gutter,$columns-gutter);
+        @include padding-lr($columns-gutter,$columns-gutter);
 
-        &:hover,
         &.is-selected {
             opacity: 1;
+        }
+
+        &.is-not-selected {
+            .c-media--link {
+                cursor: default;
+            }
         }
     }
 

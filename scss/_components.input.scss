@@ -33,7 +33,7 @@
 
     &:focus {
         color: palette(color-neutral,xx-dark);
-        box-shadow: 0 0 0 1px palette(color-alpha,light), 0 0 5px palette(color-alpha,light);
+        box-shadow: 0 0 0 1px palette(color-neutral,x-light), 0 0 5px rgba(palette(color-neutral,xxxx-dark),.25);
     }
 
     .has-error & {

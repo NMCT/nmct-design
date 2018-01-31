@@ -79,8 +79,10 @@
 
 .c-alert-inline {
     display: block;
-    text-align: right;
-    @include text-dimensions(ms(-2),1);
+    font-family: $alpha-font-family;
+    text-transform: none;
+    @include margin-top($alpha-leading * .25);
+    @include text-dimensions(ms(-1),1);
 }
 
 .c-alert-inline--error {

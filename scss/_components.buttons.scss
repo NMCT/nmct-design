@@ -47,7 +47,7 @@ button::-moz-focus-inner {
     touch-action: manipulation; /* [1] */
     background-image: none; /* [2] */
     white-space: nowrap; /* [3] */
-    border-radius: $radius;
+    border-radius: 0;
     border-width: 0;
     transition-duration: $animation-duration-alpha;
     transition-timing-function: $animation-easing-alpha;
@@ -115,13 +115,13 @@ button::-moz-focus-inner {
 }
 
 .c-button--lg {
-    @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
-    @include input-dimensions(ms(0),1,0,$alpha-leading * 1,$alpha-leading * 1);
+    @include padding-lr($columns-gutter * 1.5,$columns-gutter * 1.5);
+    @include input-dimensions(ms(0),1,0,$alpha-leading * .7,$alpha-leading * .8);
 }
 
 // Button colors
 
-.c-button--beta {
+.c-button--alpha {
     background-color: palette(color-alpha);
     border-color: palette(color-beta,light);
 
@@ -133,12 +133,12 @@ button::-moz-focus-inner {
 
     &:hover,
     &:focus {
-        background-color: palette(color-alpha);
+        background-color: palette(color-alpha,light);
         color: palette(color-neutral,xxxxx-light);
     }
 
     &:active {
-        background-color: palette(color-beta);
+        background-color: palette(color-alpha);
     }
 
 }

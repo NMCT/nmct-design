@@ -19,30 +19,29 @@
     -webkit-font-smoothing: antialiased; /* [2] */
     -moz-osx-font-smoothing: grayscale; /* [2] */
     background-color: palette(color-neutral,xxxxx-light);
-    // border-radius: $radius;
-    //border: $border-width $border-style palette(color-neutral);
+    border-radius: 0;
     border: 0;
-    color: palette(color-neutral,dark);
+    color: palette(color-neutral,xx-dark);
     font-family: $alpha-font-family;
+    font-weight: $alpha-font-weight;
     margin: 0;
     width: 100%;
     display: block;
     outline: none;
     line-height: normal;
-    box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxx-dark),.1);
+    box-shadow: 0 0 0 1px palette(color-neutral,xx-light);
 
     &:focus {
         color: palette(color-neutral,xx-dark);
-        border-color: palette(color-alpha);
-        //box-shadow: 0 0 2px palette(color-alpha,x-light);
+        box-shadow: 0 0 0 1px palette(color-alpha,light), 0 0 5px palette(color-alpha,light);
     }
 
-    &.has-error {
-        border: 1px solid palette(color-error);
+    .has-error & {
+        box-shadow: 0 0 0 1px palette(color-error,light), 0 0 5px palette(color-error,light);
+        color: palette(color-error,light);
 
         &:focus {
-            border-color: palette(color-error);
-            //box-shadow: 0 0 2px palette(color-error,x-light);
+            box-shadow: 0 0 0 1px palette(color-error,light), 0 0 5px palette(color-error,light);
         }
     }
 }
@@ -62,15 +61,18 @@
 
 .c-input-text--md {
     // border-radius: $radius-md;
-    @include padding-lr($columns-gutter,$columns-gutter);
-    @include input-dimensions(ms(-1),1,0,.75,.75);
+    @include padding-lr($columns-gutter * .75,$columns-gutter * .75);
+    @include input-dimensions(ms(-1),1,0,$alpha-leading * .45,$alpha-leading * .55);
+
+    .c-label & {
+        @include margin-top($alpha-leading * .25);
+    }
 }
 
 .c-input-text--lg {
     // border-radius: $radius-lg;
-    @include padding-lr($columns-gutter / 2,$columns-gutter / 2);
-    @include padding-tb($columns-gutter / 2,$columns-gutter / 2);
-    // @include input-dimensions($alpha-font-size,1,0,1.125,1.125);
+    @include padding-lr($columns-gutter,$columns-gutter);
+    @include input-dimensions(ms(0),1,0,$alpha-leading * .5,$alpha-leading * .5);
 }
 
 // rounded

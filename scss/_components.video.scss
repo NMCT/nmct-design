@@ -75,6 +75,25 @@
         width: 100%;
         position: relative;
         z-index: 10;
+
+        &::-webkit-media-controls-enclosure {
+            overflow:hidden;
+            // position: absolute;
+        }
+
+        &::-webkit-media-controls-panel {
+            // display: flex !important;
+            // opacity: 1 !important;
+        }
+
+        &::-internal-media-controls-download-button {
+            display:none;
+            opacity: 0;
+        }
+        &::-webkit-media-controls-panel {
+            width: calc(100% + 30px);
+            overflow: hidden;
+        }
     }
 
     .c-video-player-controls {

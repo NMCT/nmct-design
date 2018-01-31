@@ -30,6 +30,12 @@
         display: block;
     }
 
+    .c-media__title,
+    .c-media__text,
+    .c-media__meta {
+        transition: color $animation-duration-alpha $animation-easing-alpha;
+    }
+
     .c-media__title {
         width: 100%;
 
@@ -37,15 +43,40 @@
         .c-media--link:visited & {
             color: palette(color-neutral,xxxx-dark);
         }
+
+        .c-media--link:hover &,
+        .c-media--link:focus & {
+            color: $link-color;
+
+            // override this when it's inside the carousel on the homepage
+            .c-carousel__item.is-not-selected & {
+                color: palette(color-neutral,xxxx-dark);
+            }
+        }
     }
 
     .c-media__text {
         color: palette(color-neutral);
+
+        .c-media--link:hover &,
+        .c-media--link:focus & {
+            color: $link-color;
+        }
+
+        // override this when it's inside the carousel on the homepage
+        .c-carousel__item.is-not-selected & {
+            color: palette(color-neutral);
+        }
     }
 
     .c-media__meta {
         font-family: $beta-font-family;
         text-transform: uppercase;
+
+        .c-media--link:hover &,
+        .c-media--link:focus & {
+            color: $link-color;
+        }
     }
 
     .c-media__more-link {
@@ -55,17 +86,6 @@
         font-family: $beta-font-family;
         text-transform: uppercase;
         @include ms-1;
-    }
-
-    .c-media__title,
-    .c-media__text,
-    .c-media__meta {
-        transition: color $animation-duration-alpha $animation-easing-alpha;
-
-        .c-media--link:hover &,
-        .c-media--link:focus & {
-            color: $link-color;
-        }
     }
 
     .c-media__picture {
@@ -84,6 +104,10 @@
 
         .c-media--link:hover & {
            opacity: .75;
+
+           .c-carousel__item.is-not-selected & {
+               opacity: 1;
+           }
         }
     }
 

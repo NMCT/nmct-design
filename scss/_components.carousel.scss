@@ -38,8 +38,10 @@
     .c-carousel__item {
         min-width: 100%;
         opacity: .75;
+        transition: opacity $animation-duration-alpha $animation-easing-alpha;
         @include padding-lr($columns-gutter,$columns-gutter);
 
+        &:hover,
         &.is-selected {
             opacity: 1;
         }

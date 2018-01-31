@@ -65,9 +65,14 @@
         background-color: #fff;
         color: palette(color-alpha);
         border-radius: 100%;
+        transition: color $animation-duration-alpha $animation-easing-alpha;
+
+        &:hover {
+            color: palette(color-alpha,light);
+        }
 
         &.is-disabled {
-            color: palette( color-neutral, xxx-light );
+            color: palette(color-neutral,xx-light);
         }
 
         @include mq(bp3) {

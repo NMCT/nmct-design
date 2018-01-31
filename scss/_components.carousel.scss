@@ -66,6 +66,10 @@
         color: palette(color-alpha);
         border-radius: 100%;
 
+        &.is-disabled {
+            color: palette( color-neutral, xxx-light );
+        }
+
         @include mq(bp3) {
             top: 50%;
             transform: translateY(-50%);

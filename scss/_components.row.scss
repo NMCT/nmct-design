@@ -89,10 +89,9 @@
 .c-row--404 {
     background-color: palette(color-alpha);
     color: white;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .c-row--no-overflow {

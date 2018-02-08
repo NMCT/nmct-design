@@ -60,7 +60,7 @@
         display: block;
         text-decoration: none;
         font-weight: $delta-font-weight;
-        @include text-dimensions($alpha-font-size,1);
+        @include text-dimensions(ms(-1),1);
 
         &,
         &:visited {
@@ -74,10 +74,10 @@
             left: 0;
             height: 2px;
             width: 0;
-            opacity: 0;
+            // opacity: 0;
             background-color: rgba(palette(color-neutral,xxxxx-light),1);
-            transition: all $animation-duration-alpha $animation-easing-alpha;
-            transition-property: background, opacity, width;
+            transition: all $animation-duration-beta $animation-easing-alpha;
+            transition-property: width;
         }
 
         &:hover,

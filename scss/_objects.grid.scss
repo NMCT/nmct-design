@@ -14,6 +14,14 @@
 
 .o-grid {
     @include clearfix;
+
+    &.o-flex {
+        &:before,
+        &:after {
+            flex-basis: 0;
+            order: 1;
+        }
+    }
 }
 
 // Default gutter

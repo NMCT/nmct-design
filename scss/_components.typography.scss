@@ -19,49 +19,52 @@
 .c-type-intro {
     font-weight: $delta-font-weight;
     // font-weight: $jota-font-weight;
-    // font-weight: $beta-font-weight;
+    // font-weight: $gamma-font-weight;
     @include ms2;
 
     a {
         position: relative;
         display: inline-block;
+        // text-decoration: underline;
 
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 2px;
-            width: 100%;
-            background-color: rgba(palette(color-neutral,xxxx-dark),.5);
-            transition: background $animation-duration-alpha $animation-easing-alpha;
-        }
+        // &:before {
+        //     // content: '';
+        //     position: absolute;
+        //     bottom: 2px;
+        //     left: 0;
+        //     height: 2px;
+        //     width: 100%;
+        //     // background-color: rgba(palette(color-neutral,xxxx-dark),.5);
+        //     background-color: rgba(palette(color-alpha,light),1);
+        //     transition: background $animation-duration-alpha $animation-easing-alpha;
+        // }
 
         &,
         &:visited {
-            color: palette(color-neutral,xxxx-dark);
+            // color: palette(color-neutral,xxxx-dark);
+            @include link-underline(white, palette(color-neutral,xxxx-dark), palette(color-alpha,light), palette(color-alpha), 2px);
 
             .c-row--intro &,
             .c-row--alpha & {
                 color: palette(color-neutral,xxxxx-light);
 
-                &:after {
-                    background-color: rgba(palette(color-neutral,xxxxx-light),.5);
-                }
+                // &:after {
+                //     background-color: rgba(palette(color-neutral,xxxxx-light),.5);
+                // }
             }
         }
 
         &:hover {
             text-decoration: none;
 
-            &:after {
-                background-color: rgba(palette(color-neutral,xxxx-dark),1);
-
-                .c-row--intro &,
-                .c-row--alpha & {
-                    background-color: rgba(palette(color-neutral,xxxxx-light),1);
-                }
-            }
+            // &:after {
+            //     background-color: rgba(palette(color-neutral,xxxx-dark),1);
+            //
+            //     .c-row--intro &,
+            //     .c-row--alpha & {
+            //         background-color: rgba(palette(color-neutral,xxxxx-light),1);
+            //     }
+            // }
         }
     }
 
@@ -70,7 +73,7 @@
     }
 
     @include mq(bp4) {
-        @include ms7;
+        @include ms8;
     }
 }
 

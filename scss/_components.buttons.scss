@@ -111,7 +111,7 @@ button::-moz-focus-inner {
 
 .c-button--md {
     @include padding-lr($columns-gutter * 1.25,$columns-gutter * 1.25);
-    @include input-dimensions(ms(0),1,0,$alpha-leading / 2.1,$alpha-leading / 1.9);
+    @include input-dimensions(ms(-1),1,0,$alpha-leading / 2.1,$alpha-leading / 1.9);
 }
 
 .c-button--lg {

@@ -4,6 +4,10 @@
     Default markup for typographic elements
 */
 
+* {
+    font-feature-settings: "liga" 1, "zero" 1, "calt" 1, "ss01" 1;
+}
+
 h1 {
     font-family: $h1-font-family;
     font-weight: $h1-font-weight;

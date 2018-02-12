@@ -18,6 +18,8 @@
 
 .c-type-intro {
     font-weight: $delta-font-weight;
+    // font-weight: $jota-font-weight;
+    // font-weight: $gamma-font-weight;
     @include ms2;
 
     a {
@@ -68,7 +70,7 @@
     }
 
     @include mq(bp4) {
-        @include ms7;
+        @include ms8;
     }
 }
 
@@ -125,3 +127,14 @@
     .c-type-svg__path {
         fill: palette(color-neutral,xxx-light);
     }
+
+.c-type-title-lg {
+    @include mq(bp3) {
+        // font-weight: $jota-font-weight;
+        @include ms10;
+    }
+
+    @include mq(bp5) {
+        @include ms12;
+    }
+}

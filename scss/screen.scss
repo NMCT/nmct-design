@@ -21,7 +21,6 @@
 @charset "utf-8";
 // scss-lint:enable StringQuotes
 
-
 // Modular scale
 @import 'modularscale';
 
@@ -44,6 +43,7 @@
 @import '../vendor/chopstick-sass/scss/generic.box-sizing';
 
 /* Elements */
+@import 'scss/elements.fonts';
 //@import '../vendor/chopstick-sass/scss/elements.page';
 @import 'scss/elements.page';
 //@import '../vendor/chopstick-sass/scss/elements.typography';

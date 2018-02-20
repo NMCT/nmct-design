@@ -12,14 +12,22 @@
 
 @font-face {
     font-family: 'Inter UI';
-    font-weight: 600;
-    src: url('../fonts/Inter-UI-Medium.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    src: url('../fonts/Inter-UI-Regularitalic.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Inter UI';
     font-weight: 700;
     src: url('../fonts/Inter-UI-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter UI';
+    font-weight: 700;
+    font-style: italic;
+    src: url('../fonts/Inter-UI-Bolditalic.woff') format('woff');
 }
 
 @font-face {

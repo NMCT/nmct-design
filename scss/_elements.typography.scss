@@ -83,11 +83,19 @@ li {
 
 blockquote {
     font-style: $blockquote-font-style;
-    @include text-dimensions($blockquote-font-size,$blockquote-line-height);
+    font-weight: $delta-font-weight;
+    padding-left: 0;
+    @include ms2;
     @include margin-bottom($blockquote-margin-bottom);
-    > p {
+
+    > * {
         font-size: inherit;
         line-height: inherit;
+    }
+
+    @include mq(bp3) {
+        @include ms5;
+        @include padding-left($columns-gutter * 2);
     }
 }
 

@@ -141,7 +141,7 @@ $modularscale: (
 // $alpha-font-family: 'acumin-pro', sans-serif !default;
 $alpha-font-family: 'Inter UI', sans-serif !default;
 // $alpha-font-family: 'aktiv-grotesk', sans-serif !default;
-$beta-font-family: 'roboto-mono', monospace !default;
+$beta-font-family: 'Roboto Mono', monospace !default;
 
 $alpha-font-size: ms(0) !default;
 
@@ -255,7 +255,7 @@ $html-responsive-font-size: false !default;
 $html-responsive-font-breakpoint: bp5 !default;
 $html-responsive-font-magnification: 112.5% !default;
 
-$html-background-color: palette(color-alpha,base) !default;
+$html-background-color: palette(color-neutral, xx-dark) !default;
 $body-color: palette(color-neutral,xx-dark) !default;
 
 $body-font-smoothing: true !default;

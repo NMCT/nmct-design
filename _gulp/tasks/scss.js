@@ -33,7 +33,7 @@ gulp.task('scss', ['dependencies'], function () {
         .pipe(gulp.dest(config.jekyllCssDes))
         .pipe(browserSync.stream({match: '**/*.css'}))
         .pipe(gulp.dest(config.cssDest))
-        .pipe(gulpCopy('/Applications/MAMP/htdocs/dev/wp-content/themes/nmct/dist/style/', {
+        .pipe(gulpCopy('/Users/martijnloth/Sites/nmct-website/wp-content/themes/nmct/dist/style/', {
             prefix: 1
         }))
 });

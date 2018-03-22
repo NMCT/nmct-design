@@ -23,6 +23,24 @@
         color: palette(color-alpha);
         @include padding-tb($alpha-leading,$alpha-leading);
     }
+
+    // p {
+    //     // In case images are added with the Wordpress WYSIWIG editor
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: flex-end;
+    //     flex-wrap: wrap;
+
+    //     & > img {
+    //         width: 100%;
+    //         margin-bottom: #{ $media-object-gutter / 2}px;
+
+    //         @include mq(bp2) {
+    //             width: auto;
+    //             margin: 0 auto #{ $media-object-gutter / 2}px;
+    //         }
+    //     }
+    // }
 }
 
 .s-content-white {

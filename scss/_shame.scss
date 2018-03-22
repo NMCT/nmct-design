@@ -229,6 +229,10 @@ li {
     height: 75vh;
 }
 
+.c-map--contained {
+    height: 40vh;
+}
+
 ::-webkit-input-placeholder {
     font-family: $placeholder-font-family;
     font-style: $placeholder-font-style;

@@ -6,13 +6,15 @@
 .c-module {
     position: relative;
     width: 100%;
-    background: palette(color-neutral, xxxxx-light);
-    border-bottom: $alpha-leading * .25px solid transparent;
-    box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxx-dark),.05), 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     // align-items: flex-start;
-    flex-grow: 1;
+    
+    border-bottom: $alpha-leading * .25px solid transparent;
+    background: palette(color-neutral, xxxxx-light);
+    box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxx-dark),.05), 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
+
     @include padding-lr($columns-gutter / 2, $columns-gutter / 2);
     @include padding-tb($alpha-leading / 2, $alpha-leading / 2);
 
@@ -39,10 +41,18 @@
     &--project {
         border-color: palette(color-project);
     }
+
+    &:hover {
+        text-decoration: none;
+        opacity: .8;
+    }
 }
 
     .c-module__title {
         width: 100%;
+
+        color: $body-color;
+
         @include ms-1;
         @include margin-bottom($alpha-leading * .5);
     }

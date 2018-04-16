@@ -9,8 +9,6 @@
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    // align-items: flex-start;
-
     border-bottom: $alpha-leading * .25px solid transparent;
     background: palette(color-neutral, xxxxx-light);
     box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxx-dark),.05), 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
@@ -41,21 +39,33 @@
     &--project {
         border-color: palette(color-project);
     }
-
-    &:hover {
-        text-decoration: none;
-        opacity: .8;
-    }
 }
 
 .c-module--link {
 
     &:hover {
         text-decoration: none;
-        transform: translate(-2px, -2px);
+        // transform: translate(-2px, -2px);
 
-        .c-module__title {
-            color: palette(color-alpha);
+        .c-module__title,
+        .c-module__tags {
+            color: white;
+        }
+
+        &.c-module--code {
+            background-color: palette(color-code);
+        }
+        &.c-module--connect {
+            background-color: palette(color-connect);
+        }
+        &.c-module--create {
+            background-color: palette(color-create);
+        }
+        &.c-module--project {
+            background-color: palette(color-project);
+        }
+        &.c-module--inform {
+            background-color: palette(color-inform);
         }
     }
 }

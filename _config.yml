@@ -18,6 +18,8 @@ navigation:
     url: 'programma'
   - title: Nieuws
     url: 'nieuws'
+  - title: 'Afstandsonderwijs'
+    url: 'at-home'
   - title: Contact
     url: 'contact'
 

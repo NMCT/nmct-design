@@ -126,6 +126,17 @@
         fill: palette(color-neutral,xxx-light);
     }
 
+.c-type-title-md {
+    @include mq(bp3) {
+        // font-weight: $jota-font-weight;
+        @include ms6;
+    }
+
+    @include mq(bp5) {
+        @include ms8;
+    }
+}
+
 .c-type-title-lg {
     @include mq(bp3) {
         // font-weight: $jota-font-weight;

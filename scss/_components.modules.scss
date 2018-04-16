@@ -10,7 +10,7 @@
     flex-grow: 1;
     flex-wrap: wrap;
     // align-items: flex-start;
-    
+
     border-bottom: $alpha-leading * .25px solid transparent;
     background: palette(color-neutral, xxxxx-light);
     box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxx-dark),.05), 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
@@ -48,11 +48,26 @@
     }
 }
 
+.c-module--link {
+
+    &:hover {
+        text-decoration: none;
+        transform: translate(-2px, -2px);
+
+        .c-module__title {
+            color: palette(color-alpha);
+        }
+    }
+}
+
+    .c-module__title,
+    .c-module__tags {
+        transition: all $animation-duration-alpha $animation-easing-alpha;
+    }
+
     .c-module__title {
         width: 100%;
-
         color: $body-color;
-
         @include ms-1;
         @include margin-bottom($alpha-leading * .5);
     }

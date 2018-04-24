@@ -71,15 +71,27 @@
 }
 
     .c-module__title,
-    .c-module__tags {
+    .c-module__tags,
+    .module__points {
         transition: all $animation-duration-alpha $animation-easing-alpha;
     }
 
     .c-module__title {
         width: 100%;
-        color: $body-color;
+        margin-bottom: 0;
+        // color: $body-color;
+        color: palette(color-neutral,xxx-dark);
         @include ms-1;
-        @include margin-bottom($alpha-leading * .5);
+        // @include margin-bottom($alpha-leading * .5);
+    }
+
+    .c-module__points {
+        width: 100%;
+        margin-bottom: 0;
+        color: $body-color;
+        color: palette;
+        // font-family: $beta-font-family;
+        @include ms-2;
     }
 
     .c-module__tags {
@@ -88,5 +100,6 @@
         color: palette(color-neutral);
         font-family: $beta-font-family;
         text-transform: uppercase;
+        @include padding-top($alpha-leading * .5);
         @include ms-2;
     }

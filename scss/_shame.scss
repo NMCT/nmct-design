@@ -253,3 +253,12 @@ li {
     font-weight: $alpha-font-weight;
     color: $placeholder-color;
 }
+
+.c-partner {
+    filter: grayscale( 1 );
+    transition: filter 400ms ease-out;
+
+    &:hover {
+        filter: grayscale( 0 );
+    }
+}

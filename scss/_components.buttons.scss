@@ -116,7 +116,7 @@ button::-moz-focus-inner {
 
 .c-button--lg {
     @include padding-lr($columns-gutter * 1.5,$columns-gutter * 1.5);
-    @include input-dimensions(ms(0),1,0,$alpha-leading * .7,$alpha-leading * .8);
+    @include input-dimensions(ms(0),1,0,$alpha-leading * .75,$alpha-leading * .75);
 }
 
 // Button colors
@@ -166,23 +166,26 @@ button::-moz-focus-inner {
 // special cases
 
 .c-button--header-cta {
-    border: 2px solid white;
-    border-radius: $alpha-leading * 4px;
+    // border-radius: $alpha-leading * 4px;
     z-index: 30;
+    @include box-shadow;
 
     &,
     &:visited {
-        color: palette(color-neutral,xxxxx-light);
+        background-color: palette(color-neutral,xxxxx-light);
+        color: palette(color-alpha);
     }
 
     &:hover,
     &:focus {
-        background-color: palette(color-neutral,xxxxx-light);
+        background-color: rgba(palette(color-neutral,xxxxx-light),.9);
         color: palette(color-alpha);
     }
 
     &:active {
         background-color: palette(color-neutral,xxxxx-light);
+        color: palette(color-alpha);
+        transform: scale(1);
     }
 
     .c-header & {

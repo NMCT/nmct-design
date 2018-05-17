@@ -279,4 +279,16 @@ $choice-column-border-style: solid;
         height: #{$alpha-leading * .5}px;
         border-radius: 100%;
         @include margin-right($columns-gutter * .25);
-    }
+	}
+	
+.c-curriculum__call-to-action {
+	width: 100%;
+	height: 100%;
+	padding-top: #{$alpha-leading * .5}px;
+
+	text-align: center;
+
+	@include mq(bp5) {
+		width: calc( 200% + 24px );
+	}
+}

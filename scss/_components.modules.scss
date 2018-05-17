@@ -32,8 +32,8 @@
         border-color: palette(color-create);
     }
 
-    &--inform {
-        border-color: palette(color-inform);
+    &--analysis {
+        border-color: palette(color-analysis);
     }
 
     &--project {
@@ -64,8 +64,8 @@
         &.c-module--project {
             background-color: palette(color-project);
         }
-        &.c-module--inform {
-            background-color: palette(color-inform);
+        &.c-module--analysis {
+            background-color: palette(color-analysis);
         }
     }
 }

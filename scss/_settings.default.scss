@@ -54,7 +54,7 @@ $color-neutral: hsl(hue($color-beta),5,50) !default;
 $color-code: #01A8C1;
 $color-connect: #EF3696;
 $color-create: #FB9D3C;
-$color-inform: #A46B50;
+$color-analysis: #A46B50;
 $color-project: #7B9641;
 
 // Palettes
@@ -114,8 +114,8 @@ $palettes: (
     color-create: (
         base: $color-create,
     ),
-    color-inform: (
-        base: $color-inform,
+    color-analysis: (
+        base: $color-analysis,
     ),
     color-project: (
         base: $color-project,

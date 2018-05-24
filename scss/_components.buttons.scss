@@ -51,7 +51,7 @@ button::-moz-focus-inner {
     border-width: 0;
     transition-duration: $animation-duration-alpha;
     transition-timing-function: $animation-easing-alpha;
-    transition-property: background, color, border, transform;
+    transition-property: background, color, border, transform, box-shadow;
     outline: none;
     appearance: none;
     box-shadow: none;
@@ -163,10 +163,16 @@ button::-moz-focus-inner {
     }
 }
 
+.c-button--transform {
+    &:hover {
+        transform: translateY(-2px);
+        @include box-shadow-xl();
+    }
+}
+
 // special cases
 
 .c-button--header-cta {
-    // border-radius: $alpha-leading * 4px;
     z-index: 30;
     @include box-shadow;
 
@@ -180,6 +186,8 @@ button::-moz-focus-inner {
     &:focus {
         background-color: rgba(palette(color-neutral,xxxxx-light),.9);
         color: palette(color-alpha);
+        transform: translateY(-1px);
+        @include box-shadow-lg;
     }
 
     &:active {

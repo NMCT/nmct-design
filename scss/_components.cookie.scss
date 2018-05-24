@@ -1,0 +1,26 @@
+.c-cookie-message {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	padding: #{ $columns-gutter }px;
+
+	color: palette(color-neutral, xxxxx-light);
+
+	background-color: rgba( $html-background-color, .9 );
+
+	z-index: 9999;
+
+	@include mq(bp2) {
+		// width: calc( #{map-get( $breakpoints, bp2 )} - #{ 2 * $columns-gutter}px);
+		right: #{$columns-gutter}px;
+		bottom: #{$columns-gutter}px;
+		left: #{$columns-gutter}px;
+	}
+	
+	@include mq(bp3) {
+		right: #{$columns-gutter * 2}px;
+		left: auto;
+	}
+}

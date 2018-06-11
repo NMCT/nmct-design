@@ -9,13 +9,12 @@
 	color: palette(color-neutral, xxxxx-light);
 
 	background-color: $html-background-color;
-	
-	opacity: .7;
+
 	z-index: 9999;
 
-	&:hover {
-		opacity: 1;
-	}
+    a {
+        text-decoration: underline;
+    }
 
 	@include mq(bp2) {
 		// width: calc( #{map-get( $breakpoints, bp2 )} - #{ 2 * $columns-gutter}px);
@@ -23,7 +22,7 @@
 		bottom: #{$columns-gutter}px;
 		left: #{$columns-gutter}px;
 	}
-	
+
 	@include mq(bp3) {
 		right: #{$columns-gutter * 2}px;
 		left: auto;

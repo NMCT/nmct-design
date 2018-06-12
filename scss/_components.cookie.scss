@@ -3,14 +3,10 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-
 	padding: #{ $columns-gutter }px;
-
-	color: palette(color-neutral, xxxxx-light);
-
-	background-color: $html-background-color;
-
-	z-index: 9999;
+	background-color: #fff;
+    z-index: 9999;
+	@include box-shadow-xl;
 
     a {
         text-decoration: underline;
@@ -24,7 +20,15 @@
 	}
 
 	@include mq(bp3) {
-		right: #{$columns-gutter * 2}px;
-		left: auto;
+		right: auto;
+        display: flex;
+        align-items: center;
 	}
+}
+
+.c-cookie-message__text {
+    @include mq(bp3) {
+        margin-right: 24px;
+        margin-bottom: 0;
+    }
 }

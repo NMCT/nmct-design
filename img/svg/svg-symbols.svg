@@ -11,11 +11,19 @@
     <symbol id="c-symbol-close" viewBox="0 0 24 24">
       <title>close</title><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill-rule="nonzero"/>
     </symbol>
+    <symbol id="c-symbol-date_range" viewBox="0 0 768 768">
+      <title>c-symbol-date_range icon</title>
+      <path d="M607.5 640.5V288h-447v352.5h447zm0-513c34.5 0 64.5 30 64.5 64.5v448.5c0 34.5-30 63-64.5 63h-447c-36 0-64.5-28.5-64.5-63V192c0-34.5 28.5-64.5 64.5-64.5H192v-63h64.5v63h255v-63H576v63h31.5zm-63 225v63H480v-63h64.5zm-129 0v63h-63v-63h63zm-127.5 0v63h-64.5v-63H288z"/>
+    </symbol>
     <symbol id="c-symbol-keyboard-arrow-down" viewBox="0 0 24 24">
       <title>keyboard-arrow-down</title><path d="M7.41 8L12 12.58 16.59 8 18 9.41l-6 6-6-6z" fill-rule="nonzero"/>
     </symbol>
     <symbol id="c-symbol-menu" viewBox="0 0 24 24">
       <title>menu</title><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill-rule="nonzero"/>
+    </symbol>
+    <symbol id="c-symbol-notifications" viewBox="0 0 768 768">
+      <title>c-symbol-notifications icon</title>
+      <title/><path d="M576 511.5l64.5 64.5v31.5h-513V576l64.5-64.5v-159c0-99 52.5-180 144-202.5v-22.5c0-27 21-48 48-48s48 21 48 48V150c91.5 22.5 144 105 144 202.5v159zm-192 192c-36 0-64.5-28.5-64.5-63h129c0 34.5-30 63-64.5 63z"/>
     </symbol>
     <symbol id="c-symbol-play" viewBox="0 0 24 24">
       <title>play</title><path d="M8 5v14l11-7z" fill-rule="nonzero"/>

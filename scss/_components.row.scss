@@ -53,13 +53,10 @@
 }
 
 .c-row--top {
-    // background-color: palette(color-neutral, xx-dark);
-    // background-color: palette(color-alpha, dark);
     background-color: palette(color-alpha, base);
     z-index: 30;
     box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxxx-light),.15);
     @include padding-tb($alpha-leading * .5, $alpha-leading * .5);
-    // @include padding-lr($alpha-leading * .5, $alpha-leading * .5);
 }
 
 .c-row--header {

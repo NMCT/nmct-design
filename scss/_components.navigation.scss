@@ -129,7 +129,7 @@
 // mobile navigation
 
 .c-nav-mobile {
-    display: none;
+    opacity: 0;
     position: fixed;
     top: 0;
     right: 0;
@@ -137,14 +137,13 @@
     left: 0;
     background-color: palette(color-alpha);
     z-index: 100;
+    pointer-events: none;
+    transition: opacity $animation-duration-alpha $animation-easing-alpha;
 
     &.is-visible {
         display: block;
-    }
-
-    @include mq(bp3) {
-        @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
-        @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
+        opacity: 1;
+        pointer-events: auto;
     }
 
     @include mq(bp4) {
@@ -158,6 +157,23 @@
 .c-nav-mobile__body {
     @include padding-tb($alpha-leading,$alpha-leading);
     @include padding-lr($columns-gutter,$columns-gutter);
+
+    @include mq(bp3) {
+        @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
+        @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
+    }
+}
+
+.c-nav-mobile__nav {
+    opacity: 0;
+    width: 100%;
+    transform: translateX(24px);
+
+    .is-visible & {
+        opacity: 1;
+        transform: none;
+        transition: all $animation-duration-alpha $animation-easing-alpha;
+    }
 }
 
 // top navigation

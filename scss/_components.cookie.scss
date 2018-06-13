@@ -13,7 +13,6 @@
     }
 
 	@include mq(bp2) {
-		// width: calc( #{map-get( $breakpoints, bp2 )} - #{ 2 * $columns-gutter}px);
 		right: #{$columns-gutter}px;
 		bottom: #{$columns-gutter}px;
 		left: #{$columns-gutter}px;

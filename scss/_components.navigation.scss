@@ -65,6 +65,7 @@
         text-decoration: none;
         font-weight: $delta-font-weight;
         @include text-dimensions(ms(-1),1);
+        @include padding-tb($alpha-leading / 4,$alpha-leading / 4);
 
         &,
         &:visited {
@@ -78,7 +79,6 @@
             left: 0;
             height: 2px;
             width: 0;
-            // opacity: 0;
             background-color: rgba(palette(color-neutral,xxxxx-light),1);
             transition: all $animation-duration-beta $animation-easing-alpha;
             transition-property: width;
@@ -98,9 +98,9 @@
             }
         }
 
-        // @include mq(bp4,max) {
-            @include padding-tb($alpha-leading / 4,$alpha-leading / 4);
-        // }
+        @include mq(bp4) {
+            @include padding-tb($alpha-leading / 2,$alpha-leading / 2);
+        }
     }
 
 .c-nav-main-trigger {
@@ -137,8 +137,6 @@
     left: 0;
     background-color: palette(color-alpha);
     z-index: 100;
-    @include padding-tb($alpha-leading,$alpha-leading);
-    @include padding-lr($columns-gutter,$columns-gutter);
 
     &.is-visible {
         display: block;
@@ -155,6 +153,11 @@
             display: none;
         }
     }
+}
+
+.c-nav-mobile__body {
+    @include padding-tb($alpha-leading,$alpha-leading);
+    @include padding-lr($columns-gutter,$columns-gutter);
 }
 
 // top navigation

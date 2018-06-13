@@ -29,6 +29,10 @@
             margin-bottom: 0;
         }
 
+        .c-nav-mobile & {
+            @include margin-bottom($alpha-leading * 1.5);
+        }
+
         @include mq(bp4) {
             display: flex;
             align-items: center;
@@ -95,7 +99,7 @@
         }
 
         // @include mq(bp4,max) {
-            @include padding-tb($alpha-leading / 2,$alpha-leading / 2);
+            @include padding-tb($alpha-leading / 4,$alpha-leading / 4);
         // }
     }
 
@@ -117,10 +121,10 @@
     }
 }
 
-    .c-nav-main-trigger__symbol {
-        width: 1.5em;
-        height: 1.5em;
-    }
+    // .c-nav-main-trigger__symbol {
+    //     width: 1.5em;
+    //     height: 1.5em;
+    // }
 
 // mobile navigation
 

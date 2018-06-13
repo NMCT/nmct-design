@@ -209,23 +209,6 @@ li {
     }
 }
 
-.c-update {
-    color: palette(color-neutral,xxxxx-light);
-    font-weight: $delta-font-weight;
-    margin-bottom: 0;
-    text-align: center;
-    @include ms-2;
-
-    a {
-        &,
-        &:visited {
-            color: palette(color-neutral,xxxxx-light);
-            // color: palette(color-alpha,light);
-            text-decoration: underline;
-        }
-    }
-}
-
 .c-map {
     width: 100%;
     height: 0;

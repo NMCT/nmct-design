@@ -1,0 +1,84 @@
+/*
+    Components: Update
+*/
+
+@keyframes bellshake-wild {
+    0% { transform: rotate(0); }
+    1% { transform: rotate(30deg); }
+    3% { transform: rotate(-28deg); }
+    5% { transform: rotate(34deg); }
+    7% { transform: rotate(-32deg); }
+    9% { transform: rotate(30deg); }
+    11% { transform: rotate(-28deg); }
+    13% { transform: rotate(26deg); }
+    15% { transform: rotate(-24deg); }
+    17% { transform: rotate(22deg); }
+    19% { transform: rotate(-20deg); }
+    21% { transform: rotate(18deg); }
+    23% { transform: rotate(-16deg); }
+    25% { transform: rotate(14deg); }
+    27% { transform: rotate(-12deg); }
+    29% { transform: rotate(10deg); }
+    31% { transform: rotate(-8deg); }
+    33% { transform: rotate(6deg); }
+    35% { transform: rotate(-4deg); }
+    37% { transform: rotate(2deg); }
+    39% { transform: rotate(-1deg); }
+    41% { transform: rotate(1deg); }
+    43% { transform: rotate(0); }
+    100% { transform: rotate(0); }
+}
+
+@keyframes bellshake {
+    0% { transform: rotate(0); }
+    2% { transform: rotate(11deg); }
+    4% { transform: rotate(-11deg); }
+    6% { transform: rotate(7deg); }
+    8% { transform: rotate(-7deg); }
+    10% { transform: rotate(4deg); }
+    12% { transform: rotate(-4deg); }
+    14% { transform: rotate(2deg); }
+    16% { transform: rotate(-2deg); }
+    18% { transform: rotate(1deg); }
+    19% { transform: rotate(0); }
+    100% { transform: rotate(0); }
+}
+
+.c-update {
+    color: palette(color-neutral,xxxxx-light);
+    margin-bottom: 0;
+    display: flex;
+    @include ms-1;
+
+    a {
+        &,
+        &:visited {
+            color: palette(color-neutral,xxxxx-light);
+            text-decoration: underline;
+            font-weight: $delta-font-weight;
+        }
+    }
+
+    // @include mq(bp4) {
+    //     justify-content: center;
+    // }
+}
+
+.c-update__symbol-holder {
+    margin-right: 12px;
+    display: block;
+}
+
+.c-update__symbol {
+    fill: white;
+}
+
+.c-update__symbol--bell {
+    // animation: bellshake-wild 4s 1s $animation-easing-alpha infinite;
+    animation: bellshake 4s 1s $animation-easing-alpha infinite;
+    transform-origin: 50% 4px;
+}
+
+.c-update__text {
+    display: block;
+}
